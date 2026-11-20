@@ -1,0 +1,61 @@
+{
+  "original_parent_manifest": {
+    "path": "D:\\BCI_builds\\PriResCal_STYLE9_Best_65p2778_20261114\\SEALED_MANIFEST.json",
+    "sha": "15cd95bb350e7af0354c38ccdde4d64c88736a5b2cb75d9bb19bfad81a34a240"
+  },
+  "complete_component_lineage": {
+    "path": "D:\\BCI_builds\\PRS729167_FullChainAudit_20261120\\LINEAGE.json",
+    "sha": "58336332fbd53e74bf562e956480c11e227248945c7f3e588eef210f03c0d17a"
+  },
+  "CSP_exports": [
+    {
+      "path": "D:\\BCI_builds\\PRS_SourceCSP_RebuildReplay_20261120\\H1_CSP.npz",
+      "sha": "fbd353ffb54a5ac5cb72b109cefbe61e64387ffad8c17a096f831bcb0797a585",
+      "h": 1
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS_SourceCSP_RebuildReplay_20261120\\H2_CSP.npz",
+      "sha": "d2802a4438620affb379cde1ed95a9032c4b8c6076860c328589781010c6bc6e",
+      "h": 2
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS_SourceCSP_RebuildReplay_20261120\\H3_CSP.npz",
+      "sha": "47ea95917525d27793a32025ec8e1037132ffe2a684c2d97f52fec4f1c1ce993",
+      "h": 3
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS_SourceCSP_RebuildReplay_20261120\\H4_CSP.npz",
+      "sha": "1d40f6f4c031d9f6330b451adfb8a54b96771c960db15ec1d9fb07d044053a52",
+      "h": 4
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS_SourceCSP_RebuildReplay_20261120\\H5_CSP.npz",
+      "sha": "93430d2adb417665d119bdb19b2b6c85a2144751bed495d6f46d15ab3c5a8e79",
+      "h": 5
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS_SourceCSP_RebuildReplay_20261120\\H6_CSP.npz",
+      "sha": "95176b0f5186fccc86b1856f8676e364adc157d5e2e2bf8b76dd07a66e944856",
+      "h": 6
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS_SourceCSP_RebuildReplay_20261120\\H7_CSP.npz",
+      "sha": "bc27b7c85921aa20d882f8e6ef58b8068442e80b2fe894b0ac509d88e5e88b3b",
+      "h": 7
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS_SourceCSP_RebuildReplay_20261120\\H8_CSP.npz",
+      "sha": "ab2a334e90254ad149235b3d61e2b18f6578736bc2f1227356f9dd4499207dd4",
+      "h": 8
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS_SourceCSP_RebuildReplay_20261120\\H9_CSP.npz",
+      "sha": "70b03b5d8f2a291e2de9b362b0c3eb3544eca22015f1e8183ca66970b5841be1",
+      "h": 9
+    }
+  ],
+  "graph_weights": {
+    "path": "D:\\BCI_builds\\PRS6875_BipolarGraph_Source\\WEIGHTS_AND_STRICT_QA.json",
+    "sha": "cd3e4fc7004840948036bf2391f1a9b613b396e3e63e40fc5c69d757686d7f69"
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "study": "IV2b interface degradation diagnostic only, outside A/B same-weight claims",
+  "status": "DRAFT_NOT_EXECUTED",
+  "expectation": "Predeclared expectation: severe3to22spatial information loss may yield left/rightACC near50%; this is a hypothesis, not guaranteed result.",
+  "interpretation": "Tests fixed mapping/interface degradation, not model cross-dataset efficacy. Abovechance does not establish mapping fidelity; near-chance does not refute full22channelPRS.",
+  "data": "onlyIV2bT1/2,session3excluded,E4/5andderived probabilities sealed",
+  "mapping": "fixed standard1020 inverse-square from all3 C3/Cz/C4 for missing rows, exact3direct; requires independently proved cache channel order; if unproved stop. No target score mapping choice.",
+  "report": "absoluteACC/kappa,unlabelled covariance rank/conditioning,estimated bipolar magnitude and finite checks,all participants/panels; no including IV2b in generalized same-weight claims",
+  "rules": {
+    "prior": [
+      0.5,
+      0.5
+    ],
+    "warmup": 20,
+    "history": "past only: predict trial t with original probabilities0..t-1 within block; current/future excluded",
+    "regularization": ".1+20/n_history",
+    "L2": "lambda*mean(b*b)=lambda*(b0²+b1²)/2",
+    "optimizer": "L-BFGS-B,zero2vector,maxiter150,gtol1e-8; center final bias",
+    "batch_secondary": "whole original block unlabelled probabilities,lambda=.1; same mean-square normalization",
+    "binary_operation": "First produce and fuse native4class outputs; select columns0/1,left/right; clip1e-12..1,normalize; ONLY THEN apply binary past-only bias. Expert-layer bias absent.",
+    "reset": "every native physical acquisition block, no state carried between blocks or sessions"
+  }
+}
