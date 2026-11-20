@@ -1,0 +1,945 @@
+{
+  "status": "DRAFT_AWAITING_USER_CONFIRMATION_NO_EXECUTION",
+  "dataset": "OpenBMI",
+  "allowed": {
+    "subjects": [
+      1,
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9,
+      10,
+      11,
+      12,
+      13,
+      14,
+      15,
+      16,
+      17,
+      18,
+      19,
+      20,
+      21,
+      22,
+      23,
+      24,
+      25,
+      26,
+      27,
+      28,
+      29,
+      30,
+      31,
+      32,
+      33,
+      34,
+      35,
+      36,
+      37,
+      38,
+      39,
+      40,
+      41,
+      42,
+      43,
+      44,
+      45,
+      46,
+      47,
+      48,
+      49,
+      50,
+      51,
+      52,
+      53,
+      54
+    ],
+    "sessions": [
+      1
+    ],
+    "phases": "all original session1 acquisition phases, preserve native order; reset EA and bias per acquisition block to avoid discontinuities"
+  },
+  "sealed": {
+    "sessions": [
+      2
+    ],
+    "assets": "raw EEG, labels, features, predictions and all derived session2 files"
+  },
+  "model": "same nine frozen IV2a source PRS panels used by PRS6875_BipolarGraph_Source external evaluation; never select a panel; existing fixed montage mapping and source normalization; session1 held external to all source training",
+  "primary": "mean54 of per-person mean9-panel causal ACC gain; bootstrap resamples persons with all nine panels retained together",
+  "secondary": "batch same aggregation; equal-probability panel ensemble optional descriptive only, never selection",
+  "bootstrap": {
+    "seed": 20261125,
+    "repeats": 50000,
+    "unit": "subject"
+  },
+  "rule": "subject-bootstrap95% lower>0:迁移成立; upper<0:有害; otherwise中性",
+  "classes": 2,
+  "prior": [
+    0.5,
+    0.5
+  ],
+  "batch_reg": 0.1,
+  "causal_reg": ".1+20/n",
+  "warmup": 20,
+  "l2": "lambda*mean(b_c**2)=lambda*(b0**2+b1**2)/2; same numeric lambda; centered bias; gradient lambda*b for two classes",
+  "optimizer": "frozen L-BFGS-B maxiter150 gtol1e-8; zero initial two-class bias; center output bias",
+  "batch": "use current acquisition block only, all unlabelled probabilities; future block data excluded",
+  "causal": "current and past original probabilities within block only, first20 unchanged, no retroactive revision",
+  "no_training": true,
+  "no_tuning": true,
+  "labels": "session1 labels only for scoring after all54x9 probabilities and corrections hashed and committed; never mounted in correction process",
+  "isolation": "same OS mount and network isolation as IV2b; only allowlisted session1 staged assets; inaccessible session2 paths and derived caches, file access logs saved",
+  "assumption": "depends on balanced class prior; not pure zero calibration",
+  "historical_exposure": "session2 labels used for historical scoring/method reporting; cohort not independent blind; no automatic target-label fitting found in audited direct-transfer paths",
+  "preflight": "verify all designated checkpoint hashes and fixed montage, session1 native trial identity, class convention and block markers; numerical replay where same-session archive exists; if assets/provenance absent stop and report; do not train",
+  "source_plan_sha": "4aacd1e7da2d95c1a74486a85a0e9cfb6e47974868eb1167653eab17d7c12933",
+  "version": "revision3-public-preregistration-awaiting-confirmation",
+  "evaluation_scope": "冻结IV2a模型＋校正规则在OpenBMI第1会话上的外部迁移；不代表PRS在OpenBMI上有效，不代表OpenBMI内部LOSO有效性。",
+  "historical_boundary": "第2会话已被早先迁移路线读取过EEG和标签并用于报告；本次封存只约束当前分析，不声称其历史未曝光。",
+  "class_mapping": {
+    "source_order": [
+      "left_hand",
+      "right_hand",
+      "feet",
+      "tongue"
+    ],
+    "target_order": [
+      "left_hand",
+      "right_hand"
+    ],
+    "operation": "After complete four-class PRS fusion, select columns0,1; clip selected probabilities to [1e-12,1]; renormalize each row to sum1; apply frozen binary bias thereafter. Do not combine feet/tongue into hands.",
+    "target_labels": "verify original OpenBMI native left/right code through source metadata; if ambiguous stop before scoring, never guess",
+    "probability_epsilon": "bias log clips at1e-9, unchanged frozen rule"
+  },
+  "channel_mapping": {
+    "source_channels": [
+      "Fz",
+      "FC3",
+      "FC1",
+      "FCz",
+      "FC2",
+      "FC4",
+      "C5",
+      "C3",
+      "C1",
+      "Cz",
+      "C2",
+      "C4",
+      "C6",
+      "CP3",
+      "CP1",
+      "CPz",
+      "CP2",
+      "CP4",
+      "P1",
+      "Pz",
+      "P2",
+      "POz"
+    ],
+    "target_channels": [
+      "FC5",
+      "FC3",
+      "FC1",
+      "FC2",
+      "FC4",
+      "FC6",
+      "C5",
+      "C3",
+      "C1",
+      "Cz",
+      "C2",
+      "C4",
+      "C6",
+      "CP5",
+      "CP3",
+      "CP1",
+      "CPz",
+      "CP2",
+      "CP4",
+      "CP6"
+    ],
+    "shape": [
+      22,
+      20
+    ],
+    "matrix": [
+      [
+        0.0,
+        0.16116973689470854,
+        0.33688331428589147,
+        0.34418111220182646,
+        0.1577658366175736,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.3024163703460834,
+        0.2979817828999218,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.13979587788549663,
+        0.2598059688684983,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.11166278169153941,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.2396876775264094,
+        0.41654655886518566,
+        0.23210298191686554,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.10994905540679085,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.24094011584965738,
+        0.42336946702389205,
+        0.22574136171965978,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.11207522326622944,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.2228738835989399,
+        0.42981176702702795,
+        0.2352391261078028,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.20848686077082215,
+        0.25722004876035465,
+        0.28357678393476077,
+        0.2507163065340625,
+        0.0,
+        0.0
+      ]
+    ],
+    "rows": [
+      {
+        "channel": "Fz",
+        "kind": "fixed_geometry_IDW4",
+        "donors": [
+          "FC2",
+          "FC1",
+          "FC3",
+          "FC4"
+        ],
+        "weights": [
+          0.34418111220182646,
+          0.33688331428589147,
+          0.16116973689470854,
+          0.1577658366175736
+        ]
+      },
+      {
+        "channel": "FC3",
+        "kind": "exact",
+        "donors": [
+          "FC3"
+        ],
+        "weights": [
+          1.0
+        ]
+      },
+      {
+        "channel": "FC1",
+        "kind": "exact",
+        "donors": [
+          "FC1"
+        ],
+        "weights": [
+          1.0
+        ]
+      },
+      {
+        "channel": "FCz",
+        "kind": "fixed_geometry_IDW4",
+        "donors": [
+          "FC1",
+          "FC2",
+          "Cz",
+          "C1"
+        ],
+        "weights": [
+          0.3024163703460834,
+          0.2979817828999218,
+          0.2598059688684983,
+          0.13979587788549663
+        ]
+      },
+      {
+        "channel": "FC2",
+        "kind": "exact",
+        "donors": [
+          "FC2"
+        ],
+        "weights": [
+          1.0
+        ]
+      },
+      {
+        "channel": "FC4",
+        "kind": "exact",
+        "donors": [
+          "FC4"
+        ],
+        "weights": [
+          1.0
+        ]
+      },
+      {
+        "channel": "C5",
+        "kind": "exact",
+        "donors": [
+          "C5"
+        ],
+        "weights": [
+          1.0
+        ]
+      },
+      {
+        "channel": "C3",
+        "kind": "exact",
+        "donors": [
+          "C3"
+        ],
+        "weights": [
+          1.0
+        ]
+      },
+      {
+        "channel": "C1",
+        "kind": "exact",
+        "donors": [
+          "C1"
+        ],
+        "weights": [
+          1.0
+        ]
+      },
+      {
+        "channel": "Cz",
+        "kind": "exact",
+        "donors": [
+          "Cz"
+        ],
+        "weights": [
+          1.0
+        ]
+      },
+      {
+        "channel": "C2",
+        "kind": "exact",
+        "donors": [
+          "C2"
+        ],
+        "weights": [
+          1.0
+        ]
+      },
+      {
+        "channel": "C4",
+        "kind": "exact",
+        "donors": [
+          "C4"
+        ],
+        "weights": [
+          1.0
+        ]
+      },
+      {
+        "channel": "C6",
+        "kind": "exact",
+        "donors": [
+          "C6"
+        ],
+        "weights": [
+          1.0
+        ]
+      },
+      {
+        "channel": "CP3",
+        "kind": "exact",
+        "donors": [
+          "CP3"
+        ],
+        "weights": [
+          1.0
+        ]
+      },
+      {
+        "channel": "CP1",
+        "kind": "exact",
+        "donors": [
+          "CP1"
+        ],
+        "weights": [
+          1.0
+        ]
+      },
+      {
+        "channel": "CPz",
+        "kind": "exact",
+        "donors": [
+          "CPz"
+        ],
+        "weights": [
+          1.0
+        ]
+      },
+      {
+        "channel": "CP2",
+        "kind": "exact",
+        "donors": [
+          "CP2"
+        ],
+        "weights": [
+          1.0
+        ]
+      },
+      {
+        "channel": "CP4",
+        "kind": "exact",
+        "donors": [
+          "CP4"
+        ],
+        "weights": [
+          1.0
+        ]
+      },
+      {
+        "channel": "P1",
+        "kind": "fixed_geometry_IDW4",
+        "donors": [
+          "CP1",
+          "CP3",
+          "CPz",
+          "C1"
+        ],
+        "weights": [
+          0.41654655886518566,
+          0.2396876775264094,
+          0.23210298191686554,
+          0.11166278169153941
+        ]
+      },
+      {
+        "channel": "Pz",
+        "kind": "fixed_geometry_IDW4",
+        "donors": [
+          "CPz",
+          "CP1",
+          "CP2",
+          "Cz"
+        ],
+        "weights": [
+          0.42336946702389205,
+          0.24094011584965738,
+          0.22574136171965978,
+          0.10994905540679085
+        ]
+      },
+      {
+        "channel": "P2",
+        "kind": "fixed_geometry_IDW4",
+        "donors": [
+          "CP2",
+          "CP4",
+          "CPz",
+          "C2"
+        ],
+        "weights": [
+          0.42981176702702795,
+          0.2352391261078028,
+          0.2228738835989399,
+          0.11207522326622944
+        ]
+      },
+      {
+        "channel": "POz",
+        "kind": "fixed_geometry_IDW4",
+        "donors": [
+          "CPz",
+          "CP1",
+          "CP2",
+          "CP3"
+        ],
+        "weights": [
+          0.28357678393476077,
+          0.25722004876035465,
+          0.2507163065340625,
+          0.20848686077082215
+        ]
+      }
+    ],
+    "file_sha": "9f50cd433058ca4fe327e45e5672587b60101cfff999ea17f3772a407ba79840",
+    "operation": "mapped[n,i,t]=sum_j M[i,j]*raw[n,j,t]; exact matches direct, missing channels fixed IDW4; no target fitting; verify raw channel order before use; bipolar FC3-CP3 and FC4-CP4 from exact original target channels"
+  },
+  "block_balance_check": {
+    "before_inference": "From unlabelled metadata freeze person/session1/block/phase/trial/time order and block boundaries, no label access. If native boundaries ambiguous stop and document.",
+    "after_prediction_lock": "Separate scorer reads permitted session1 labels, enumerates left/right counts for every previously frozen block, validates unique trial identity and total, writes counts and imbalance fraction.",
+    "report": "All blocks retained; unequal left/right counts flagged and separately summarized with n,prior and effects. Primary remains all preregistered persons/blocks; no exclusion, reweighting or prior adaptation based on balance. Missing-class blocks retained with kappa undefined explicitly, not silently dropped."
+  },
+  "secondary_analyses": {
+    "soft_TV": "For each person and each panel/block compute abs(mean(p_left)-.5) before correction; n-weighted over blocks then equal-mean9 panels for one person feature; correlate54 persons with per-person mean9-panel causal and batch ACC gains by Spearman. Report rho and leave-one-person-out range; exploratory.",
+    "decision_changes": "For each person/panel/method count argmax changed, wrong-to-right, right-to-wrong, wrong-to-wrong. Corrected fraction=wrong-to-right/all decision-changed, null if zero. Also wrong-to-right/(wrong-to-right+right-to-wrong). Pool counts over nine panels explicitly as repeated panel-trials, and report per-person rates; never call repeated panels independent people.",
+    "benefit_harm": "54-person fraction with mean9-panel ACC gain strictly>0.01; fraction harmed gain<0; ties separately; report mean gain itself and by-person distribution for both methods. No metric-based selection.",
+    "within_person_panel_order": "score each panel before averaging, no choosing best source fold or trialwise oracle"
+  },
+  "archive": "Public timestamped GitHub commit on a dedicated preregistration branch; exact PLAN.json plus SHA manifest, public commit URL and GitHub server commit receipt stored locally. No EEG, labels, models or predictions published.",
+  "channel_mapping_provenance": {
+    "source": "Full65_OpenBMI_Direct_20261115/PROTOCOL.json mapping_rule and MAPPING.npy; PACKAGE_LOCK mapping_sha",
+    "generation_algorithm": "MNE standard_1020 coordinates; exact matches16, missing6; choose nearest4 among20 target channels by Euclidean distance, weights normalized inverse-squared distance; no EEG and no labels in calculation",
+    "independent_reconstruction": "Recomputed from current installed MNE standard_1020; maximum absolute matrix difference1.1102230246251565e-16",
+    "generation_time_evidence": "Local filesystem records MAPPING.npy and PROTOCOL.json created/last-written2026-11-15T01:58:08Z (09:58:08 Asia/Shanghai). Local timestamps are not trusted external timestamps and do not prove original creation. Historical REPORT mtime2026-11-15T03:04:57Z.",
+    "decision_record": "Historical protocol states single locked mapping, no alternative sweep, source unchanged. PACKAGE_LOCK pins mapping and protocol. Geometry-only computation independently verified. Original standalone generator script not found in scoped audit; no independent tamper-proof timestamp before historical scoring.",
+    "target_label_selection": "No evidence found of selecting the matrix by OpenBMI labels or session2 scores; historical protocol explicitly forbids it. However absence of every possible prior label-guided design decision cannot be independently proved; session2 had historical exposure. Do not claim fully audited lifetime absence of such influence.",
+    "current_decision": "Reuse this exact archived matrix with its SHA; never search mappings, donors or weights during current study."
+  },
+  "effect_size_wording": "Primary verdict unchanged: lower95%CI>0迁移成立; crossing or touching0中性; upper95%CI<0有害. If lower95%CI>0 and mean ACC gain<0.01, additionally describe as方向一致、幅度小. Mean exactly0.01 does not trigger small-effect phrase.",
+  "interruption_handling": {
+    "permitted": "Only fix engineering errors unrelated to outcomes, such as IO, isolation, device/runtime compatibility, serialization or progress reporting, while preserving algorithms, trial set, mapping, constants and registered analyses.",
+    "restart": "After any engineering fix, invalidate current run artifacts as analysis inputs, retain them in a failure archive, and rerun the entire preregistered54-person×9-panel inference/calibration workflow from beginning; do not selectively retain successful persons or panels.",
+    "after_scoring": "Never modify rules or numerical constants after any score is seen. If an error affects validity after scoring, disclose it, archive the result as invalid and stop for a new plan and user confirmation rather than adjust based on score.",
+    "logging": "Record error, discovery phase, whether labels/scores had been opened, exact code diff and hashes, reason the fix is outcome-independent, complete-run identifiers."
+  }
+}
