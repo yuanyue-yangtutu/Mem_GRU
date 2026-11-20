@@ -1,0 +1,31 @@
+[
+  {
+    "version": "72.9167 expert-bias candidate",
+    "correct": 1890,
+    "n": 2592,
+    "acc": 72.9166666667,
+    "kappa": 0.6388888889,
+    "parent": "68.75% original full statspool, not68.79exchange",
+    "reference": "71.6435% fullmodelpastonly",
+    "information": "source trainingLOSO; uses prior/current unlabelled history in existing EA/fusion, and strictly earlier trials for expert andfinal bias. No future for bias; not independent single-trial inference. Nine-target historical development exposure.",
+    "comparability": "not comparable in one strict-independent-trial leaderboard with65.90; includes expert-level bias not included A/B"
+  },
+  {
+    "version": "68.78858% graph exchange",
+    "correct": 1783,
+    "n": 2592,
+    "acc": 68.7885802469,
+    "kappa": 0.5838477366,
+    "parent": "68.75statspool plus exchangegraph",
+    "information": "historical prefix geometry, different architecture from72.9167candidate; no extra classbias"
+  },
+  {
+    "version": "65.89506% strict exchange",
+    "correct": 1708,
+    "n": 2592,
+    "acc": 65.8950617284,
+    "kappa": 0.5452674897,
+    "parent": "same exchange checkpoints as68.78858",
+    "information": "strict same-trial/source-reference geometry replay; excludes other target-trial statistics in this protocol; distinct reference preprocessing from prefix version"
+  }
+]

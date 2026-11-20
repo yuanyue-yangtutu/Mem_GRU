@@ -1,0 +1,789 @@
+{
+  "scope": "descriptive only; not used to choose primary rule; no new neural inference or target scoring",
+  "rows": [
+    {
+      "dataset": "IV2a_strict_exchange",
+      "subject": 1,
+      "n": 288,
+      "base": [
+        0.7361111111111112,
+        0.6481481481481481
+      ],
+      "inclusive": [
+        0.7326388888888888,
+        0.6435185185185186
+      ],
+      "past_only": [
+        0.7326388888888888,
+        0.6435185185185186
+      ],
+      "delta_past_minus_inclusive": [
+        0.0,
+        0.0
+      ],
+      "decision_changes": 0,
+      "fix": 0,
+      "harm": 0,
+      "probability_max_difference": 0.00803326920659908
+    },
+    {
+      "dataset": "IV2a_strict_exchange",
+      "subject": 2,
+      "n": 288,
+      "base": [
+        0.5173611111111112,
+        0.3564814814814815
+      ],
+      "inclusive": [
+        0.5416666666666666,
+        0.38888888888888884
+      ],
+      "past_only": [
+        0.5416666666666666,
+        0.38888888888888884
+      ],
+      "delta_past_minus_inclusive": [
+        0.0,
+        0.0
+      ],
+      "decision_changes": 0,
+      "fix": 0,
+      "harm": 0,
+      "probability_max_difference": 0.007224077665265005
+    },
+    {
+      "dataset": "IV2a_strict_exchange",
+      "subject": 3,
+      "n": 288,
+      "base": [
+        0.8090277777777778,
+        0.7453703703703703
+      ],
+      "inclusive": [
+        0.84375,
+        0.7916666666666666
+      ],
+      "past_only": [
+        0.84375,
+        0.7916666666666666
+      ],
+      "delta_past_minus_inclusive": [
+        0.0,
+        0.0
+      ],
+      "decision_changes": 0,
+      "fix": 0,
+      "harm": 0,
+      "probability_max_difference": 0.007999472344963676
+    },
+    {
+      "dataset": "IV2a_strict_exchange",
+      "subject": 4,
+      "n": 288,
+      "base": [
+        0.5347222222222222,
+        0.37962962962962965
+      ],
+      "inclusive": [
+        0.5590277777777778,
+        0.4120370370370371
+      ],
+      "past_only": [
+        0.5590277777777778,
+        0.4120370370370371
+      ],
+      "delta_past_minus_inclusive": [
+        0.0,
+        0.0
+      ],
+      "decision_changes": 0,
+      "fix": 0,
+      "harm": 0,
+      "probability_max_difference": 0.008021774506965063
+    },
+    {
+      "dataset": "IV2a_strict_exchange",
+      "subject": 5,
+      "n": 288,
+      "base": [
+        0.5590277777777778,
+        0.4120370370370371
+      ],
+      "inclusive": [
+        0.6736111111111112,
+        0.5648148148148149
+      ],
+      "past_only": [
+        0.6736111111111112,
+        0.5648148148148149
+      ],
+      "delta_past_minus_inclusive": [
+        0.0,
+        0.0
+      ],
+      "decision_changes": 0,
+      "fix": 0,
+      "harm": 0,
+      "probability_max_difference": 0.00866848845627588
+    },
+    {
+      "dataset": "IV2a_strict_exchange",
+      "subject": 6,
+      "n": 288,
+      "base": [
+        0.5277777777777778,
+        0.37037037037037035
+      ],
+      "inclusive": [
+        0.6215277777777778,
+        0.49537037037037035
+      ],
+      "past_only": [
+        0.6215277777777778,
+        0.49537037037037035
+      ],
+      "delta_past_minus_inclusive": [
+        0.0,
+        0.0
+      ],
+      "decision_changes": 0,
+      "fix": 0,
+      "harm": 0,
+      "probability_max_difference": 0.00894135295688192
+    },
+    {
+      "dataset": "IV2a_strict_exchange",
+      "subject": 7,
+      "n": 288,
+      "base": [
+        0.7222222222222222,
+        0.6296296296296297
+      ],
+      "inclusive": [
+        0.7291666666666666,
+        0.6388888888888888
+      ],
+      "past_only": [
+        0.7291666666666666,
+        0.6388888888888888
+      ],
+      "delta_past_minus_inclusive": [
+        0.0,
+        0.0
+      ],
+      "decision_changes": 0,
+      "fix": 0,
+      "harm": 0,
+      "probability_max_difference": 0.008322386893229172
+    },
+    {
+      "dataset": "IV2a_strict_exchange",
+      "subject": 8,
+      "n": 288,
+      "base": [
+        0.7465277777777778,
+        0.662037037037037
+      ],
+      "inclusive": [
+        0.7534722222222222,
+        0.6712962962962963
+      ],
+      "past_only": [
+        0.7534722222222222,
+        0.6712962962962963
+      ],
+      "delta_past_minus_inclusive": [
+        0.0,
+        0.0
+      ],
+      "decision_changes": 0,
+      "fix": 0,
+      "harm": 0,
+      "probability_max_difference": 0.007849063284433355
+    },
+    {
+      "dataset": "IV2a_strict_exchange",
+      "subject": 9,
+      "n": 288,
+      "base": [
+        0.7777777777777778,
+        0.7037037037037037
+      ],
+      "inclusive": [
+        0.7881944444444444,
+        0.7175925925925926
+      ],
+      "past_only": [
+        0.7881944444444444,
+        0.7175925925925926
+      ],
+      "delta_past_minus_inclusive": [
+        0.0,
+        0.0
+      ],
+      "decision_changes": 0,
+      "fix": 0,
+      "harm": 0,
+      "probability_max_difference": 0.007857425332588819
+    },
+    {
+      "dataset": "IV2a_prefix_statspool",
+      "subject": 1,
+      "n": 288,
+      "base": [
+        0.8055555555555556,
+        0.7407407407407407
+      ],
+      "inclusive": [
+        0.8125,
+        0.75
+      ],
+      "past_only": [
+        0.8125,
+        0.75
+      ],
+      "delta_past_minus_inclusive": [
+        0.0,
+        0.0
+      ],
+      "decision_changes": 0,
+      "fix": 0,
+      "harm": 0,
+      "probability_max_difference": 0.0074089987882201
+    },
+    {
+      "dataset": "IV2a_prefix_statspool",
+      "subject": 2,
+      "n": 288,
+      "base": [
+        0.5486111111111112,
+        0.39814814814814814
+      ],
+      "inclusive": [
+        0.5347222222222222,
+        0.37962962962962965
+      ],
+      "past_only": [
+        0.5381944444444444,
+        0.3842592592592593
+      ],
+      "delta_past_minus_inclusive": [
+        0.00347222222222221,
+        0.00462962962962965
+      ],
+      "decision_changes": 2,
+      "fix": 1,
+      "harm": 0,
+      "probability_max_difference": 0.006983072531624557
+    },
+    {
+      "dataset": "IV2a_prefix_statspool",
+      "subject": 3,
+      "n": 288,
+      "base": [
+        0.8541666666666666,
+        0.8055555555555556
+      ],
+      "inclusive": [
+        0.875,
+        0.8333333333333334
+      ],
+      "past_only": [
+        0.875,
+        0.8333333333333334
+      ],
+      "delta_past_minus_inclusive": [
+        0.0,
+        0.0
+      ],
+      "decision_changes": 0,
+      "fix": 0,
+      "harm": 0,
+      "probability_max_difference": 0.008496699202052094
+    },
+    {
+      "dataset": "IV2a_prefix_statspool",
+      "subject": 4,
+      "n": 288,
+      "base": [
+        0.5798611111111112,
+        0.43981481481481477
+      ],
+      "inclusive": [
+        0.5868055555555556,
+        0.44907407407407407
+      ],
+      "past_only": [
+        0.5868055555555556,
+        0.44907407407407407
+      ],
+      "delta_past_minus_inclusive": [
+        0.0,
+        0.0
+      ],
+      "decision_changes": 0,
+      "fix": 0,
+      "harm": 0,
+      "probability_max_difference": 0.007129195940035693
+    },
+    {
+      "dataset": "IV2a_prefix_statspool",
+      "subject": 5,
+      "n": 288,
+      "base": [
+        0.4652777777777778,
+        0.2870370370370371
+      ],
+      "inclusive": [
+        0.6111111111111112,
+        0.4814814814814815
+      ],
+      "past_only": [
+        0.6111111111111112,
+        0.4814814814814815
+      ],
+      "delta_past_minus_inclusive": [
+        0.0,
+        0.0
+      ],
+      "decision_changes": 0,
+      "fix": 0,
+      "harm": 0,
+      "probability_max_difference": 0.0074362790889891395
+    },
+    {
+      "dataset": "IV2a_prefix_statspool",
+      "subject": 6,
+      "n": 288,
+      "base": [
+        0.5555555555555556,
+        0.40740740740740744
+      ],
+      "inclusive": [
+        0.5972222222222222,
+        0.4629629629629629
+      ],
+      "past_only": [
+        0.5972222222222222,
+        0.4629629629629629
+      ],
+      "delta_past_minus_inclusive": [
+        0.0,
+        0.0
+      ],
+      "decision_changes": 0,
+      "fix": 0,
+      "harm": 0,
+      "probability_max_difference": 0.008759695587205685
+    },
+    {
+      "dataset": "IV2a_prefix_statspool",
+      "subject": 7,
+      "n": 288,
+      "base": [
+        0.7673611111111112,
+        0.6898148148148149
+      ],
+      "inclusive": [
+        0.7777777777777778,
+        0.7037037037037037
+      ],
+      "past_only": [
+        0.7777777777777778,
+        0.7037037037037037
+      ],
+      "delta_past_minus_inclusive": [
+        0.0,
+        0.0
+      ],
+      "decision_changes": 0,
+      "fix": 0,
+      "harm": 0,
+      "probability_max_difference": 0.008333546817655746
+    },
+    {
+      "dataset": "IV2a_prefix_statspool",
+      "subject": 8,
+      "n": 288,
+      "base": [
+        0.8125,
+        0.75
+      ],
+      "inclusive": [
+        0.8506944444444444,
+        0.8009259259259259
+      ],
+      "past_only": [
+        0.8506944444444444,
+        0.8009259259259259
+      ],
+      "delta_past_minus_inclusive": [
+        0.0,
+        0.0
+      ],
+      "decision_changes": 0,
+      "fix": 0,
+      "harm": 0,
+      "probability_max_difference": 0.008606841641249252
+    },
+    {
+      "dataset": "IV2a_prefix_statspool",
+      "subject": 9,
+      "n": 288,
+      "base": [
+        0.7986111111111112,
+        0.7314814814814814
+      ],
+      "inclusive": [
+        0.7986111111111112,
+        0.7314814814814814
+      ],
+      "past_only": [
+        0.7986111111111112,
+        0.7314814814814814
+      ],
+      "delta_past_minus_inclusive": [
+        0.0,
+        0.0
+      ],
+      "decision_changes": 0,
+      "fix": 0,
+      "harm": 0,
+      "probability_max_difference": 0.008493237740971105
+    },
+    {
+      "dataset": "IV2b_T12",
+      "subject": 1,
+      "n": 240,
+      "base": [
+        0.6916666666666667,
+        0.3833333333333333
+      ],
+      "inclusive": [
+        0.7291666666666666,
+        0.45833333333333337
+      ],
+      "past_only": [
+        0.7291666666666666,
+        0.45833333333333337
+      ],
+      "delta_past_minus_inclusive": [
+        0.0,
+        0.0
+      ],
+      "decision_changes": 0,
+      "fix": 0,
+      "harm": 0,
+      "probability_max_difference": 0.0030286049414872396
+    },
+    {
+      "dataset": "IV2b_T12",
+      "subject": 2,
+      "n": 240,
+      "base": [
+        0.7083333333333334,
+        0.41666666666666663
+      ],
+      "inclusive": [
+        0.7208333333333333,
+        0.44166666666666665
+      ],
+      "past_only": [
+        0.7208333333333333,
+        0.44166666666666665
+      ],
+      "delta_past_minus_inclusive": [
+        0.0,
+        0.0
+      ],
+      "decision_changes": 0,
+      "fix": 0,
+      "harm": 0,
+      "probability_max_difference": 0.0028828629681645346
+    },
+    {
+      "dataset": "IV2b_T12",
+      "subject": 3,
+      "n": 240,
+      "base": [
+        0.5666666666666667,
+        0.1333333333333333
+      ],
+      "inclusive": [
+        0.5791666666666667,
+        0.15833333333333333
+      ],
+      "past_only": [
+        0.5791666666666667,
+        0.15833333333333333
+      ],
+      "delta_past_minus_inclusive": [
+        0.0,
+        0.0
+      ],
+      "decision_changes": 0,
+      "fix": 0,
+      "harm": 0,
+      "probability_max_difference": 0.0029633748829033246
+    },
+    {
+      "dataset": "IV2b_T12",
+      "subject": 4,
+      "n": 260,
+      "base": [
+        0.6846153846153846,
+        0.36923076923076925
+      ],
+      "inclusive": [
+        0.7653846153846153,
+        0.5307692307692308
+      ],
+      "past_only": [
+        0.7692307692307693,
+        0.5384615384615384
+      ],
+      "delta_past_minus_inclusive": [
+        0.0038461538461539435,
+        0.007692307692307665
+      ],
+      "decision_changes": 1,
+      "fix": 1,
+      "harm": 0,
+      "probability_max_difference": 0.0033209483561081887
+    },
+    {
+      "dataset": "IV2b_T12",
+      "subject": 5,
+      "n": 260,
+      "base": [
+        0.6576923076923077,
+        0.3153846153846154
+      ],
+      "inclusive": [
+        0.7038461538461539,
+        0.4076923076923077
+      ],
+      "past_only": [
+        0.7038461538461539,
+        0.4076923076923077
+      ],
+      "delta_past_minus_inclusive": [
+        0.0,
+        0.0
+      ],
+      "decision_changes": 0,
+      "fix": 0,
+      "harm": 0,
+      "probability_max_difference": 0.003191634503967644
+    },
+    {
+      "dataset": "IV2b_T12",
+      "subject": 6,
+      "n": 240,
+      "base": [
+        0.725,
+        0.44999999999999996
+      ],
+      "inclusive": [
+        0.7583333333333333,
+        0.5166666666666666
+      ],
+      "past_only": [
+        0.7583333333333333,
+        0.5166666666666666
+      ],
+      "delta_past_minus_inclusive": [
+        0.0,
+        0.0
+      ],
+      "decision_changes": 0,
+      "fix": 0,
+      "harm": 0,
+      "probability_max_difference": 0.0032096143609214867
+    },
+    {
+      "dataset": "IV2b_T12",
+      "subject": 7,
+      "n": 240,
+      "base": [
+        0.7291666666666666,
+        0.45833333333333337
+      ],
+      "inclusive": [
+        0.7208333333333333,
+        0.44166666666666665
+      ],
+      "past_only": [
+        0.7208333333333333,
+        0.44166666666666665
+      ],
+      "delta_past_minus_inclusive": [
+        0.0,
+        0.0
+      ],
+      "decision_changes": 0,
+      "fix": 0,
+      "harm": 0,
+      "probability_max_difference": 0.0030634796556452404
+    },
+    {
+      "dataset": "IV2b_T12",
+      "subject": 8,
+      "n": 280,
+      "base": [
+        0.6321428571428571,
+        0.26428571428571423
+      ],
+      "inclusive": [
+        0.6357142857142857,
+        0.27142857142857146
+      ],
+      "past_only": [
+        0.6357142857142857,
+        0.27142857142857146
+      ],
+      "delta_past_minus_inclusive": [
+        0.0,
+        0.0
+      ],
+      "decision_changes": 0,
+      "fix": 0,
+      "harm": 0,
+      "probability_max_difference": 0.0033607282283860396
+    },
+    {
+      "dataset": "IV2b_T12",
+      "subject": 9,
+      "n": 240,
+      "base": [
+        0.5916666666666667,
+        0.18333333333333335
+      ],
+      "inclusive": [
+        0.6,
+        0.19999999999999996
+      ],
+      "past_only": [
+        0.6,
+        0.19999999999999996
+      ],
+      "delta_past_minus_inclusive": [
+        0.0,
+        0.0
+      ],
+      "decision_changes": 0,
+      "fix": 0,
+      "harm": 0,
+      "probability_max_difference": 0.0029815992224500043
+    }
+  ],
+  "summary": {
+    "IV2a_strict_exchange": {
+      "means": {
+        "base": [
+          0.6589506172839505,
+          0.5452674897119343
+        ],
+        "inclusive": [
+          0.6936728395061729,
+          0.5915637860082303
+        ],
+        "past_only": [
+          0.6936728395061729,
+          0.5915637860082303
+        ],
+        "delta_past_minus_inclusive": [
+          0.0,
+          0.0
+        ]
+      },
+      "changes": 0,
+      "fix": 0,
+      "harm": 0,
+      "up": 0,
+      "down": 0,
+      "ties": 9
+    },
+    "IV2a_prefix_statspool": {
+      "means": {
+        "base": [
+          0.6875,
+          0.5833333333333334
+        ],
+        "inclusive": [
+          0.7160493827160495,
+          0.6213991769547325
+        ],
+        "past_only": [
+          0.7164351851851851,
+          0.6219135802469135
+        ],
+        "delta_past_minus_inclusive": [
+          0.0003858024691358011,
+          0.0005144032921810723
+        ]
+      },
+      "changes": 2,
+      "fix": 1,
+      "harm": 0,
+      "up": 1,
+      "down": 0,
+      "ties": 8
+    },
+    "IV2b_T12": {
+      "means": {
+        "base": [
+          0.6652167277167277,
+          0.33043345543345537
+        ],
+        "inclusive": [
+          0.6903642653642653,
+          0.38072853072853075
+        ],
+        "past_only": [
+          0.6907916157916159,
+          0.3815832315832316
+        ],
+        "delta_past_minus_inclusive": [
+          0.0004273504273504382,
+          0.0008547008547008517
+        ]
+      },
+      "changes": 1,
+      "fix": 1,
+      "harm": 0,
+      "up": 1,
+      "down": 0,
+      "ties": 8
+    }
+  },
+  "input_sha": {
+    "D:\\BCI_builds\\PRS_OfflineCalibration9_20261120\\H1.npz": "4fdf2e646504edeb4b11496afae3be281b53f9a94588739db2029f781d895b9c",
+    "D:\\BCI_builds\\PRS_OfflineCalibration9_20261120\\H2.npz": "6bbbb0b2cce8d4babac0ccc7ff849c23fc4b785964775ecfccedf77e83736769",
+    "D:\\BCI_builds\\PRS_OfflineCalibration9_20261120\\H3.npz": "50595cb82aadbf6fb73b068de69407c5e4e59e1d7b628ca00318ae5336a284b2",
+    "D:\\BCI_builds\\PRS_OfflineCalibration9_20261120\\H4.npz": "85c8d06180213af6d65fb3a4780a5ab990ba15c0b245eaab20cf37e9cdac6307",
+    "D:\\BCI_builds\\PRS_OfflineCalibration9_20261120\\H5.npz": "fb035bb28362ac4edbf3524a96e692bccac4792d5221ebe20dfd83e57f0e85cd",
+    "D:\\BCI_builds\\PRS_OfflineCalibration9_20261120\\H6.npz": "32ffbeaf5b3099342ad86b55b06ff2b05fb61b38fd183e6773faf1305685e33d",
+    "D:\\BCI_builds\\PRS_OfflineCalibration9_20261120\\H7.npz": "9b3856369fef909ec270d6c9bf79373a73bf896cce16473fd813a23f4a666192",
+    "D:\\BCI_builds\\PRS_OfflineCalibration9_20261120\\H8.npz": "2b07c78cbfaa01401a264202128b8ab9708d3f870d31a02aceb5d44c4a7526b6",
+    "D:\\BCI_builds\\PRS_OfflineCalibration9_20261120\\H9.npz": "ee46dc2bde7a4ee3a4b1a5cd8499033c9a8f2b6766426bc7dffe7bad2fa08f4d",
+    "D:\\BCI_builds\\PRS687500_PastOnlyBias_20261120\\H1.npz": "7ac6e4652f6fca48f2194eb3f28c8110508c1e434429007fc4a5bb3292a6b293",
+    "D:\\BCI_builds\\PRS687500_PastOnlyBias_20261120\\H2.npz": "a9cf358a98da53fb67aa8c47e0d9496319b6345966130501dc59117693f439cc",
+    "D:\\BCI_builds\\PRS687500_PastOnlyBias_20261120\\H3.npz": "3e4f5d76138e3c9593b1609d97f0a1b238c96995245dd6ec985c991c3c5c64df",
+    "D:\\BCI_builds\\PRS687500_PastOnlyBias_20261120\\H4.npz": "57bad87a0209450259c45fb179622aba1346e5bec2344cba13e8aa38163bd2ed",
+    "D:\\BCI_builds\\PRS687500_PastOnlyBias_20261120\\H5.npz": "fd268db1a2841a06a23f317e8f33f0237cb904039c347a4ca72a88b3ac96fa65",
+    "D:\\BCI_builds\\PRS687500_PastOnlyBias_20261120\\H6.npz": "6ee8e6387ff2d7cb0c02c7c00d67290659b818ae82c4a1a36d6b2a5e909b79de",
+    "D:\\BCI_builds\\PRS687500_PastOnlyBias_20261120\\H7.npz": "9a38ceb1d069f46fc15fa03b0e2bea05208fabbe0df36283ecc264543be0ca4e",
+    "D:\\BCI_builds\\PRS687500_PastOnlyBias_20261120\\H8.npz": "dce3d43f6bbd4d4d28f55a3e31c16d1a2a97fcf1de4d768160bee978dca2ceb6",
+    "D:\\BCI_builds\\PRS687500_PastOnlyBias_20261120\\H9.npz": "aa7ac8b3196ccb323c8f66d789ef2599c96d01324a222aa769211dfddc36c379",
+    "D:\\BCI_builds\\IV2b_PastOnlyBias_20261120\\S01.npz": "8d463f68fd3b749ab289395fc8cec81de5b687b17ebfbd86d90717122850475a",
+    "D:\\BCI_builds\\IV2b_PastOnlyBias_20261120\\S02.npz": "e02ab8aa22ea73b4d490513be96446d0804a4dcf104045495d3e2e0626a9a9f4",
+    "D:\\BCI_builds\\IV2b_PastOnlyBias_20261120\\S03.npz": "3150fa7b91d17cdd2c1c4f6a3e1f7f8f61a3132eef93a1ba6216bc0e74e33a1a",
+    "D:\\BCI_builds\\IV2b_PastOnlyBias_20261120\\S04.npz": "6c4cab8f9fe249a4d79ec8708a71ee5991dd06ff47444c7a20a5bf3639f5e4f8",
+    "D:\\BCI_builds\\IV2b_PastOnlyBias_20261120\\S05.npz": "e8b3612c22566926dc4977575694bc5017618c5ec19b12e2a28e805dca9da81b",
+    "D:\\BCI_builds\\IV2b_PastOnlyBias_20261120\\S06.npz": "478776dfee8ac513da5f49803ccad67e07950059b580ac8f49683255d5d6ff64",
+    "D:\\BCI_builds\\IV2b_PastOnlyBias_20261120\\S07.npz": "ce6da18cfef1a69a8258760d725da36fc0f8bc87f1e4b53bbdd87f268b12594f",
+    "D:\\BCI_builds\\IV2b_PastOnlyBias_20261120\\S08.npz": "25d76cf812c71b7781c320e62e598a38b5d320afb3f6e1b4c7cd969bdcbf5f88",
+    "D:\\BCI_builds\\IV2b_PastOnlyBias_20261120\\S09.npz": "696da8f569407be9aea5d35fc0facf4ba2008081b3131058b45c57384d941ccf"
+  }
+}

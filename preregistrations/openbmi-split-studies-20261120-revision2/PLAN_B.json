@@ -1,0 +1,871 @@
+{
+  "id": "B_SAME_WEIGHTS_IV2A_OPENBMI_EXPLORATORY",
+  "status": "DRAFT_WAITING_USER_CONFIRMATION_NO_EXECUTION",
+  "estimand": "Exploratory secondary study: each of nine frozen IV2a panels deployed unchanged to its IV2a held person and all54OpenBMI session1 persons. No IV2b in same-weight claim. All9IV2a folds are different trained panels; do not call them one common weight vector or test an all9 ensemble on IV2a.",
+  "model": "same original5expert primary family asA; completePRS as predeclared secondary only if its sourcefixture/preflight passes. Each paired panel has exactly the same checkpoints,source normalizers,classifier parameters and constants acrossIV2a/OpenBMI.",
+  "tasks": "common left/right classification; IV2a native4class result separately reported. No 72.9167 fourclass number directly compared with binary outcomes.",
+  "IV2a_common_task": "Use existingT trials with left/right cue identity only, native ordering and run boundaries, fixed inclusion before outcome analysis; cue task identity defines evaluation domain, not bias fitting labels. All source-trained weights exclude heldperson. Recompute/query fixed preprocessing only on this task stream to avoid feet/tongue altering history. Output locks before scoring.",
+  "OpenBMI_data": {
+    "allowed": "OpenBMI54persons session1 only; both original native phases retained with known boundaries",
+    "sealed": "session2 raw/labels/features/predictions and all derived caches",
+    "labels": "session1 vault inaccessible to inference/calibration; metadata order frozen without labels. After all output hashes publicly committed, separate scorer checks every block class counts and scores; unbalanced blocks retained and separately reported",
+    "history": "session2 labels have been read/scored by earlier migration paths; native held-person session1 may have been evaluated, actual executed extent unproven. Neither OpenBMI session was used to fit the designated IV2a checkpoints or choose current frozen bias constants, according to audited code/provenance; cannot prove lifetime absence of indirect human selection influence"
+  },
+  "channel_mapping": {
+    "source_channels": [
+      "Fz",
+      "FC3",
+      "FC1",
+      "FCz",
+      "FC2",
+      "FC4",
+      "C5",
+      "C3",
+      "C1",
+      "Cz",
+      "C2",
+      "C4",
+      "C6",
+      "CP3",
+      "CP1",
+      "CPz",
+      "CP2",
+      "CP4",
+      "P1",
+      "Pz",
+      "P2",
+      "POz"
+    ],
+    "target_channels": [
+      "FC5",
+      "FC3",
+      "FC1",
+      "FC2",
+      "FC4",
+      "FC6",
+      "C5",
+      "C3",
+      "C1",
+      "Cz",
+      "C2",
+      "C4",
+      "C6",
+      "CP5",
+      "CP3",
+      "CP1",
+      "CPz",
+      "CP2",
+      "CP4",
+      "CP6"
+    ],
+    "shape": [
+      22,
+      20
+    ],
+    "matrix": [
+      [
+        0.0,
+        0.16116973689470854,
+        0.33688331428589147,
+        0.34418111220182646,
+        0.1577658366175736,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.3024163703460834,
+        0.2979817828999218,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.13979587788549663,
+        0.2598059688684983,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        1.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.11166278169153941,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.2396876775264094,
+        0.41654655886518566,
+        0.23210298191686554,
+        0.0,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.10994905540679085,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.24094011584965738,
+        0.42336946702389205,
+        0.22574136171965978,
+        0.0,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.11207522326622944,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.2228738835989399,
+        0.42981176702702795,
+        0.2352391261078028,
+        0.0
+      ],
+      [
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.0,
+        0.20848686077082215,
+        0.25722004876035465,
+        0.28357678393476077,
+        0.2507163065340625,
+        0.0,
+        0.0
+      ]
+    ],
+    "rows": [
+      {
+        "channel": "Fz",
+        "kind": "fixed_geometry_IDW4",
+        "donors": [
+          "FC2",
+          "FC1",
+          "FC3",
+          "FC4"
+        ],
+        "weights": [
+          0.34418111220182646,
+          0.33688331428589147,
+          0.16116973689470854,
+          0.1577658366175736
+        ]
+      },
+      {
+        "channel": "FC3",
+        "kind": "exact",
+        "donors": [
+          "FC3"
+        ],
+        "weights": [
+          1.0
+        ]
+      },
+      {
+        "channel": "FC1",
+        "kind": "exact",
+        "donors": [
+          "FC1"
+        ],
+        "weights": [
+          1.0
+        ]
+      },
+      {
+        "channel": "FCz",
+        "kind": "fixed_geometry_IDW4",
+        "donors": [
+          "FC1",
+          "FC2",
+          "Cz",
+          "C1"
+        ],
+        "weights": [
+          0.3024163703460834,
+          0.2979817828999218,
+          0.2598059688684983,
+          0.13979587788549663
+        ]
+      },
+      {
+        "channel": "FC2",
+        "kind": "exact",
+        "donors": [
+          "FC2"
+        ],
+        "weights": [
+          1.0
+        ]
+      },
+      {
+        "channel": "FC4",
+        "kind": "exact",
+        "donors": [
+          "FC4"
+        ],
+        "weights": [
+          1.0
+        ]
+      },
+      {
+        "channel": "C5",
+        "kind": "exact",
+        "donors": [
+          "C5"
+        ],
+        "weights": [
+          1.0
+        ]
+      },
+      {
+        "channel": "C3",
+        "kind": "exact",
+        "donors": [
+          "C3"
+        ],
+        "weights": [
+          1.0
+        ]
+      },
+      {
+        "channel": "C1",
+        "kind": "exact",
+        "donors": [
+          "C1"
+        ],
+        "weights": [
+          1.0
+        ]
+      },
+      {
+        "channel": "Cz",
+        "kind": "exact",
+        "donors": [
+          "Cz"
+        ],
+        "weights": [
+          1.0
+        ]
+      },
+      {
+        "channel": "C2",
+        "kind": "exact",
+        "donors": [
+          "C2"
+        ],
+        "weights": [
+          1.0
+        ]
+      },
+      {
+        "channel": "C4",
+        "kind": "exact",
+        "donors": [
+          "C4"
+        ],
+        "weights": [
+          1.0
+        ]
+      },
+      {
+        "channel": "C6",
+        "kind": "exact",
+        "donors": [
+          "C6"
+        ],
+        "weights": [
+          1.0
+        ]
+      },
+      {
+        "channel": "CP3",
+        "kind": "exact",
+        "donors": [
+          "CP3"
+        ],
+        "weights": [
+          1.0
+        ]
+      },
+      {
+        "channel": "CP1",
+        "kind": "exact",
+        "donors": [
+          "CP1"
+        ],
+        "weights": [
+          1.0
+        ]
+      },
+      {
+        "channel": "CPz",
+        "kind": "exact",
+        "donors": [
+          "CPz"
+        ],
+        "weights": [
+          1.0
+        ]
+      },
+      {
+        "channel": "CP2",
+        "kind": "exact",
+        "donors": [
+          "CP2"
+        ],
+        "weights": [
+          1.0
+        ]
+      },
+      {
+        "channel": "CP4",
+        "kind": "exact",
+        "donors": [
+          "CP4"
+        ],
+        "weights": [
+          1.0
+        ]
+      },
+      {
+        "channel": "P1",
+        "kind": "fixed_geometry_IDW4",
+        "donors": [
+          "CP1",
+          "CP3",
+          "CPz",
+          "C1"
+        ],
+        "weights": [
+          0.41654655886518566,
+          0.2396876775264094,
+          0.23210298191686554,
+          0.11166278169153941
+        ]
+      },
+      {
+        "channel": "Pz",
+        "kind": "fixed_geometry_IDW4",
+        "donors": [
+          "CPz",
+          "CP1",
+          "CP2",
+          "Cz"
+        ],
+        "weights": [
+          0.42336946702389205,
+          0.24094011584965738,
+          0.22574136171965978,
+          0.10994905540679085
+        ]
+      },
+      {
+        "channel": "P2",
+        "kind": "fixed_geometry_IDW4",
+        "donors": [
+          "CP2",
+          "CP4",
+          "CPz",
+          "C2"
+        ],
+        "weights": [
+          0.42981176702702795,
+          0.2352391261078028,
+          0.2228738835989399,
+          0.11207522326622944
+        ]
+      },
+      {
+        "channel": "POz",
+        "kind": "fixed_geometry_IDW4",
+        "donors": [
+          "CPz",
+          "CP1",
+          "CP2",
+          "CP3"
+        ],
+        "weights": [
+          0.28357678393476077,
+          0.25722004876035465,
+          0.2507163065340625,
+          0.20848686077082215
+        ]
+      }
+    ],
+    "file_sha": "9f50cd433058ca4fe327e45e5672587b60101cfff999ea17f3772a407ba79840",
+    "operation": "mapped[n,i,t]=sum_j M[i,j]*raw[n,j,t]; exact matches direct, missing channels fixed IDW4; no target fitting; verify raw channel order before use; bipolar FC3-CP3 and FC4-CP4 from exact original target channels"
+  },
+  "fixed_rules": {
+    "prior": [
+      0.5,
+      0.5
+    ],
+    "warmup": 20,
+    "history": "PRIMARY current-inclusive: zero-based trial t>=20 fit bias on original log probabilities0..t inclusive, n=t+1; apply to current trial. Trial0..19 unchanged. No future trial or corrected probability fed into fit.",
+    "regularization": "PRIMARY .1+20/(t+1), where t is zero-based local-block index",
+    "L2": "lambda*mean(b*b)=lambda*(b0²+b1²)/2",
+    "optimizer": "L-BFGS-B,zero2vector,maxiter150,gtol1e-8; center final bias",
+    "batch_secondary": "whole original block unlabelled probabilities,lambda=.1; same mean-square normalization",
+    "binary_operation": "First produce/fuse native4class probabilities, select left/right columns0,1 and renormalize, then apply binary CURRENT-INCLUSIVE bias. No expert-layer bias.",
+    "reset": "every native physical acquisition block, no state carried between blocks or sessions",
+    "past_only_sensitivity": {
+      "role": "preregistered secondary sensitivity; not primary or basis for choosing deployment",
+      "history": "t>=20 fit only original probabilities0..t-1, n=t; predict current t then update. Trials0..19 unchanged.",
+      "regularization": ".1+20/t",
+      "constants": "same lambda formula .1+20/n, class prior, clipping, optimizer and mean-square L2; only history sample set and corresponding n differ"
+    }
+  },
+  "source_audit": {
+    "training": "setup geom.w.fit uses only IV2a foldh source_ids/source_y; eight people excluding h,216each=1728; fiveband CSP+LDA lsqr auto. Held IV2a query covariances only predicted, not fit. No OpenBMI data/labels enter this fit call.",
+    "determinism": "no RNG in source CSP/eigh/LDA; numerical reproducibility depends on versions/BLAS. Rebuilt nine source classifiers and strict ninefold full-model replay matched archived probabilities exactly, no decisions changed.",
+    "claim": "Prior PLAN no target-label automatic fitting found remains true for audited direct-transfer chain; source fitting existed and is now removed from deployment, not reclassified as target fitting.",
+    "resolution": "CSP/LDA gap resolved by nine source-rebuilt frozen NPZ exports. Runtime loads filters/prior/coef/intercept/classes, never calls fit; new files pinned in ASSET_REFERENCES. Independent model/source owner replay checks passed; new-target full end-to-end parity/preflight still mandatory.",
+    "study_change": "new source classical parameters were fitted on source-only data in prior authorized recovery experiment, not found original files. This is disclosed. Plans A/B require zero further classical or neural fitting."
+  },
+  "assets_file_sha256": "8a35776e317f11afb12119b1105ccb7222bcfd4de2cb6accc351ab847351a0f2",
+  "primary_inference_status": "All B results exploratory secondary. Current-inclusive is the prespecified causal bias rule; past-only separately labelled sensitivity. No direct cross-dataset accuracy superiority test based on unlike difficulty.",
+  "statistics": "Per-panel/person raw and correctedACC/kappa; fixed panel mapping; subject-bootstrap separately withinIV2a9heldpeople andOpenBMI54people; never count repeated9panels as independent persons. Cross-library absolute accuracy comparison descriptive only.",
+  "separation": "A tests rule increment on external data; B tests absolute/corrected source-to-external behavior of same panel checkpoints. Shared outputs may be reused, not independent replications.",
+  "no_expert_layer_bias": true,
+  "no_training": true,
+  "assumption": "balanced class prior; not pure zero calibration",
+  "revision": "2-current-inclusive-restored-awaiting-confirmation",
+  "relation_to_old": {
+    "old_plan_sha": "59d4543d2f9c7756dde399a237a6b5a9b9019105f5fe32e4a0329178ba124e80",
+    "old_commit": "4a4e9167841beca1dfc8a7b83a8b22c35baf3c2b",
+    "old_file_unchanged": true,
+    "previous_split_draft_commit": "a13bb2e2f04925931efdb38b6bf2d7e63f314154",
+    "previous_A_sha": "5b61477696981829eaa336ac8f6e4a90d21724e0f950ae7329266aa5367932bb",
+    "previous_B_sha": "4b8e74409c73f23dd68ea5443734eabfe8b0e7010d1cfca87615818aec34b78e",
+    "correction": "The past-only primary wording arose from imprecise instructions. Restore the already validated current-inclusive primary rule of the original public PLAN. Past-only is a prespecified secondary sensitivity, never selected on results.",
+    "two_differences": [
+      {
+        "item": "observations for fitting current bias",
+        "restored_primary": "logp[0:t+1], includes current trial",
+        "secondary_past_only": "logp[0:t], excludes current trial"
+      },
+      {
+        "item": "sample count in unchanged regularizer formula",
+        "restored_primary": "n=t+1,lambda=.1+20/(t+1)",
+        "secondary_past_only": "n=t,lambda=.1+20/t"
+      }
+    ],
+    "remaining_changes": "A still uses five-expert arithmetic mean main and fullPRS secondary per prior requested split; A/B omit expert-layer correction. No source model selection or target tuning."
+  },
+  "domain_selection_note": "IV2a left/right stream is selected by instructed cue categories solely to define the evaluation domain. Cue-domain selection is not fitted bias supervision. IV2a and OpenBMI binary tasks have different difficulty, acquisition, montage and populations; cross-dataset accuracy levels are descriptive only, not evidence of equal difficulty or directly ranked superiority.",
+  "input_port_reference": "Use the exact A.input_port state boundaries and sourcefold model parameters; no second interpretation of geometry. Main5expert no target EA; completePRS secondary prefix geometry explicitly disclosed."
+}
