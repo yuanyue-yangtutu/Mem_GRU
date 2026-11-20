@@ -1,0 +1,185 @@
+{
+  "name": "手类输入端口静态定位",
+  "source_chain": "v76 fixed filtered cached x -> v77 rename copy ->v78 ->v79 ->v81, no learned transform",
+  "code_hashes": {
+    "D:\\BCI_builds\\build_v76_inputs.py": "28ea553567a9c11d3d0f38f685eab3fa860046a34dedc4e057b3696698eeb35c",
+    "D:\\BCI_builds\\build_v77.py": "32ff4fc3a0c32abb08f29629f0a78db5e12cd36ea30a1f13ee3816d369ee4a20",
+    "D:\\BCI_builds\\build_v78.py": "9f18e6a9b1736c3022a8a2c4b820b8bdab9332a4e03c6bf5dec4de3b4bfdaa72",
+    "D:\\BCI_builds\\build_v79.py": "17d1816026b1b2e935e0f880bf44ee175641311721da813ce6aaee0dac8afd28",
+    "D:\\BCI_builds\\build_v81.py": "9362364770a47066cd00f09a651ace2b7bc26e58f9ddb26ac6e2a6dbb77303d2",
+    "D:\\BCI_builds\\prs1777_nested_locked_20261119\\nested.py": "619e62d7999d78d78ecf478cc5f00dfc1f3a88942cfdcb8eb988f265b583f81a",
+    "D:\\BCI_builds\\strict_prs_current_trial_20261119\\run.py": "319f1bb7f7ebb3155b55ebf3796d6b5f9e69dd22589a7bc252f2c249cd38d9f5",
+    "D:\\BCI_builds\\PRS6875_BipolarGraph_Source\\strict_eval.py": "11362910fea5e6594002ecaa412b5c91d01ddb5cde2b6985e751ccfab66a9cd4",
+    "D:\\BCI_builds\\PRS687114_SharedRefinement_Full9\\run.py": "51d085de30d0aed5556e399cde1930172b76954d20868e560c321e73390f3b22",
+    "D:\\BCI_builds\\PRS729167_FullChainAudit_20261120\\candidate_replay.py": "07ff49a6762055ee88883bae7ac08992186a25744b73fda7335448ab6343f027",
+    "D:\\BCI_builds\\PRS729167_FullChainAudit_20261120\\branches_cpu.py": "6ea9d8b4a2eb32e3f998591c358e6df693a82164d2b647a9e6b4a4a376c1f2a5",
+    "D:\\BCI_builds\\PRS_ExpertBiasComplement_20261120\\run.py": "07ff49a6762055ee88883bae7ac08992186a25744b73fda7335448ab6343f027",
+    "D:\\BCI_builds\\prs_bipolar_lateral_update_20261119\\external_geometry.py": "622c458467575c0e55d6962c6d41ae626430b6ecd5ba1b25513bf40a87ca0292",
+    "D:\\BCI_builds\\PRS_OpenBMI_20261116\\payload\\prs_riemann.py": "253d9741a875031d3ad3b53eec54687892391f6f4df3e0991ca51bc7a3a75693",
+    "D:\\BCI_builds\\OpenBMI_AB_Execution_20261120\\stage\\code\\worker.py": "7484d9ae324e3ed024c1bb844335674fff73a182c0a0508820ed6ef49d357f11",
+    "D:\\BCI_builds\\OpenBMI_AB_Execution_20261120\\prepare.py": "ecf6b7e4a2a2ac3de7dc2a9f20e7fb5282f853868bd5f665ec89e35f43fbe3d2"
+  },
+  "source_cache_comparison": [
+    {
+      "panel": 1,
+      "v81_shape": [
+        288,
+        22,
+        1000
+      ],
+      "PRS_shape": [
+        288,
+        22,
+        1000
+      ],
+      "v81_x_payload_sha256": "cea4055894852d2668b191ee1682b8a7c8050abb0fe94128a513a3afb6b06bf5",
+      "PRS_x_payload_sha256": "b3b76f47203607ef4f7e750c3ada9cb6f9d23b60a5e9a8ca70bb040c6fc81528",
+      "same_payload": false
+    },
+    {
+      "panel": 2,
+      "v81_shape": [
+        288,
+        22,
+        1000
+      ],
+      "PRS_shape": [
+        288,
+        22,
+        1000
+      ],
+      "v81_x_payload_sha256": "52d51dbe9abee4d48386cd18316a6feea3bcbbce7d9c0f9fe3a7fc040375e0c5",
+      "PRS_x_payload_sha256": "292293dcb8fa2d3a38e7579dcf1f32aed94f3a0559e3d919fbb9640cbd3505af",
+      "same_payload": false
+    },
+    {
+      "panel": 3,
+      "v81_shape": [
+        288,
+        22,
+        1000
+      ],
+      "PRS_shape": [
+        288,
+        22,
+        1000
+      ],
+      "v81_x_payload_sha256": "7c00c6c5512148eb480bdef1229e18c4ca5464fe61d1db70cf5ee26991eb5929",
+      "PRS_x_payload_sha256": "ddb8d31a0b1f4076432ca6ac3ac33392157d277baedabb72b2dfe0d71eb3abe7",
+      "same_payload": false
+    },
+    {
+      "panel": 4,
+      "v81_shape": [
+        288,
+        22,
+        1000
+      ],
+      "PRS_shape": [
+        288,
+        22,
+        1000
+      ],
+      "v81_x_payload_sha256": "3b8cc0edc67818af08ebab7669b0f4a2bf4a0d600d4268942a7e128a3dfe8f49",
+      "PRS_x_payload_sha256": "441c15b4b22d4d1e82265422f44f6b9a094b07baf7528e2d49b17d7fd2578391",
+      "same_payload": false
+    },
+    {
+      "panel": 5,
+      "v81_shape": [
+        288,
+        22,
+        1000
+      ],
+      "PRS_shape": [
+        288,
+        22,
+        1000
+      ],
+      "v81_x_payload_sha256": "75cc1c1db8de762fc5bb540a2e26753d5773540878b656c9efa706bec0aa4d64",
+      "PRS_x_payload_sha256": "03da02d92e3945d1250c604522ac68260090b666ae9417f012e42347661d5e7f",
+      "same_payload": false
+    },
+    {
+      "panel": 6,
+      "v81_shape": [
+        288,
+        22,
+        1000
+      ],
+      "PRS_shape": [
+        288,
+        22,
+        1000
+      ],
+      "v81_x_payload_sha256": "6bba0f761dab1560b398b9591f2de98c5a39755803679ea3a11f48e319112c4a",
+      "PRS_x_payload_sha256": "639d3799622e005f74a3625c9b34a1aa2f62b2f060e1c6ca2741b550bd5a4f0d",
+      "same_payload": false
+    },
+    {
+      "panel": 7,
+      "v81_shape": [
+        288,
+        22,
+        1000
+      ],
+      "PRS_shape": [
+        288,
+        22,
+        1000
+      ],
+      "v81_x_payload_sha256": "5ea86be24365d5cc38e2f6d2c5bf94172d19973659e9963dac083a529e22e7eb",
+      "PRS_x_payload_sha256": "943cf1f327171823e32ac99b3765e50af9f3b31b8d00e6448bb6b2c3a76dcc42",
+      "same_payload": false
+    },
+    {
+      "panel": 8,
+      "v81_shape": [
+        288,
+        22,
+        1000
+      ],
+      "PRS_shape": [
+        288,
+        22,
+        1000
+      ],
+      "v81_x_payload_sha256": "4d8fc53f0253e67c6fb6340be675295e59139c61e3b0ddb7b9703c86404923e0",
+      "PRS_x_payload_sha256": "ff7c9c96e5cca68f2de55afad7b12b4f9f6ce2e5372cff14bc457fe8be2eed48",
+      "same_payload": false
+    },
+    {
+      "panel": 9,
+      "v81_shape": [
+        288,
+        22,
+        1000
+      ],
+      "PRS_shape": [
+        288,
+        22,
+        1000
+      ],
+      "v81_x_payload_sha256": "4294a925c62609a557dd28722030a0365caa17663b0d0e46467dae38b24754a3",
+      "PRS_x_payload_sha256": "91b6af86c1f62ad31c545dcc6734ddd78de05633118614c7e52a3577c6bfdc9e",
+      "same_payload": false
+    }
+  ],
+  "localized_issue": "OpenBMI portable worker hand branch hv=torch.tensor(v) passes generic PRS input. Old full_ob/openbmi infer takes separate handraw from v81 cache; model source mean/std are trained for that filtered port. This is a concrete source-port preprocessing mismatch, not merely file naming.",
+  "what_is_proved": "source definitions differ and cached x payload hash comparison proves whether bytes match; no values or labels read",
+  "what_is_not_proved": "H1/H2/H4/H5 complete-output errors causal decomposition NOT established; thresholds/CPU/GPU geometry and other portable differences not excluded",
+  "known_failed_panels_from_user": [
+    "H1",
+    "H2",
+    "H4",
+    "H5"
+  ],
+  "repair": "NOT performed. Proposal only: preserve exact separate v81 port and source frozen normalization on both source and future E paths. Reason is source training-input contract before target scoring, not desired target ACC; requires separately authorized source-only localization and whole preflight.",
+  "freeze_gate": "Do not freeze executable PLAN or execute E until input-port fix (if authorized) and remaining errors are independently localized with source fixtures. Hash/schema inspection alone cannot close numerical root-cause gate.",
+  "prior_read_disclosure": {
+    "path": "D:\\BCI_builds\\IV2a_E_ReadonlyAudit_Draft_20261120\\HISTORICAL_JSON_ACCESS_DISCLOSURE.json",
+    "sha256": "34302eff922415a57668b1adebb1e0a8b423d64b46b4df42b86494a5801c80e8",
+    "preserved": true
+  },
+  "status": "PREPROCESSING_PORT_DIFFERENCE_LOCALIZED; FULL_FAILURE_ATTRIBUTION_OPEN"
+}

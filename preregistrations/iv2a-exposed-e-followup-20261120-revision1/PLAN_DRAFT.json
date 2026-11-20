@@ -1,0 +1,190 @@
+{
+  "id": "IV2a_EXPOSED_E_FROZEN_FOLLOWUP_EXPLORATORY_REV1",
+  "status": "PUBLIC_REVISION_DRAFT_NOT_CONFIRMED_NOT_EXECUTABLE",
+  "date": "2026-11-20 Asia/Shanghai",
+  "not_executed": true,
+  "old_OpenBMI_plans_unchanged": {
+    "PLAN_A.json": "f55a5849858727eb6fc1bca8827871317341532e58f707fbf0abeff266aa0848",
+    "PLAN_B.json": "62ee03306b1b9693fcccecc5f56a94c8121fd0fdcdf3fede3233594eee5e59d2",
+    "ASSET_REFERENCES.json": "8a35776e317f11afb12119b1105ccb7222bcfd4de2cb6accc351ab847351a0f2"
+  },
+  "exposure": "A01E-A09E rawEEG and labels previously read/scored repeatedly, including project-level strongest-base retention informed by historical E scores. This may only be registered as frozen historical E follow-up, NOT fresh unseen/independent once-only confirmation.",
+  "estimand": "same nine frozen IV2a stats68.75 complete panels, corresponding E person h for panelh; no graph branch, no other held panels ensemble; no E training/earlystop/choice",
+  "source_model": "PRS_ExpertBiasComplement_20261120 complete72.9167 recipe, exact all downstream components; do not silently substitute original-five mean",
+  "asset_references_sha256": "20c98b4ba9a961e6ac75f0c6c1b767fb1609033ff87ce9ffcc82e4ede90384e7",
+  "input": {
+    "allowed": "A01E-A09E EEG only after further confirmation and full source-only preflight; all288 trials retained",
+    "labels": "E official sidecar and embedded labels unavailable to inference; MUST use reviewed label-stripping staging since standard load_session opens embedded run[y]. No current E data extraction authorized.",
+    "preprocessing": "THREE distinct ports as GEOMETRY_INPUT_CONTRACT: raw PRS active, fixed4-38Hz v81 hand, raw500sample strict-rest. The previous blanket4-38 description applied to hand only and is superseded; no source or target arrays regenerated.",
+    "target_prior": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ]
+  },
+  "arms": [
+    {
+      "id": "S0",
+      "name": "strict frozen baseline",
+      "geometry": "exact strict_eval current-trial-only source-selected reference, no previous/future E trial state",
+      "bias": "none",
+      "T_note": "matching statspool/no-graph strict frozen reference65.7407%, NOT graph65.8951%",
+      "on_preflight_failure": "预检失败即不可执行，不替代，不放宽容差；缺失该臂参照/资产同样不可执行。依赖该臂的配对增量记不可估计，不以其他臂顶替。",
+      "preflight_status": "NOT_RUN_NOT_EXECUTABLE",
+      "reference_spec": "PREFLIGHT_SPEC.json:arms.S0"
+    },
+    {
+      "id": "S1",
+      "name": "strict baseline + final past-only bias",
+      "geometry": "S0",
+      "bias": "final only",
+      "on_preflight_failure": "预检失败即不可执行，不替代，不放宽容差；缺失该臂参照/资产同样不可执行。依赖该臂的配对增量记不可估计，不以其他臂顶替。",
+      "preflight_status": "NOT_RUN_NOT_EXECUTABLE",
+      "reference_spec": "PREFLIGHT_SPEC.json:arms.S1"
+    },
+    {
+      "id": "P0",
+      "name": "prefixEA frozen complete stats baseline",
+      "geometry": "historical current-inclusive source-prior2 prefix all geometric branches",
+      "bias": "none",
+      "T_note": "historical68.75%",
+      "on_preflight_failure": "预检失败即不可执行，不替代，不放宽容差；缺失该臂参照/资产同样不可执行。依赖该臂的配对增量记不可估计，不以其他臂顶替。",
+      "preflight_status": "NOT_RUN_NOT_EXECUTABLE",
+      "reference_spec": "PREFLIGHT_SPEC.json:arms.P0"
+    },
+    {
+      "id": "P1",
+      "name": "prefixEA + final past-only bias",
+      "geometry": "P0",
+      "bias": "final only",
+      "T_note": "historical71.6435%",
+      "on_preflight_failure": "预检失败即不可执行，不替代，不放宽容差；缺失该臂参照/资产同样不可执行。依赖该臂的配对增量记不可估计，不以其他臂顶替。",
+      "preflight_status": "NOT_RUN_NOT_EXECUTABLE",
+      "reference_spec": "PREFLIGHT_SPEC.json:arms.P1"
+    },
+    {
+      "id": "P2",
+      "name": "complete72.9167 workflow",
+      "geometry": "P0",
+      "bias": "five original expert past-only biases before full downstream fusion, plus final past-only bias",
+      "T_note": "historical72.9167%; not independent-trial inference",
+      "on_preflight_failure": "预检失败即不可执行，不替代，不放宽容差；缺失该臂参照/资产同样不可执行。依赖该臂的配对增量记不可估计，不以其他臂顶替。",
+      "preflight_status": "NOT_RUN_NOT_EXECUTABLE",
+      "reference_spec": "PREFLIGHT_SPEC.json:arms.P2"
+    }
+  ],
+  "bias_constants": {
+    "classes": 4,
+    "prior": [
+      0.25,
+      0.25,
+      0.25,
+      0.25
+    ],
+    "warmup": 20,
+    "fit_history": "zero-based i>=20,indices0..i-1, n=i",
+    "lambda_formula": ".1+20/n",
+    "L2": "lambda*mean(b*b)=lambda*sum(b^2)/4",
+    "objective": "mean(logsumexp(logp+b))-mean(b)+lambda*mean(b^2)",
+    "clip_logp": 1e-09,
+    "optimizer": "scipy L-BFGS-B, zero4vector,maxiter150,gtol1e-8; scipy default ftol/version must match pinned source environment, not retuned",
+    "centering": "subtract mean(b)",
+    "feedback": "never feed corrected probabilities into same-layer history"
+  },
+  "fusion_constants": {
+    "original5": "equal probability mean; MSVT .5 main+.5 mean(aux)",
+    "upstream_delta": "mean(corrected original5)-mean(original5), add at original P input; retain raw/lateral/statistics readouts",
+    "CSP_head": "normalize(sqrt(CSP*head)) four source-seed mean downstream",
+    "R": "linear and log pool .75 neural+.25 R; safe switch margin .05 or agreeing argmax",
+    "FB": ".9 safe+.1 filterbank",
+    "SHAPE": ".95 prior+.05 shapeLDA",
+    "hand": "unchanged two-hand top2 eligibility and conditional-product order swap; no new threshold",
+    "epsilon": "retain per-stage clipping from pinned code, not globally replace one epsilon"
+  },
+  "target_state_inventory": [
+    {
+      "component": "original3MSVT+2SCL and source normalizers",
+      "target_state": "none across trials; eval BN fixed; within-trial state/token sequence only",
+      "fixed": "three original MSVT parents,2SCL,source fold mean/sd"
+    },
+    {
+      "component": "two bipolar raw/lateral experts and3seed stats pool",
+      "target_state": "current trial FC3-CP3 and FC4-CP4, within-trial demean/RMS only",
+      "fixed": "raw/lateral weights, statistics seeds20261149/50/51"
+    },
+    {
+      "component": "four source heads",
+      "target_state": "token cumulative average within current trial, not history across target trials",
+      "fixed": "seed20261120 CPU QR72x32 projection and4 heads,8epoch frozen"
+    },
+    {
+      "component": "hand expert",
+      "target_state": "current v81-convention EEG trial only, no target mean/EA; fixed two models",
+      "fixed": "seed856/857,source perchannel mean/std"
+    },
+    {
+      "component": "prefix CSP reference",
+      "target_state": "current-inclusive (2*source_prior+sum(C_0..C_t))/(t+3), five bands",
+      "reset": "once at start of each held E session; no physical-run reset in historical72 recipe"
+    },
+    {
+      "component": "prefix Riemann EA",
+      "target_state": "filtered broadband covariance cumulative sum,source prior pseudocount2,current-inclusive; fixed source tangent reference",
+      "reset": "start of E session"
+    },
+    {
+      "component": "prefix FB and shape geometry",
+      "target_state": "current-inclusive band covariance cumulative sums with source prior count2; no target-fitted scaler or classifier",
+      "reset": "start of E session"
+    },
+    {
+      "component": "expert-layer bias",
+      "target_state": "5 separate original4class probability histories, i>=20 uses original indices0..i-1 only; excludes current; no corrected feedback",
+      "reset": "one full288trial E session, no run reset"
+    },
+    {
+      "component": "final bias",
+      "target_state": "post-full-PRS original-to-this-layer probability history0..i-1 only; excludes current; no final corrected feedback",
+      "reset": "one full288trial E session, no run reset"
+    }
+  ],
+  "strict_geometry_blocker": "Input contract now specified from source code; no source numerical execution done, strict port/current-trial reference parity and v81 root-cause gate remain open.",
+  "numeric_preflight": "all five arms source fixtures and correct v81 hand input; exact reference fixtures pinned and tolerances registered before target scores; any missing asset/hash/ambiguous labels/parity fail stops entire proposed study, no weaker substitution or postscore repair",
+  "output_gate": "Future only: all9people×5arms outputs and state trace hashes locked; public hash-only commit,save server push/anonymous retrieval receipts; separate authorized scorer labels afterward; never treat historic E labels as unread.",
+  "statistics": {
+    "analysis_role": "exploratory paired increments; E absolute ACC/kappa descriptive only, label E已曝光，不作确认声明",
+    "primary_readouts": [
+      "S1-S0",
+      "P1-P0",
+      "P2-P1",
+      "P2-S1"
+    ],
+    "all_four_reported": true,
+    "unit": "9 paired subjects (held h corresponding panelh), never trialwise or repeated-panel pooling",
+    "bootstrap": {
+      "repeats": 50000,
+      "seed": 20261125,
+      "resample": "same person indices for all comparisons and ACC/kappa; mean perperson paired differences",
+      "CI": "percentile95%,2.5/97.5; ACC in percentage points and kappa differences"
+    },
+    "direction": "升/降/平 based exact perperson correct-count net; kappa directions separately report; do not resolve ties through floating noise",
+    "report": "each contrast mean deltaACC/deltakappa,subjectbootstrap95%interval,up/down/tie,all9perpersonvalues; unavailable dependency ->不可估计,no substitution",
+    "verdict": "CI crosses or touches0:无法区分;lower>0 descriptive positive increment;upper<0 descriptive harm; even lower>0 not independent E confirmation",
+    "absolute": "all arms perperson andmeanACC/kappa only listing, E已曝光，不作确认声明",
+    "multiplicity": "all4 registered descriptive estimates reported; no posthoc winner selection or global success declaration",
+    "no_rule_or_exclusion_change": true
+  },
+  "interruptions": "only outcome-independent engineering fixes before any score, preserve failures and whole rerun; after any score scientific or numerical rule changes require genuinely new data and new PLAN",
+  "single_use": "one future run/scoring under final executable preregistration,outputs public hash commit BEFORE any new E label access; historical exposure remains disclosed. After scoring changes require genuinely new data. New audit policy prohibits label reads; scoring only by separately authorized isolated scorer,not this audit.",
+  "execution_authorization": "NONE; publishing this draft does not authorize source numerical replay,repair,E extraction,inference,scoring or nested training. Await user review; only an executable freeze after blockers resolved and fresh confirmation can permit execution.",
+  "name": "已曝光历史E上的冻结跟进",
+  "study_type": "探索性，E已曝光，不作确认声明",
+  "supersedes_draft_only": "071e8b802e2571f8f6c9f498d766ed51730a46ceeaaf8e47d5921436f72ca39a; old file retained unchanged",
+  "audit_policy": "AUDIT_POLICY.json",
+  "source_port_issue_status": "PREPROCESSING_PORT_DIFFERENCE_LOCALIZED; FULL_FAILURE_ATTRIBUTION_OPEN",
+  "geometry_input_contract_sha256": "e207df996fee8f4091b4d91432b69b388856e0a1351e0e664ebc9d0da1766514",
+  "preflight_spec_sha256": "8a38bd2975a92d11f7aa4bc9f88fac9990a6d1b3590e8d57ed94a7be67f76825",
+  "repair_not_authorized_or_executed": true,
+  "nested_LOSO": "NOT STARTED; cost estimate remains estimate only"
+}

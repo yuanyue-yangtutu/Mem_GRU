@@ -1,0 +1,1342 @@
+{
+  "name": "端到端源侧预检规范：未执行",
+  "allowed": "only existing source/IV2aT fixtures; no E or OpenBMI target files; no labels; no model fit",
+  "current_revision": "schema/hash checks only. No forward,no probability replay,no numerical success claim.",
+  "source_fixture_schemas": [
+    {
+      "path": "D:\\BCI_builds\\OpenBMI_AB_Execution_20261120\\stage\\fixtures\\H1.npz",
+      "sha256": "4e91bd4c89e907a1c53f9a596a4452b8058ff294bfc45b1e18a332c557efb1b4",
+      "field_names": [
+        "x",
+        "P",
+        "full"
+      ],
+      "arrays": {
+        "x": {
+          "shape": [
+            8,
+            22,
+            1000
+          ]
+        },
+        "P": {
+          "shape": [
+            8,
+            4
+          ]
+        },
+        "full": {
+          "shape": [
+            8,
+            4
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS6875_BipolarGraph_Source\\full9\\strict1.npz",
+      "sha256": "d5df40a8d4e04639d92be8d9c0cd76aebc1dfc0c07add89e95d561ab8e53b179",
+      "field_names": [
+        "p"
+      ],
+      "arrays": {
+        "p": {
+          "shape": [
+            3,
+            288,
+            4
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS687500_PastOnlyBias_20261120\\H1.npz",
+      "sha256": "7ac6e4652f6fca48f2194eb3f28c8110508c1e434429007fc4a5bb3292a6b293",
+      "field_names": [
+        "past_only",
+        "causal",
+        "base",
+        "ids"
+      ],
+      "arrays": {
+        "past_only": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "causal": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "base": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "ids": {
+          "shape": [
+            288
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS729167_FullChainAudit_20261120\\H1.npz",
+      "sha256": "863f22c6f4150a14a7e2de5ad43123f90971840c422ba59a5f04751d4adcfb01",
+      "field_names": [
+        "base",
+        "reference",
+        "pre_only",
+        "candidate",
+        "experts",
+        "corrected_experts",
+        "ids"
+      ],
+      "arrays": {
+        "base": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "reference": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "pre_only": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "candidate": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "experts": {
+          "shape": [
+            5,
+            288,
+            4
+          ]
+        },
+        "corrected_experts": {
+          "shape": [
+            5,
+            288,
+            4
+          ]
+        },
+        "ids": {
+          "shape": [
+            288
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\OpenBMI_AB_Execution_20261120\\stage\\fixtures\\H2.npz",
+      "sha256": "c7dfccbb4f823a87367e215e0ba8fcc40fe9fc061b72cdbbb39d9580f89f4db8",
+      "field_names": [
+        "x",
+        "P",
+        "full"
+      ],
+      "arrays": {
+        "x": {
+          "shape": [
+            8,
+            22,
+            1000
+          ]
+        },
+        "P": {
+          "shape": [
+            8,
+            4
+          ]
+        },
+        "full": {
+          "shape": [
+            8,
+            4
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS6875_BipolarGraph_Source\\full9\\strict2.npz",
+      "sha256": "5a32c7f457684e005308a07d5929ce37fbd979e6b98c6730150e06faa614af55",
+      "field_names": [
+        "p"
+      ],
+      "arrays": {
+        "p": {
+          "shape": [
+            3,
+            288,
+            4
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS687500_PastOnlyBias_20261120\\H2.npz",
+      "sha256": "a9cf358a98da53fb67aa8c47e0d9496319b6345966130501dc59117693f439cc",
+      "field_names": [
+        "past_only",
+        "causal",
+        "base",
+        "ids"
+      ],
+      "arrays": {
+        "past_only": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "causal": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "base": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "ids": {
+          "shape": [
+            288
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS729167_FullChainAudit_20261120\\H2.npz",
+      "sha256": "5e7741f5f8b8151c4273801448c0e35c4d49b03b5359aef0e6cf8a1d568d8ed4",
+      "field_names": [
+        "base",
+        "reference",
+        "pre_only",
+        "candidate",
+        "experts",
+        "corrected_experts",
+        "ids"
+      ],
+      "arrays": {
+        "base": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "reference": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "pre_only": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "candidate": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "experts": {
+          "shape": [
+            5,
+            288,
+            4
+          ]
+        },
+        "corrected_experts": {
+          "shape": [
+            5,
+            288,
+            4
+          ]
+        },
+        "ids": {
+          "shape": [
+            288
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\OpenBMI_AB_Execution_20261120\\stage\\fixtures\\H3.npz",
+      "sha256": "2d766378f2a6845bdaca8c1ec72fee5348e4aee04d871235f275830b5e7ba4b5",
+      "field_names": [
+        "x",
+        "P",
+        "full"
+      ],
+      "arrays": {
+        "x": {
+          "shape": [
+            8,
+            22,
+            1000
+          ]
+        },
+        "P": {
+          "shape": [
+            8,
+            4
+          ]
+        },
+        "full": {
+          "shape": [
+            8,
+            4
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS6875_BipolarGraph_Source\\full9\\strict3.npz",
+      "sha256": "3c227e9a96400aabdd74b914bcd5873c01e736e5086637d7666db11bd476a298",
+      "field_names": [
+        "p"
+      ],
+      "arrays": {
+        "p": {
+          "shape": [
+            3,
+            288,
+            4
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS687500_PastOnlyBias_20261120\\H3.npz",
+      "sha256": "3e4f5d76138e3c9593b1609d97f0a1b238c96995245dd6ec985c991c3c5c64df",
+      "field_names": [
+        "past_only",
+        "causal",
+        "base",
+        "ids"
+      ],
+      "arrays": {
+        "past_only": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "causal": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "base": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "ids": {
+          "shape": [
+            288
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS729167_FullChainAudit_20261120\\H3.npz",
+      "sha256": "c6a4cf7edd21004119bd83acb3d4f297ebc6117c04d09999408aed5b7727cae7",
+      "field_names": [
+        "base",
+        "reference",
+        "pre_only",
+        "candidate",
+        "experts",
+        "corrected_experts",
+        "ids"
+      ],
+      "arrays": {
+        "base": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "reference": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "pre_only": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "candidate": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "experts": {
+          "shape": [
+            5,
+            288,
+            4
+          ]
+        },
+        "corrected_experts": {
+          "shape": [
+            5,
+            288,
+            4
+          ]
+        },
+        "ids": {
+          "shape": [
+            288
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\OpenBMI_AB_Execution_20261120\\stage\\fixtures\\H4.npz",
+      "sha256": "11506123bb9a26e6a8d2d784917b87aea3f0e84dda0c4861d0829d8271b29cb8",
+      "field_names": [
+        "x",
+        "P",
+        "full"
+      ],
+      "arrays": {
+        "x": {
+          "shape": [
+            8,
+            22,
+            1000
+          ]
+        },
+        "P": {
+          "shape": [
+            8,
+            4
+          ]
+        },
+        "full": {
+          "shape": [
+            8,
+            4
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS6875_BipolarGraph_Source\\full9\\strict4.npz",
+      "sha256": "a7e1e1608e734e0f8f0f3945a7da40ebf4d8771aac771967a6288d335162a270",
+      "field_names": [
+        "p"
+      ],
+      "arrays": {
+        "p": {
+          "shape": [
+            3,
+            288,
+            4
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS687500_PastOnlyBias_20261120\\H4.npz",
+      "sha256": "57bad87a0209450259c45fb179622aba1346e5bec2344cba13e8aa38163bd2ed",
+      "field_names": [
+        "past_only",
+        "causal",
+        "base",
+        "ids"
+      ],
+      "arrays": {
+        "past_only": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "causal": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "base": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "ids": {
+          "shape": [
+            288
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS729167_FullChainAudit_20261120\\H4.npz",
+      "sha256": "5435dcd8fc5df7b32edf001e6d00706c13e3a8dc2c18fa4751a0fee921b7c8b7",
+      "field_names": [
+        "base",
+        "reference",
+        "pre_only",
+        "candidate",
+        "experts",
+        "corrected_experts",
+        "ids"
+      ],
+      "arrays": {
+        "base": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "reference": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "pre_only": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "candidate": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "experts": {
+          "shape": [
+            5,
+            288,
+            4
+          ]
+        },
+        "corrected_experts": {
+          "shape": [
+            5,
+            288,
+            4
+          ]
+        },
+        "ids": {
+          "shape": [
+            288
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\OpenBMI_AB_Execution_20261120\\stage\\fixtures\\H5.npz",
+      "sha256": "2dffd5bfbd8e7a3ff0d55e21591b578edc0489a17b8ab23e03085df979064cc7",
+      "field_names": [
+        "x",
+        "P",
+        "full"
+      ],
+      "arrays": {
+        "x": {
+          "shape": [
+            8,
+            22,
+            1000
+          ]
+        },
+        "P": {
+          "shape": [
+            8,
+            4
+          ]
+        },
+        "full": {
+          "shape": [
+            8,
+            4
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS6875_BipolarGraph_Source\\full9\\strict5.npz",
+      "sha256": "ba1d7063c5f4532b9357986fff75ea21ce04bfc0b0007341784290dd749a73f1",
+      "field_names": [
+        "p"
+      ],
+      "arrays": {
+        "p": {
+          "shape": [
+            3,
+            288,
+            4
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS687500_PastOnlyBias_20261120\\H5.npz",
+      "sha256": "fd268db1a2841a06a23f317e8f33f0237cb904039c347a4ca72a88b3ac96fa65",
+      "field_names": [
+        "past_only",
+        "causal",
+        "base",
+        "ids"
+      ],
+      "arrays": {
+        "past_only": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "causal": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "base": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "ids": {
+          "shape": [
+            288
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS729167_FullChainAudit_20261120\\H5.npz",
+      "sha256": "1fed9166a0d2ecc7d5bc135c911122e5f35a8207d29305bbc1ebc673b41dacd7",
+      "field_names": [
+        "base",
+        "reference",
+        "pre_only",
+        "candidate",
+        "experts",
+        "corrected_experts",
+        "ids"
+      ],
+      "arrays": {
+        "base": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "reference": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "pre_only": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "candidate": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "experts": {
+          "shape": [
+            5,
+            288,
+            4
+          ]
+        },
+        "corrected_experts": {
+          "shape": [
+            5,
+            288,
+            4
+          ]
+        },
+        "ids": {
+          "shape": [
+            288
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\OpenBMI_AB_Execution_20261120\\stage\\fixtures\\H6.npz",
+      "sha256": "8522f7cbe7da1d91f19e7e79ac44f19904fb91caddd8e31f19f76d9f32baf073",
+      "field_names": [
+        "x",
+        "P",
+        "full"
+      ],
+      "arrays": {
+        "x": {
+          "shape": [
+            8,
+            22,
+            1000
+          ]
+        },
+        "P": {
+          "shape": [
+            8,
+            4
+          ]
+        },
+        "full": {
+          "shape": [
+            8,
+            4
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS6875_BipolarGraph_Source\\full9\\strict6.npz",
+      "sha256": "02ac0eac1116e884bbebe816cee4caaf9b70c1d6945e8f246d041b35fed97f0b",
+      "field_names": [
+        "p"
+      ],
+      "arrays": {
+        "p": {
+          "shape": [
+            3,
+            288,
+            4
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS687500_PastOnlyBias_20261120\\H6.npz",
+      "sha256": "6ee8e6387ff2d7cb0c02c7c00d67290659b818ae82c4a1a36d6b2a5e909b79de",
+      "field_names": [
+        "past_only",
+        "causal",
+        "base",
+        "ids"
+      ],
+      "arrays": {
+        "past_only": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "causal": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "base": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "ids": {
+          "shape": [
+            288
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS729167_FullChainAudit_20261120\\H6.npz",
+      "sha256": "e6fb1e8b2f6af39929388bd872239786d55e1c5b384315bfe7f59809a4ec2e23",
+      "field_names": [
+        "base",
+        "reference",
+        "pre_only",
+        "candidate",
+        "experts",
+        "corrected_experts",
+        "ids"
+      ],
+      "arrays": {
+        "base": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "reference": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "pre_only": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "candidate": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "experts": {
+          "shape": [
+            5,
+            288,
+            4
+          ]
+        },
+        "corrected_experts": {
+          "shape": [
+            5,
+            288,
+            4
+          ]
+        },
+        "ids": {
+          "shape": [
+            288
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\OpenBMI_AB_Execution_20261120\\stage\\fixtures\\H7.npz",
+      "sha256": "8adeffe55b31a3fbc809477741ff773abaee3d202d0990b4ef63ed9869158d06",
+      "field_names": [
+        "x",
+        "P",
+        "full"
+      ],
+      "arrays": {
+        "x": {
+          "shape": [
+            8,
+            22,
+            1000
+          ]
+        },
+        "P": {
+          "shape": [
+            8,
+            4
+          ]
+        },
+        "full": {
+          "shape": [
+            8,
+            4
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS6875_BipolarGraph_Source\\full9\\strict7.npz",
+      "sha256": "b4e7fd752b20c57f14f4aa269e3870b9cd9cd40e3a4b4cb75ce1480669a59a66",
+      "field_names": [
+        "p"
+      ],
+      "arrays": {
+        "p": {
+          "shape": [
+            3,
+            288,
+            4
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS687500_PastOnlyBias_20261120\\H7.npz",
+      "sha256": "9a38ceb1d069f46fc15fa03b0e2bea05208fabbe0df36283ecc264543be0ca4e",
+      "field_names": [
+        "past_only",
+        "causal",
+        "base",
+        "ids"
+      ],
+      "arrays": {
+        "past_only": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "causal": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "base": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "ids": {
+          "shape": [
+            288
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS729167_FullChainAudit_20261120\\H7.npz",
+      "sha256": "6bbd0f489df3641482b4e886e8576ddd1650fa4590b190bf772622af4061c63b",
+      "field_names": [
+        "base",
+        "reference",
+        "pre_only",
+        "candidate",
+        "experts",
+        "corrected_experts",
+        "ids"
+      ],
+      "arrays": {
+        "base": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "reference": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "pre_only": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "candidate": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "experts": {
+          "shape": [
+            5,
+            288,
+            4
+          ]
+        },
+        "corrected_experts": {
+          "shape": [
+            5,
+            288,
+            4
+          ]
+        },
+        "ids": {
+          "shape": [
+            288
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\OpenBMI_AB_Execution_20261120\\stage\\fixtures\\H8.npz",
+      "sha256": "e6c0fcbb63ef1b2b169367edd69423a079431db4d3d14e7696111f95899d1d50",
+      "field_names": [
+        "x",
+        "P",
+        "full"
+      ],
+      "arrays": {
+        "x": {
+          "shape": [
+            8,
+            22,
+            1000
+          ]
+        },
+        "P": {
+          "shape": [
+            8,
+            4
+          ]
+        },
+        "full": {
+          "shape": [
+            8,
+            4
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS6875_BipolarGraph_Source\\full9\\strict8.npz",
+      "sha256": "c870bbd9697a380c3c4a1c33f181402570154c39ec4671ad993674049d8b9c71",
+      "field_names": [
+        "p"
+      ],
+      "arrays": {
+        "p": {
+          "shape": [
+            3,
+            288,
+            4
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS687500_PastOnlyBias_20261120\\H8.npz",
+      "sha256": "dce3d43f6bbd4d4d28f55a3e31c16d1a2a97fcf1de4d768160bee978dca2ceb6",
+      "field_names": [
+        "past_only",
+        "causal",
+        "base",
+        "ids"
+      ],
+      "arrays": {
+        "past_only": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "causal": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "base": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "ids": {
+          "shape": [
+            288
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS729167_FullChainAudit_20261120\\H8.npz",
+      "sha256": "485d158b686b966c6a135b754e61ac6dcaa816683d89cfbcb6424f8e2336df72",
+      "field_names": [
+        "base",
+        "reference",
+        "pre_only",
+        "candidate",
+        "experts",
+        "corrected_experts",
+        "ids"
+      ],
+      "arrays": {
+        "base": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "reference": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "pre_only": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "candidate": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "experts": {
+          "shape": [
+            5,
+            288,
+            4
+          ]
+        },
+        "corrected_experts": {
+          "shape": [
+            5,
+            288,
+            4
+          ]
+        },
+        "ids": {
+          "shape": [
+            288
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\OpenBMI_AB_Execution_20261120\\stage\\fixtures\\H9.npz",
+      "sha256": "64cef888692011efcccba2099dc63b436a64ca51effe77c621ff7b2e0c7f4400",
+      "field_names": [
+        "x",
+        "P",
+        "full"
+      ],
+      "arrays": {
+        "x": {
+          "shape": [
+            8,
+            22,
+            1000
+          ]
+        },
+        "P": {
+          "shape": [
+            8,
+            4
+          ]
+        },
+        "full": {
+          "shape": [
+            8,
+            4
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS6875_BipolarGraph_Source\\full9\\strict9.npz",
+      "sha256": "5522bd0c4206adf81b814b9a32aa976dcf1c15eac9f497dccb11bf6c8759e1b5",
+      "field_names": [
+        "p"
+      ],
+      "arrays": {
+        "p": {
+          "shape": [
+            3,
+            288,
+            4
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS687500_PastOnlyBias_20261120\\H9.npz",
+      "sha256": "aa7ac8b3196ccb323c8f66d789ef2599c96d01324a222aa769211dfddc36c379",
+      "field_names": [
+        "past_only",
+        "causal",
+        "base",
+        "ids"
+      ],
+      "arrays": {
+        "past_only": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "causal": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "base": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "ids": {
+          "shape": [
+            288
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS729167_FullChainAudit_20261120\\H9.npz",
+      "sha256": "8e5f8686250c547e03b1e85555d9cef15677bdacab7c45f47b1141cbee36fd46",
+      "field_names": [
+        "base",
+        "reference",
+        "pre_only",
+        "candidate",
+        "experts",
+        "corrected_experts",
+        "ids"
+      ],
+      "arrays": {
+        "base": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "reference": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "pre_only": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "candidate": {
+          "shape": [
+            288,
+            4
+          ]
+        },
+        "experts": {
+          "shape": [
+            5,
+            288,
+            4
+          ]
+        },
+        "corrected_experts": {
+          "shape": [
+            5,
+            288,
+            4
+          ]
+        },
+        "ids": {
+          "shape": [
+            288
+          ]
+        }
+      }
+    }
+  ],
+  "arms": {
+    "S0": {
+      "neural": "same frozen stats68.75 complete model,no graph",
+      "reference": "PRS6875_BipolarGraph_Source/full9/strict{h}.npz:p[0], held h all288 current-trial-only",
+      "require": "verify no graph insertion and exact strict reference/source classifiers; full output atol2e-6,rtol0,all argmax equal"
+    },
+    "S1": {
+      "neural": "S0",
+      "reference": "no archived exact S0+past-only full-probability fixture established",
+      "require": "before execution, independently check unchanged registered bias math using existing S0 T probabilities and mathematical oracle, not E; this numerical derivation is NOT authorized/performed now. No use of graph-strict or current-inclusive substitute."
+    },
+    "P0": {
+      "neural": "same stats68.75 model",
+      "reference": "PRS687500_PastOnlyBias/Hh.npz:base; candidate audit Hh.npz:base; require full parameter assembly not cached P substitution",
+      "require": "all source folds before any E,atol2e-6,rtol0,same argmax"
+    },
+    "P1": {
+      "neural": "P0",
+      "reference": "PRS687500_PastOnlyBias/Hh.npz:past_only and candidate audit:reference",
+      "require": "atol2e-6,rtol0,same argmax; past-only history and warmup invariants"
+    },
+    "P2": {
+      "neural": "P0+expert corrections",
+      "reference": "PRS729167_FullChainAudit/Hh.npz:candidate,experts,corrected_experts,pre_only; original candidate locked provenance",
+      "require": "atol2e-6,rtol0,same argmax for all stages plusfullpipeline"
+    }
+  },
+  "components": {
+    "raw5_experts": {
+      "atol": 2e-05,
+      "rtol": 0,
+      "same_argmax": true
+    },
+    "heads": {
+      "atol": 1e-05,
+      "same_argmax": true
+    },
+    "hand": {
+      "atol": 3e-05,
+      "same_argmax": true
+    },
+    "R": {
+      "atol": 0.0001,
+      "same_argmax": true
+    },
+    "FB": {
+      "atol": 2e-06,
+      "same_argmax": true
+    },
+    "shape": {
+      "atol": 2e-06,
+      "same_argmax": true
+    },
+    "complete_and_stage_outputs": {
+      "atol": 2e-06,
+      "rtol": 0,
+      "same_argmax": true
+    }
+  },
+  "extra_tests": [
+    "source owner exclusions and all parameter hashes",
+    "exact two input ports and native precision/crop/channel units",
+    "E-blind staging readiness; no label-opening helper",
+    "prefix before later sample invariant for EA,sourceprior count2",
+    "bias0..19 unchanged,fit excludes current and future,both layers no recursive feedback",
+    "trial ordering/reset exactly one full session,all288,no exclusions",
+    "fresh branch outputs all assembled together; cached probabilities only references",
+    "reviewed source environment CPU/mkldnnFalse convention and source code pins; no postfailure backend/tolerance shopping"
+  ],
+  "failure_policy": {
+    "S0": "预检失败即不可执行，不替代，不放宽容差；缺失该臂参照/资产同样不可执行。依赖该臂的配对增量记不可估计，不以其他臂顶替。",
+    "S1": "预检失败即不可执行，不替代，不放宽容差；缺失该臂参照/资产同样不可执行。依赖该臂的配对增量记不可估计，不以其他臂顶替。",
+    "P0": "预检失败即不可执行，不替代，不放宽容差；缺失该臂参照/资产同样不可执行。依赖该臂的配对增量记不可估计，不以其他臂顶替。",
+    "P1": "预检失败即不可执行，不替代，不放宽容差；缺失该臂参照/资产同样不可执行。依赖该臂的配对增量记不可估计，不以其他臂顶替。",
+    "P2": "预检失败即不可执行，不替代，不放宽容差；缺失该臂参照/资产同样不可执行。依赖该臂的配对增量记不可估计，不以其他臂顶替。"
+  },
+  "global_gate": "Until source-port failure attribution and all five source preflights satisfied under a reviewed new execution authorization, entire E study blocked. If future authorized arm fails, record failure and no substitutes; any partial-study decision requires new preregistration before any E scoring.",
+  "numerical_preflight_status": {
+    "S0": "NOT_RUN_NOT_EXECUTABLE",
+    "S1": "NOT_RUN_NOT_EXECUTABLE",
+    "P0": "NOT_RUN_NOT_EXECUTABLE",
+    "P1": "NOT_RUN_NOT_EXECUTABLE",
+    "P2": "NOT_RUN_NOT_EXECUTABLE"
+  }
+}

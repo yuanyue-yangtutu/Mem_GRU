@@ -1,0 +1,514 @@
+{
+  "code_hashes": {
+    "D:\\BCI_builds\\build_v76_inputs.py": "28ea553567a9c11d3d0f38f685eab3fa860046a34dedc4e057b3696698eeb35c",
+    "D:\\BCI_builds\\build_v77.py": "32ff4fc3a0c32abb08f29629f0a78db5e12cd36ea30a1f13ee3816d369ee4a20",
+    "D:\\BCI_builds\\build_v78.py": "9f18e6a9b1736c3022a8a2c4b820b8bdab9332a4e03c6bf5dec4de3b4bfdaa72",
+    "D:\\BCI_builds\\build_v79.py": "17d1816026b1b2e935e0f880bf44ee175641311721da813ce6aaee0dac8afd28",
+    "D:\\BCI_builds\\build_v81.py": "9362364770a47066cd00f09a651ace2b7bc26e58f9ddb26ac6e2a6dbb77303d2",
+    "D:\\BCI_builds\\prs1777_nested_locked_20261119\\nested.py": "619e62d7999d78d78ecf478cc5f00dfc1f3a88942cfdcb8eb988f265b583f81a",
+    "D:\\BCI_builds\\strict_prs_current_trial_20261119\\run.py": "319f1bb7f7ebb3155b55ebf3796d6b5f9e69dd22589a7bc252f2c249cd38d9f5",
+    "D:\\BCI_builds\\PRS6875_BipolarGraph_Source\\strict_eval.py": "11362910fea5e6594002ecaa412b5c91d01ddb5cde2b6985e751ccfab66a9cd4",
+    "D:\\BCI_builds\\PRS687114_SharedRefinement_Full9\\run.py": "51d085de30d0aed5556e399cde1930172b76954d20868e560c321e73390f3b22",
+    "D:\\BCI_builds\\PRS729167_FullChainAudit_20261120\\candidate_replay.py": "07ff49a6762055ee88883bae7ac08992186a25744b73fda7335448ab6343f027",
+    "D:\\BCI_builds\\PRS729167_FullChainAudit_20261120\\branches_cpu.py": "6ea9d8b4a2eb32e3f998591c358e6df693a82164d2b647a9e6b4a4a376c1f2a5",
+    "D:\\BCI_builds\\PRS_ExpertBiasComplement_20261120\\run.py": "07ff49a6762055ee88883bae7ac08992186a25744b73fda7335448ab6343f027",
+    "D:\\BCI_builds\\prs_bipolar_lateral_update_20261119\\external_geometry.py": "622c458467575c0e55d6962c6d41ae626430b6ecd5ba1b25513bf40a87ca0292",
+    "D:\\BCI_builds\\PRS_OpenBMI_20261116\\payload\\prs_riemann.py": "253d9741a875031d3ad3b53eec54687892391f6f4df3e0991ca51bc7a3a75693",
+    "D:\\BCI_builds\\OpenBMI_AB_Execution_20261120\\stage\\code\\worker.py": "7484d9ae324e3ed024c1bb844335674fff73a182c0a0508820ed6ef49d357f11",
+    "D:\\BCI_builds\\OpenBMI_AB_Execution_20261120\\prepare.py": "ecf6b7e4a2a2ac3de7dc2a9f20e7fb5282f853868bd5f665ec89e35f43fbe3d2"
+  },
+  "old_asset_refs_sha256": "bbe058669ba9a14e5d69e8a12b6c66c2feac63b892849f3eadb7d009751b9e5d",
+  "old_lineage_manifest_sha256": "58336332fbd53e74bf562e956480c11e227248945c7f3e588eef210f03c0d17a",
+  "fixed_model": "stats68.75 + all72.9167 components; no graph branch or originalfive substitute",
+  "source_dataset_schema": [
+    {
+      "path": "D:\\BCI_builds\\v81_signal_specific_t\\inputs\\data\\S1.npz",
+      "sha256": "a261827fd82e237bebb19916454b74c76d0242f6532219679e3d475333969af0",
+      "field_names": [
+        "x",
+        "y",
+        "blocks"
+      ],
+      "arrays": {
+        "x": {
+          "shape": [
+            288,
+            22,
+            1000
+          ],
+          "uninterpreted_payload_sha256": "cea4055894852d2668b191ee1682b8a7c8050abb0fe94128a513a3afb6b06bf5"
+        },
+        "blocks": {
+          "shape": [
+            288
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS_UNIFORM_NEWSEEDS\\data\\S1.npz",
+      "sha256": "a1da498e9c29c8ba248e845e9bad25011d5dbb3a8afb94d071a0ca60633396b3",
+      "field_names": [
+        "x",
+        "y",
+        "raw_run",
+        "start_index"
+      ],
+      "arrays": {
+        "x": {
+          "shape": [
+            288,
+            22,
+            1000
+          ],
+          "uninterpreted_payload_sha256": "b3b76f47203607ef4f7e750c3ada9cb6f9d23b60a5e9a8ca70bb040c6fc81528"
+        },
+        "raw_run": {
+          "shape": [
+            288
+          ]
+        },
+        "start_index": {
+          "shape": [
+            288
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\v81_signal_specific_t\\inputs\\data\\S2.npz",
+      "sha256": "18ba139493ca6da64bc5e079682e6e259ea3bfe06e7988f28d466289f557f26d",
+      "field_names": [
+        "x",
+        "y",
+        "blocks"
+      ],
+      "arrays": {
+        "x": {
+          "shape": [
+            288,
+            22,
+            1000
+          ],
+          "uninterpreted_payload_sha256": "52d51dbe9abee4d48386cd18316a6feea3bcbbce7d9c0f9fe3a7fc040375e0c5"
+        },
+        "blocks": {
+          "shape": [
+            288
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS_UNIFORM_NEWSEEDS\\data\\S2.npz",
+      "sha256": "83d64d14ec8b32c7f94b15abeefdf31316a068db87fd119c080d784f8c1de060",
+      "field_names": [
+        "x",
+        "y",
+        "raw_run",
+        "start_index"
+      ],
+      "arrays": {
+        "x": {
+          "shape": [
+            288,
+            22,
+            1000
+          ],
+          "uninterpreted_payload_sha256": "292293dcb8fa2d3a38e7579dcf1f32aed94f3a0559e3d919fbb9640cbd3505af"
+        },
+        "raw_run": {
+          "shape": [
+            288
+          ]
+        },
+        "start_index": {
+          "shape": [
+            288
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\v81_signal_specific_t\\inputs\\data\\S3.npz",
+      "sha256": "48cc4e5d7ee328d1cc5660ad4bcf9b4b548049cce61470768b407d273d5a0a88",
+      "field_names": [
+        "x",
+        "y",
+        "blocks"
+      ],
+      "arrays": {
+        "x": {
+          "shape": [
+            288,
+            22,
+            1000
+          ],
+          "uninterpreted_payload_sha256": "7c00c6c5512148eb480bdef1229e18c4ca5464fe61d1db70cf5ee26991eb5929"
+        },
+        "blocks": {
+          "shape": [
+            288
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS_UNIFORM_NEWSEEDS\\data\\S3.npz",
+      "sha256": "787c1bfdacc4b42db820122eedf6b2b09dc4e42b134f68cbaa66eb425a36748a",
+      "field_names": [
+        "x",
+        "y",
+        "raw_run",
+        "start_index"
+      ],
+      "arrays": {
+        "x": {
+          "shape": [
+            288,
+            22,
+            1000
+          ],
+          "uninterpreted_payload_sha256": "ddb8d31a0b1f4076432ca6ac3ac33392157d277baedabb72b2dfe0d71eb3abe7"
+        },
+        "raw_run": {
+          "shape": [
+            288
+          ]
+        },
+        "start_index": {
+          "shape": [
+            288
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\v81_signal_specific_t\\inputs\\data\\S4.npz",
+      "sha256": "97d6325e4e90788fee44e2bfea568a7b6629b36daf2bbaf3e2876ebf523673bf",
+      "field_names": [
+        "x",
+        "y",
+        "blocks"
+      ],
+      "arrays": {
+        "x": {
+          "shape": [
+            288,
+            22,
+            1000
+          ],
+          "uninterpreted_payload_sha256": "3b8cc0edc67818af08ebab7669b0f4a2bf4a0d600d4268942a7e128a3dfe8f49"
+        },
+        "blocks": {
+          "shape": [
+            288
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS_UNIFORM_NEWSEEDS\\data\\S4.npz",
+      "sha256": "509ceee862d1dd5a43fcf560f00ed6c9e9139f579783cabbff1e2fea3384b4f4",
+      "field_names": [
+        "x",
+        "y",
+        "raw_run",
+        "start_index"
+      ],
+      "arrays": {
+        "x": {
+          "shape": [
+            288,
+            22,
+            1000
+          ],
+          "uninterpreted_payload_sha256": "441c15b4b22d4d1e82265422f44f6b9a094b07baf7528e2d49b17d7fd2578391"
+        },
+        "raw_run": {
+          "shape": [
+            288
+          ]
+        },
+        "start_index": {
+          "shape": [
+            288
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\v81_signal_specific_t\\inputs\\data\\S5.npz",
+      "sha256": "0d03f3c5fb1ebae2c85ce2b94e532df59f18b16f4ec2c0fdf7388620d09ead7b",
+      "field_names": [
+        "x",
+        "y",
+        "blocks"
+      ],
+      "arrays": {
+        "x": {
+          "shape": [
+            288,
+            22,
+            1000
+          ],
+          "uninterpreted_payload_sha256": "75cc1c1db8de762fc5bb540a2e26753d5773540878b656c9efa706bec0aa4d64"
+        },
+        "blocks": {
+          "shape": [
+            288
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS_UNIFORM_NEWSEEDS\\data\\S5.npz",
+      "sha256": "d9361bbb7a297b820fe79aad6ea54743f22703fc30e945ada612257902f03ee9",
+      "field_names": [
+        "x",
+        "y",
+        "raw_run",
+        "start_index"
+      ],
+      "arrays": {
+        "x": {
+          "shape": [
+            288,
+            22,
+            1000
+          ],
+          "uninterpreted_payload_sha256": "03da02d92e3945d1250c604522ac68260090b666ae9417f012e42347661d5e7f"
+        },
+        "raw_run": {
+          "shape": [
+            288
+          ]
+        },
+        "start_index": {
+          "shape": [
+            288
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\v81_signal_specific_t\\inputs\\data\\S6.npz",
+      "sha256": "84e4a1ffc94fee1505d0028a39e4cc03580e11245195bbf65a11a83c4e105853",
+      "field_names": [
+        "x",
+        "y",
+        "blocks"
+      ],
+      "arrays": {
+        "x": {
+          "shape": [
+            288,
+            22,
+            1000
+          ],
+          "uninterpreted_payload_sha256": "6bba0f761dab1560b398b9591f2de98c5a39755803679ea3a11f48e319112c4a"
+        },
+        "blocks": {
+          "shape": [
+            288
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS_UNIFORM_NEWSEEDS\\data\\S6.npz",
+      "sha256": "b0d33cd2d0b761a598d69eaa7b92efba7d2bb87455fffbffc3053421d249dbb2",
+      "field_names": [
+        "x",
+        "y",
+        "raw_run",
+        "start_index"
+      ],
+      "arrays": {
+        "x": {
+          "shape": [
+            288,
+            22,
+            1000
+          ],
+          "uninterpreted_payload_sha256": "639d3799622e005f74a3625c9b34a1aa2f62b2f060e1c6ca2741b550bd5a4f0d"
+        },
+        "raw_run": {
+          "shape": [
+            288
+          ]
+        },
+        "start_index": {
+          "shape": [
+            288
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\v81_signal_specific_t\\inputs\\data\\S7.npz",
+      "sha256": "d0a3d89670cfd566b92f52e98ee51cf47cfbf0173e42e5b079157e367cefda31",
+      "field_names": [
+        "x",
+        "y",
+        "blocks"
+      ],
+      "arrays": {
+        "x": {
+          "shape": [
+            288,
+            22,
+            1000
+          ],
+          "uninterpreted_payload_sha256": "5ea86be24365d5cc38e2f6d2c5bf94172d19973659e9963dac083a529e22e7eb"
+        },
+        "blocks": {
+          "shape": [
+            288
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS_UNIFORM_NEWSEEDS\\data\\S7.npz",
+      "sha256": "0c10c5c36f9fca2ab40351d774347e5b962eb85cb16875ad92f1fd9c21a3005c",
+      "field_names": [
+        "x",
+        "y",
+        "raw_run",
+        "start_index"
+      ],
+      "arrays": {
+        "x": {
+          "shape": [
+            288,
+            22,
+            1000
+          ],
+          "uninterpreted_payload_sha256": "943cf1f327171823e32ac99b3765e50af9f3b31b8d00e6448bb6b2c3a76dcc42"
+        },
+        "raw_run": {
+          "shape": [
+            288
+          ]
+        },
+        "start_index": {
+          "shape": [
+            288
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\v81_signal_specific_t\\inputs\\data\\S8.npz",
+      "sha256": "ecf79e19ae3dca29d4987e28c632b8562c34316273f8f012f37c4f7fc5cf34e7",
+      "field_names": [
+        "x",
+        "y",
+        "blocks"
+      ],
+      "arrays": {
+        "x": {
+          "shape": [
+            288,
+            22,
+            1000
+          ],
+          "uninterpreted_payload_sha256": "4d8fc53f0253e67c6fb6340be675295e59139c61e3b0ddb7b9703c86404923e0"
+        },
+        "blocks": {
+          "shape": [
+            288
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS_UNIFORM_NEWSEEDS\\data\\S8.npz",
+      "sha256": "c429368c011567df034edb9f775c38e262e7ecc60a346a3f149f2a18bfec533d",
+      "field_names": [
+        "x",
+        "y",
+        "raw_run",
+        "start_index"
+      ],
+      "arrays": {
+        "x": {
+          "shape": [
+            288,
+            22,
+            1000
+          ],
+          "uninterpreted_payload_sha256": "ff7c9c96e5cca68f2de55afad7b12b4f9f6ce2e5372cff14bc457fe8be2eed48"
+        },
+        "raw_run": {
+          "shape": [
+            288
+          ]
+        },
+        "start_index": {
+          "shape": [
+            288
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\v81_signal_specific_t\\inputs\\data\\S9.npz",
+      "sha256": "e4a5c4f1ed14082e5225063055ea9972b5f12dd5f23f7d1ba09f477eedf246b7",
+      "field_names": [
+        "x",
+        "y",
+        "blocks"
+      ],
+      "arrays": {
+        "x": {
+          "shape": [
+            288,
+            22,
+            1000
+          ],
+          "uninterpreted_payload_sha256": "4294a925c62609a557dd28722030a0365caa17663b0d0e46467dae38b24754a3"
+        },
+        "blocks": {
+          "shape": [
+            288
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\PRS_UNIFORM_NEWSEEDS\\data\\S9.npz",
+      "sha256": "4fa94abd0e0f04f6183c940c318f9f0ea46c0895ebd018873860b7f6edc46ba6",
+      "field_names": [
+        "x",
+        "y",
+        "raw_run",
+        "start_index"
+      ],
+      "arrays": {
+        "x": {
+          "shape": [
+            288,
+            22,
+            1000
+          ],
+          "uninterpreted_payload_sha256": "91b6af86c1f62ad31c545dcc6734ddd78de05633118614c7e52a3577c6bfdc9e"
+        },
+        "raw_run": {
+          "shape": [
+            288
+          ]
+        },
+        "start_index": {
+          "shape": [
+            288
+          ]
+        }
+      }
+    }
+  ],
+  "local_policies_sha256": "3783685109e26ea91cc821a0c22afd703c5b2858fa774c6f122a80b0c2712ff6",
+  "prior_disclosure_sha256": "34302eff922415a57668b1adebb1e0a8b423d64b46b4df42b86494a5801c80e8",
+  "data_or_predictions_published": false
+}

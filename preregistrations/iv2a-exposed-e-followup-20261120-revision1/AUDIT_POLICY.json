@@ -1,0 +1,9 @@
+{
+  "name": "审计只读边界",
+  "date": "2026-11-20",
+  "data_access": "file hashes,field names,array shapes only; no prediction JSON or label contents; NPZ labels members not opened; no array-value decoding",
+  "source_access": "source definitions and explicitly allowlisted nonprediction protocol metadata for method provenance",
+  "retention": "previous historical_JSON read disclosure remains unmodified; do not claim past audits followed this newly imposed boundary",
+  "execution": "no numerical replay,training,inference,scoring,repair or nestedLOSO in this revision",
+  "future_preflight": "a numerical source-only runner that reads probabilities is outside schema/hash-only audit, requires separate explicit scope; no such execution implied by publishing draft"
+}

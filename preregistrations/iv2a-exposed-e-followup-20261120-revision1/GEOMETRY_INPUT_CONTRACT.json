@@ -1,0 +1,385 @@
+{
+  "name": "五臂几何输入契约",
+  "scope": "definitions filled from pinned source code and existing IV2aT schemas; no E read,no arrays numerically replayed",
+  "rate_hz": 250,
+  "channels": "same original22 ordered EEG columns, no remap or interpolation",
+  "alignment": "MAT trial onset0=run.trial-1; cue=onset0+500; equivalent source GDF cue marker, no target class labels needed to identify onsets",
+  "ports": {
+    "PRS_raw": {
+      "window": "[cue, cue+1000)",
+      "samples": 1000,
+      "origin": "native signal float64 retained before casting; PRS raw port float32; NO v81 4-38Hz preprocessing here",
+      "training_fixture": "PRS_UNIFORM_NEWSEEDS/data/S{h}.npz:x"
+    },
+    "hand_v81": {
+      "window": "[cue,cue+1000)",
+      "samples": 1000,
+      "transform": "float64 native window -> Butterworth order4,4–38Hz,fs250,SOS sosfiltfilt within each trial -> float32; not the unfiltered PRS port; no V81 learned reader or source-EA package used",
+      "training_fixture": "v81_signal_specific_t/inputs/data/S{h}.npz:x"
+    },
+    "strict_rest": {
+      "window": "[cue-500,cue)",
+      "samples": 500,
+      "precision": "retain native float64 as in nested.py, no v81 filter first",
+      "use": "current-trial rest covariance, no other target trial"
+    },
+    "strict_active": {
+      "window": "PRS_raw current1000samples",
+      "precision": "PRS_raw float32 then pinned filter/covariance code",
+      "use": "current-trial active covariance"
+    }
+  },
+  "covariances": {
+    "algorithm": "strict_prs_current_trial/run.py features: 4-40Hz Butterworth4 zero-phase broadband then5 band filters (8,12),(12,16),(16,20),(20,26),(26,32), XXT divided by actual window length",
+    "active_shape": [
+      288,
+      6,
+      22,
+      22
+    ],
+    "rest_shape": [
+      288,
+      6,
+      22,
+      22
+    ],
+    "wide_shape": [
+      288,
+      22,
+      1000
+    ],
+    "source_prior": "pa/pr=mean source8 people per-person active/rest means, uniform source person weights; held h excluded; source T only, arrays pinned by file hash, no E reference fitting"
+  },
+  "strict_reference": {
+    "per_fold_choice": {
+      "1": "hybrid",
+      "2": "pooled",
+      "3": "hybrid",
+      "4": "hybrid",
+      "5": "hybrid",
+      "6": "hybrid",
+      "7": "hybrid",
+      "8": "hybrid",
+      "9": "hybrid"
+    },
+    "frozen_selection_manifest_sha256": "a844091886a593d16ad02edb40d0735ad5d31f413c9f731f271799e12a75971b",
+    "formula": "reference(active,rest,pa,pr,sourceSelectedArm) from nested.py. No source choice recomputation. CURRENT trial waveform included; no target across-trial state. Apply exact prior/head/groupblend pipeline; do not substitute simple source-only constant geometry."
+  },
+  "prefix_reference": {
+    "CSP": "(2*sourcePrior + sum(C[0:t+1]))/(t+3), regularization/scaling from pinned functions",
+    "R": "4-40Hz raw,prior pseudocount2,current-inclusive covariance running sum; tangent ref source fixed",
+    "FB_SHAPE": "5band covariance cumulative sums with source prior2; exact eigen flooring,scaler,classifier from source parameters",
+    "reset": "only start each person E session; no run reset in historic72 recipe"
+  },
+  "source_geometry_schemas": [
+    {
+      "path": "D:\\BCI_builds\\prs1777_nested_locked_20261119\\cov1.npz",
+      "sha256": "0341448291abd41df67e5a6eb8a1f4afb15deb112a70aef3ad4d11ec10a7fccb",
+      "field_names": [
+        "active",
+        "rest",
+        "wide"
+      ],
+      "arrays": {
+        "active": {
+          "shape": [
+            288,
+            6,
+            22,
+            22
+          ]
+        },
+        "rest": {
+          "shape": [
+            288,
+            6,
+            22,
+            22
+          ]
+        },
+        "wide": {
+          "shape": [
+            288,
+            22,
+            1000
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\prs1777_nested_locked_20261119\\cov2.npz",
+      "sha256": "bd284e8487a63b1d17902ec57f24e301e20dbf7218778be49af9190050a22ae6",
+      "field_names": [
+        "active",
+        "rest",
+        "wide"
+      ],
+      "arrays": {
+        "active": {
+          "shape": [
+            288,
+            6,
+            22,
+            22
+          ]
+        },
+        "rest": {
+          "shape": [
+            288,
+            6,
+            22,
+            22
+          ]
+        },
+        "wide": {
+          "shape": [
+            288,
+            22,
+            1000
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\prs1777_nested_locked_20261119\\cov3.npz",
+      "sha256": "201af4db495f4770aa98488ab61f6d1f48dd408c22bb7bfc7bb1e00b860393c3",
+      "field_names": [
+        "active",
+        "rest",
+        "wide"
+      ],
+      "arrays": {
+        "active": {
+          "shape": [
+            288,
+            6,
+            22,
+            22
+          ]
+        },
+        "rest": {
+          "shape": [
+            288,
+            6,
+            22,
+            22
+          ]
+        },
+        "wide": {
+          "shape": [
+            288,
+            22,
+            1000
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\prs1777_nested_locked_20261119\\cov4.npz",
+      "sha256": "c1920a9d337829eb2861651f9ee028c93aed494b0a4dc6b2a128858ffb5d33c8",
+      "field_names": [
+        "active",
+        "rest",
+        "wide"
+      ],
+      "arrays": {
+        "active": {
+          "shape": [
+            288,
+            6,
+            22,
+            22
+          ]
+        },
+        "rest": {
+          "shape": [
+            288,
+            6,
+            22,
+            22
+          ]
+        },
+        "wide": {
+          "shape": [
+            288,
+            22,
+            1000
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\prs1777_nested_locked_20261119\\cov5.npz",
+      "sha256": "33f1bb4c21eabba4bfdff91d1d545394df32db140ae9e035c9126a10be6effd2",
+      "field_names": [
+        "active",
+        "rest",
+        "wide"
+      ],
+      "arrays": {
+        "active": {
+          "shape": [
+            288,
+            6,
+            22,
+            22
+          ]
+        },
+        "rest": {
+          "shape": [
+            288,
+            6,
+            22,
+            22
+          ]
+        },
+        "wide": {
+          "shape": [
+            288,
+            22,
+            1000
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\prs1777_nested_locked_20261119\\cov6.npz",
+      "sha256": "ac90b8abbbfaec4bc9ededa835a3d6d09e4bfbacfa622c1383b2f0479ac7167b",
+      "field_names": [
+        "active",
+        "rest",
+        "wide"
+      ],
+      "arrays": {
+        "active": {
+          "shape": [
+            288,
+            6,
+            22,
+            22
+          ]
+        },
+        "rest": {
+          "shape": [
+            288,
+            6,
+            22,
+            22
+          ]
+        },
+        "wide": {
+          "shape": [
+            288,
+            22,
+            1000
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\prs1777_nested_locked_20261119\\cov7.npz",
+      "sha256": "cd2dc8b8d84a91da9eb51a75424a698cc0810ea8e4bc2e2d332a7de109de291e",
+      "field_names": [
+        "active",
+        "rest",
+        "wide"
+      ],
+      "arrays": {
+        "active": {
+          "shape": [
+            288,
+            6,
+            22,
+            22
+          ]
+        },
+        "rest": {
+          "shape": [
+            288,
+            6,
+            22,
+            22
+          ]
+        },
+        "wide": {
+          "shape": [
+            288,
+            22,
+            1000
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\prs1777_nested_locked_20261119\\cov8.npz",
+      "sha256": "acf0f137f1b1ea80b1795c82f22c2fa739161057d6a11eab795108e855f1e40e",
+      "field_names": [
+        "active",
+        "rest",
+        "wide"
+      ],
+      "arrays": {
+        "active": {
+          "shape": [
+            288,
+            6,
+            22,
+            22
+          ]
+        },
+        "rest": {
+          "shape": [
+            288,
+            6,
+            22,
+            22
+          ]
+        },
+        "wide": {
+          "shape": [
+            288,
+            22,
+            1000
+          ]
+        }
+      }
+    },
+    {
+      "path": "D:\\BCI_builds\\prs1777_nested_locked_20261119\\cov9.npz",
+      "sha256": "d0f67f82068c597d13993c3772c90a91a1198ad48dedcc1c58e5ec7d02b2511b",
+      "field_names": [
+        "active",
+        "rest",
+        "wide"
+      ],
+      "arrays": {
+        "active": {
+          "shape": [
+            288,
+            6,
+            22,
+            22
+          ]
+        },
+        "rest": {
+          "shape": [
+            288,
+            6,
+            22,
+            22
+          ]
+        },
+        "wide": {
+          "shape": [
+            288,
+            22,
+            1000
+          ]
+        }
+      }
+    }
+  ],
+  "label_free_staging": "FUTURE only after confirmation: read signal/onset/rate metadata without opening run.y/classlabel. Standard load_session/session() reads y and is FORBIDDEN for staging; absent reviewed label-blind staging means all arms non-executable.",
+  "shape_is_not_equivalence": "matching shape and hash validation of a fixture is not a numerical replay or evidence of matched input values",
+  "status": "SOURCE_CONTRACT_DEFINED; IMPLEMENTATION_PARITY_NOT_RUN"
+}
