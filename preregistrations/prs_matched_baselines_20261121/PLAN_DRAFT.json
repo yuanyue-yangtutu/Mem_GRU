@@ -1,0 +1,123 @@
+{
+  "title": "同口径基线对比",
+  "date": "2026-11-21",
+  "timezone": "Asia/Shanghai",
+  "status": "DRAFT_NOT_EXECUTABLE_AWAITING_REVIEW",
+  "authorization": {
+    "documentation_and_public_submission": true,
+    "training": false,
+    "inference": false,
+    "smoke_execution": false,
+    "scoring": false,
+    "E_access": false,
+    "OpenBMI_target_access": false,
+    "old_PLAN_modification": false
+  },
+  "normative_document": {
+    "file": "PLAN_DRAFT.md",
+    "sha256": "fcacf9eb74f65fb364d9532ddcde8e2e88dc8bdf10847eb2aa210e0e1d494279"
+  },
+  "main_model": "five equal-weight neural experts + post-fusion current-inclusive causal bias",
+  "excluded": [
+    "historical 72.9167% candidate",
+    "full PRS multi-branch system"
+  ],
+  "baselines": [
+    "EEGNet",
+    "EEGNeX",
+    "ATCNet",
+    "EEG-Conformer",
+    "DSGNet"
+  ],
+  "training_seeds": [
+    42,
+    43,
+    44
+  ],
+  "PRS_system_repetitions": 3,
+  "PRS_experts_per_system": 5,
+  "protocols": [
+    {
+      "id": "P_T",
+      "source": "other8 T only",
+      "test": "held T288",
+      "role": "primary",
+      "source_validation": "proposed shared per-person/class75/25; compatibility blocker V1"
+    },
+    {
+      "id": "P_T_EVAL_TE",
+      "source": "same frozen P_T weights",
+      "test": "held T+E576 with independent session correction states",
+      "role": "descriptive literature-evaluation-domain contrast",
+      "extra_training_fits": 0
+    },
+    {
+      "id": "P_TE_POOL",
+      "source": "other8 T+E",
+      "test": "held T+E576",
+      "role": "conditional separate literature-protocol alternative; not automatically selected"
+    }
+  ],
+  "input": {
+    "channels": 22,
+    "sfreq": 250,
+    "samples": 1000,
+    "window": "cue+[0,4)s",
+    "external_filter": "none beyond native raw acquisition; v81 preprocessing forbidden",
+    "target_EA": false
+  },
+  "causal": {
+    "first_unchanged_trials": 20,
+    "history": "original probabilities0..t inclusive",
+    "log_clip": 1e-09,
+    "lambda_rule": ".1+20/n",
+    "uniform_target": true,
+    "L2": "lambda*sum(b*b)/C",
+    "solver": "pinned original L-BFGS-B maxiter150 gtol1e-8",
+    "expert_bias": false,
+    "prior_assumption": "depends on class-prior balance; not pure zero calibration"
+  },
+  "stats": {
+    "unit": "person; average three seed metrics within person",
+    "bootstrap_repeats": 50000,
+    "bootstrap_seed": 20261121,
+    "CI": "paired person-block percentile95%; pointwise, not simultaneous",
+    "inconclusive": "CI includes0: 无法区分",
+    "counts": "increase/decrease/tie per person",
+    "all_family_superiority_claim_authorized": false
+  },
+  "cost": {
+    "measured": false,
+    "ETA": null,
+    "primary_baseline_fits": 135,
+    "primary_PRS_component_fits": 135,
+    "primary_total_component_fits": 270,
+    "primary_gpu_hours_scenario": [
+      299.7,
+      2214
+    ],
+    "combined_with_conditional_source_TE_pool_hours": [
+      899.1,
+      6642
+    ],
+    "missing_defaults_mean_cost_unreliable": true
+  },
+  "secondary_dataset_options_only": [
+    "IV2b native training",
+    "IV2b frozen-transfer interface diagnostic",
+    "OpenBMI native training",
+    "OpenBMI frozen IV2a transfer"
+  ],
+  "blockers": [
+    "Common source validation split vs historical PRS recipe needs binding; no target-side selection permitted.",
+    "EEGNet MI batch/default kernel vs 250Hz matching adaptation not fully pinned.",
+    "EEGNeX accuracy-vs-loss monitor discrepancy and version-dependent defaults.",
+    "ATCNet original paper 1000/300 training configuration binding vs revised 500-epoch code.",
+    "DSGNet official preview lacks full training, class-alignment loss and weights, dependency and license specification; paper full text not retrieved.",
+    "PRS full five-member training recipe and three independent system repeats provenance not yet complete.",
+    "Source input units, trial IDs, scalar normalization definition and fixture hashes/tolerances need complete frozen manifest.",
+    "Exact literature pooled-source T+E protocol binding and all E access require separate future authorization.",
+    "All implementation adapters and isolated environments must be source-only validated and hashed before execution."
+  ],
+  "ready_for_execution": false
+}

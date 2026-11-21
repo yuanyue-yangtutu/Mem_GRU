@@ -1,0 +1,42 @@
+[
+  {
+    "role": "five_expert_loader",
+    "logical_source": "PriResCal_STYLE9_Best_65p2778_20261114/code/prirescal_frozen_loader.py",
+    "sha256": "5f619364b90403f764254fd52b8f317ed4263daaf4a8b2cf11cb6b6dd45570a4",
+    "bytes": 3095,
+    "source_only_or_protocol_read": true,
+    "executed": false
+  },
+  {
+    "role": "input_contract",
+    "logical_source": "BCI_builds/IV2a_E_FrozenFollowup_Revision1_20261120/GEOMETRY_INPUT_CONTRACT.json",
+    "sha256": "e207df996fee8f4091b4d91432b69b388856e0a1351e0e664ebc9d0da1766514",
+    "bytes": 9838,
+    "source_only_or_protocol_read": true,
+    "executed": false
+  },
+  {
+    "role": "bias_solver",
+    "logical_source": "stage/code/bias_rule.py",
+    "sha256": "5c791ff4787c063ff06bf970bbb7ad33e2e3476d87d311cd144465c57b0fe60b",
+    "bytes": 540,
+    "source_only_or_protocol_read": true,
+    "executed": false
+  },
+  {
+    "role": "bias_caller_inclusive",
+    "logical_source": "stage/code/worker.py",
+    "sha256": "7484d9ae324e3ed024c1bb844335674fff73a182c0a0508820ed6ef49d357f11",
+    "bytes": 11878,
+    "source_only_or_protocol_read": true,
+    "executed": false
+  },
+  {
+    "role": "original_bias_protocol",
+    "logical_source": "BCI_builds/PRS_UnlabelledBias_20261120/PLAN.json",
+    "sha256": "b7f026341d44de540aabdec2b6bb51bac611f038608143d5ba84238bed08ecc7",
+    "bytes": 491,
+    "source_only_or_protocol_read": true,
+    "executed": false
+  }
+]

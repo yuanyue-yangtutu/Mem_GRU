@@ -1,0 +1,20 @@
+{
+  "date": "2026-11-21 Asia/Shanghai",
+  "github_metadata": "Official GitHub connector verified all five repos; shallow git checkout used to obtain immutable commits and file hashes.",
+  "failures": [
+    "Unauthenticated GitHub REST API rate-limited (HTTP403); initial empty SOURCE_REPOS.json was unusable and regenerated from verified git commits. No results derived from failed API.",
+    "arXiv EEGNet HTML v5 404; official PDF v4 retrieved with web tool.",
+    "Brunel DSGNet full-text landing fetch timed out via web and SSL failed via PowerShell; indexed institution metadata found, full paper not obtained. No TLS bypass.",
+    "First narrow rg command accidentally passed PowerShell -ErrorAction to rg; it failed; no experimental result affected."
+  ],
+  "execution": {
+    "training": 0,
+    "neural_inference": 0,
+    "smoke_tests": 0,
+    "data_array_value_reads": 0,
+    "E_reads": 0,
+    "OpenBMI_target_reads": 0,
+    "label_reads": 0
+  },
+  "scope_note": "No background task, dependency installation, old PLAN edits or output hash edits. Public files contain documentation and source hashes only."
+}
