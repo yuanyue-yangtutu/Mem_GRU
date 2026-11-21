@@ -1,0 +1,13 @@
+{
+  "revision": "R3.1",
+  "type": "two-clause amendment only; not a model change",
+  "parent_commit": "1244dfb59ecd6034767ea536233cf6b6cae8c97d",
+  "parent_normative_sha256": "de06bb67a183bf93ae1427be935c990812172c4cfeef1ae672c71010fd94c0df",
+  "normative_file": "PLAN_R3_1.md",
+  "normative_sha256": "c6224b705a65c98812fc95fec469b8645214db66cf24319ac74bd8289f58de45",
+  "semantic_changes": [
+    "seed-major schedule",
+    "hardware thermal-stop trigger; throttle flags record only"
+  ],
+  "frozen_configs_sha256": "4d56aa9edbab55620de4a6d4c3d7b42920a56831baa2c8514394b9ebaef7f09a"
+}

@@ -1,0 +1,488 @@
+[
+  {
+    "fit_id": "EEGNet_H01_seed42",
+    "model": "EEGNet",
+    "held": 1,
+    "seed": 42
+  },
+  {
+    "fit_id": "EEGNet_H02_seed42",
+    "model": "EEGNet",
+    "held": 2,
+    "seed": 42
+  },
+  {
+    "fit_id": "EEGNet_H03_seed42",
+    "model": "EEGNet",
+    "held": 3,
+    "seed": 42
+  },
+  {
+    "fit_id": "EEGNet_H04_seed42",
+    "model": "EEGNet",
+    "held": 4,
+    "seed": 42
+  },
+  {
+    "fit_id": "EEGNet_H05_seed42",
+    "model": "EEGNet",
+    "held": 5,
+    "seed": 42
+  },
+  {
+    "fit_id": "EEGNet_H06_seed42",
+    "model": "EEGNet",
+    "held": 6,
+    "seed": 42
+  },
+  {
+    "fit_id": "EEGNet_H07_seed42",
+    "model": "EEGNet",
+    "held": 7,
+    "seed": 42
+  },
+  {
+    "fit_id": "EEGNet_H08_seed42",
+    "model": "EEGNet",
+    "held": 8,
+    "seed": 42
+  },
+  {
+    "fit_id": "EEGNet_H09_seed42",
+    "model": "EEGNet",
+    "held": 9,
+    "seed": 42
+  },
+  {
+    "fit_id": "EEGNeX_H01_seed42",
+    "model": "EEGNeX",
+    "held": 1,
+    "seed": 42
+  },
+  {
+    "fit_id": "EEGNeX_H02_seed42",
+    "model": "EEGNeX",
+    "held": 2,
+    "seed": 42
+  },
+  {
+    "fit_id": "EEGNeX_H03_seed42",
+    "model": "EEGNeX",
+    "held": 3,
+    "seed": 42
+  },
+  {
+    "fit_id": "EEGNeX_H04_seed42",
+    "model": "EEGNeX",
+    "held": 4,
+    "seed": 42
+  },
+  {
+    "fit_id": "EEGNeX_H05_seed42",
+    "model": "EEGNeX",
+    "held": 5,
+    "seed": 42
+  },
+  {
+    "fit_id": "EEGNeX_H06_seed42",
+    "model": "EEGNeX",
+    "held": 6,
+    "seed": 42
+  },
+  {
+    "fit_id": "EEGNeX_H07_seed42",
+    "model": "EEGNeX",
+    "held": 7,
+    "seed": 42
+  },
+  {
+    "fit_id": "EEGNeX_H08_seed42",
+    "model": "EEGNeX",
+    "held": 8,
+    "seed": 42
+  },
+  {
+    "fit_id": "EEGNeX_H09_seed42",
+    "model": "EEGNeX",
+    "held": 9,
+    "seed": 42
+  },
+  {
+    "fit_id": "ATCNet_H01_seed42",
+    "model": "ATCNet",
+    "held": 1,
+    "seed": 42
+  },
+  {
+    "fit_id": "ATCNet_H02_seed42",
+    "model": "ATCNet",
+    "held": 2,
+    "seed": 42
+  },
+  {
+    "fit_id": "ATCNet_H03_seed42",
+    "model": "ATCNet",
+    "held": 3,
+    "seed": 42
+  },
+  {
+    "fit_id": "ATCNet_H04_seed42",
+    "model": "ATCNet",
+    "held": 4,
+    "seed": 42
+  },
+  {
+    "fit_id": "ATCNet_H05_seed42",
+    "model": "ATCNet",
+    "held": 5,
+    "seed": 42
+  },
+  {
+    "fit_id": "ATCNet_H06_seed42",
+    "model": "ATCNet",
+    "held": 6,
+    "seed": 42
+  },
+  {
+    "fit_id": "ATCNet_H07_seed42",
+    "model": "ATCNet",
+    "held": 7,
+    "seed": 42
+  },
+  {
+    "fit_id": "ATCNet_H08_seed42",
+    "model": "ATCNet",
+    "held": 8,
+    "seed": 42
+  },
+  {
+    "fit_id": "ATCNet_H09_seed42",
+    "model": "ATCNet",
+    "held": 9,
+    "seed": 42
+  },
+  {
+    "fit_id": "EEGNet_H01_seed43",
+    "model": "EEGNet",
+    "held": 1,
+    "seed": 43
+  },
+  {
+    "fit_id": "EEGNet_H02_seed43",
+    "model": "EEGNet",
+    "held": 2,
+    "seed": 43
+  },
+  {
+    "fit_id": "EEGNet_H03_seed43",
+    "model": "EEGNet",
+    "held": 3,
+    "seed": 43
+  },
+  {
+    "fit_id": "EEGNet_H04_seed43",
+    "model": "EEGNet",
+    "held": 4,
+    "seed": 43
+  },
+  {
+    "fit_id": "EEGNet_H05_seed43",
+    "model": "EEGNet",
+    "held": 5,
+    "seed": 43
+  },
+  {
+    "fit_id": "EEGNet_H06_seed43",
+    "model": "EEGNet",
+    "held": 6,
+    "seed": 43
+  },
+  {
+    "fit_id": "EEGNet_H07_seed43",
+    "model": "EEGNet",
+    "held": 7,
+    "seed": 43
+  },
+  {
+    "fit_id": "EEGNet_H08_seed43",
+    "model": "EEGNet",
+    "held": 8,
+    "seed": 43
+  },
+  {
+    "fit_id": "EEGNet_H09_seed43",
+    "model": "EEGNet",
+    "held": 9,
+    "seed": 43
+  },
+  {
+    "fit_id": "EEGNeX_H01_seed43",
+    "model": "EEGNeX",
+    "held": 1,
+    "seed": 43
+  },
+  {
+    "fit_id": "EEGNeX_H02_seed43",
+    "model": "EEGNeX",
+    "held": 2,
+    "seed": 43
+  },
+  {
+    "fit_id": "EEGNeX_H03_seed43",
+    "model": "EEGNeX",
+    "held": 3,
+    "seed": 43
+  },
+  {
+    "fit_id": "EEGNeX_H04_seed43",
+    "model": "EEGNeX",
+    "held": 4,
+    "seed": 43
+  },
+  {
+    "fit_id": "EEGNeX_H05_seed43",
+    "model": "EEGNeX",
+    "held": 5,
+    "seed": 43
+  },
+  {
+    "fit_id": "EEGNeX_H06_seed43",
+    "model": "EEGNeX",
+    "held": 6,
+    "seed": 43
+  },
+  {
+    "fit_id": "EEGNeX_H07_seed43",
+    "model": "EEGNeX",
+    "held": 7,
+    "seed": 43
+  },
+  {
+    "fit_id": "EEGNeX_H08_seed43",
+    "model": "EEGNeX",
+    "held": 8,
+    "seed": 43
+  },
+  {
+    "fit_id": "EEGNeX_H09_seed43",
+    "model": "EEGNeX",
+    "held": 9,
+    "seed": 43
+  },
+  {
+    "fit_id": "ATCNet_H01_seed43",
+    "model": "ATCNet",
+    "held": 1,
+    "seed": 43
+  },
+  {
+    "fit_id": "ATCNet_H02_seed43",
+    "model": "ATCNet",
+    "held": 2,
+    "seed": 43
+  },
+  {
+    "fit_id": "ATCNet_H03_seed43",
+    "model": "ATCNet",
+    "held": 3,
+    "seed": 43
+  },
+  {
+    "fit_id": "ATCNet_H04_seed43",
+    "model": "ATCNet",
+    "held": 4,
+    "seed": 43
+  },
+  {
+    "fit_id": "ATCNet_H05_seed43",
+    "model": "ATCNet",
+    "held": 5,
+    "seed": 43
+  },
+  {
+    "fit_id": "ATCNet_H06_seed43",
+    "model": "ATCNet",
+    "held": 6,
+    "seed": 43
+  },
+  {
+    "fit_id": "ATCNet_H07_seed43",
+    "model": "ATCNet",
+    "held": 7,
+    "seed": 43
+  },
+  {
+    "fit_id": "ATCNet_H08_seed43",
+    "model": "ATCNet",
+    "held": 8,
+    "seed": 43
+  },
+  {
+    "fit_id": "ATCNet_H09_seed43",
+    "model": "ATCNet",
+    "held": 9,
+    "seed": 43
+  },
+  {
+    "fit_id": "EEGNet_H01_seed44",
+    "model": "EEGNet",
+    "held": 1,
+    "seed": 44
+  },
+  {
+    "fit_id": "EEGNet_H02_seed44",
+    "model": "EEGNet",
+    "held": 2,
+    "seed": 44
+  },
+  {
+    "fit_id": "EEGNet_H03_seed44",
+    "model": "EEGNet",
+    "held": 3,
+    "seed": 44
+  },
+  {
+    "fit_id": "EEGNet_H04_seed44",
+    "model": "EEGNet",
+    "held": 4,
+    "seed": 44
+  },
+  {
+    "fit_id": "EEGNet_H05_seed44",
+    "model": "EEGNet",
+    "held": 5,
+    "seed": 44
+  },
+  {
+    "fit_id": "EEGNet_H06_seed44",
+    "model": "EEGNet",
+    "held": 6,
+    "seed": 44
+  },
+  {
+    "fit_id": "EEGNet_H07_seed44",
+    "model": "EEGNet",
+    "held": 7,
+    "seed": 44
+  },
+  {
+    "fit_id": "EEGNet_H08_seed44",
+    "model": "EEGNet",
+    "held": 8,
+    "seed": 44
+  },
+  {
+    "fit_id": "EEGNet_H09_seed44",
+    "model": "EEGNet",
+    "held": 9,
+    "seed": 44
+  },
+  {
+    "fit_id": "EEGNeX_H01_seed44",
+    "model": "EEGNeX",
+    "held": 1,
+    "seed": 44
+  },
+  {
+    "fit_id": "EEGNeX_H02_seed44",
+    "model": "EEGNeX",
+    "held": 2,
+    "seed": 44
+  },
+  {
+    "fit_id": "EEGNeX_H03_seed44",
+    "model": "EEGNeX",
+    "held": 3,
+    "seed": 44
+  },
+  {
+    "fit_id": "EEGNeX_H04_seed44",
+    "model": "EEGNeX",
+    "held": 4,
+    "seed": 44
+  },
+  {
+    "fit_id": "EEGNeX_H05_seed44",
+    "model": "EEGNeX",
+    "held": 5,
+    "seed": 44
+  },
+  {
+    "fit_id": "EEGNeX_H06_seed44",
+    "model": "EEGNeX",
+    "held": 6,
+    "seed": 44
+  },
+  {
+    "fit_id": "EEGNeX_H07_seed44",
+    "model": "EEGNeX",
+    "held": 7,
+    "seed": 44
+  },
+  {
+    "fit_id": "EEGNeX_H08_seed44",
+    "model": "EEGNeX",
+    "held": 8,
+    "seed": 44
+  },
+  {
+    "fit_id": "EEGNeX_H09_seed44",
+    "model": "EEGNeX",
+    "held": 9,
+    "seed": 44
+  },
+  {
+    "fit_id": "ATCNet_H01_seed44",
+    "model": "ATCNet",
+    "held": 1,
+    "seed": 44
+  },
+  {
+    "fit_id": "ATCNet_H02_seed44",
+    "model": "ATCNet",
+    "held": 2,
+    "seed": 44
+  },
+  {
+    "fit_id": "ATCNet_H03_seed44",
+    "model": "ATCNet",
+    "held": 3,
+    "seed": 44
+  },
+  {
+    "fit_id": "ATCNet_H04_seed44",
+    "model": "ATCNet",
+    "held": 4,
+    "seed": 44
+  },
+  {
+    "fit_id": "ATCNet_H05_seed44",
+    "model": "ATCNet",
+    "held": 5,
+    "seed": 44
+  },
+  {
+    "fit_id": "ATCNet_H06_seed44",
+    "model": "ATCNet",
+    "held": 6,
+    "seed": 44
+  },
+  {
+    "fit_id": "ATCNet_H07_seed44",
+    "model": "ATCNet",
+    "held": 7,
+    "seed": 44
+  },
+  {
+    "fit_id": "ATCNet_H08_seed44",
+    "model": "ATCNet",
+    "held": 8,
+    "seed": 44
+  },
+  {
+    "fit_id": "ATCNet_H09_seed44",
+    "model": "ATCNet",
+    "held": 9,
+    "seed": 44
+  }
+]

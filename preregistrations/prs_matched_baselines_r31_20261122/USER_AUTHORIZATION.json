@@ -1,0 +1,27 @@
+{
+  "date": "2026-11-22 Asia/Shanghai",
+  "scope": "stage1 source-only training",
+  "condition": "publish R3.1 and anonymously verify exact bytes and exactly two normative differences before any source load",
+  "models": [
+    "EEGNet",
+    "EEGNeX",
+    "ATCNet"
+  ],
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "folds": 9,
+  "formal_training": true,
+  "target_inference": false,
+  "target_scoring": false,
+  "held_reads": false,
+  "E_OpenBMI_reads": false,
+  "PPU": false,
+  "budget_GPU_hours": 80,
+  "prior_probe_charge_hours": 0.0132828877777744,
+  "fit_restart": "whole fit only; complete fits retained; interrupted attempts retained not reused",
+  "PRS_fixture_inference": "not authorized or required for baseline-source training; old gate remains unrun",
+  "stop_after_training": true
+}

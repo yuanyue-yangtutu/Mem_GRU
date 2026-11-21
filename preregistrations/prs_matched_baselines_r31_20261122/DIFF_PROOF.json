@@ -1,0 +1,22 @@
+{
+  "parent_commit": "1244dfb59ecd6034767ea536233cf6b6cae8c97d",
+  "parent_MD_SHA256": "de06bb67a183bf93ae1427be935c990812172c4cfeef1ae672c71010fd94c0df",
+  "parent_JSON_SHA256": "b864e41f4bd5d51e8cbba36aa5c1fc3a138d57ceb9bdce9efdfef43339fad122",
+  "changes": [
+    {
+      "name": "seed-major schedule",
+      "old": "阶段1拟仍为EEGNet/EEGNeX/ATCNet各9折×3seed（42/43/44），合计81个正式fit；",
+      "new": "阶段1拟仍为EEGNet/EEGNeX/ATCNet各9折×3seed（42/43/44），合计81个正式fit；调度固定为seed-major：先完成seed42的全部模型×折，再seed43，再seed44；每个seed内按EEGNet、EEGNeX、ATCNet，每模型按留出S1到S9；"
+    },
+    {
+      "name": "hardware thermal-stop trigger; throttle flags record only",
+      "old": "- 建议正式门槛（待R3确认）：thermal标志持续≥30秒或核心温度≥85°C持续≥30秒，停止当前fit并记录，不自动重跑；单纯GPU_idle不触发，power-cap单列。必须保留全部原始时序，不能删除低频区间来提高吞吐估计。持续限制需先排查供电/散热，再用新的整fit attempt；不能靠降batch、lr等改科学配置。",
+      "new": "- R3.1正式门槛：硬件/热停止仅在核心温度≥85°C持续≥30秒、交流断开、睡眠/休眠或驱动报错时触发；GPU限频标志（包括thermal、power-cap和idle）只记录，不触发停止。本条同时约束第6节“持续限频异常”的解释；数据拒绝、哈希错误、训练故障与80小时预算停止规则保持不变。停止当前fit并记录，不自动重跑；保留全部原始时序，不删除低频区间，不靠降batch、lr等改科学配置。"
+    }
+  ],
+  "reconstructed_equals_R31": true,
+  "reverse_equals_parent": true,
+  "unchanged_model_factory": true,
+  "unchanged_source_pipeline": true,
+  "note": "exactly two normative textual substitutions; historical draft/status wording retained as history. Separate user authorization activates source-only stage1, not any target inference."
+}

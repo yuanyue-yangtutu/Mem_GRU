@@ -1,0 +1,73 @@
+{
+  "hash_object": "exact bytes in the Git commit",
+  "files": {
+    ".gitattributes": {
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+      "bytes": 8
+    },
+    "access_guard.py": {
+      "sha256": "668b55be0f6cfd6ee81584ac20b423e64ccf3b4e9b6270baab394c33cc5322ba",
+      "bytes": 1605
+    },
+    "baseline_factory.py": {
+      "sha256": "5c6129981e6662043811d43c1ab8d667b787c7ddf58f8048147ac989a15a7845",
+      "bytes": 3877
+    },
+    "common.py": {
+      "sha256": "8253c77b6e6df398adfb7f4115f1914917196dab4c5a898b04f3f923a667b1ab",
+      "bytes": 1265
+    },
+    "controller.py": {
+      "sha256": "c06462de18952c6ba0d6c21d7cbdcbb13a152e98174e1c77be5993325aeaf3b2",
+      "bytes": 8715
+    },
+    "dashboard.pyw": {
+      "sha256": "7d770dbef133035d2131de3d6376d3a0a598be4fa93ed91a84f3083cd7650c19",
+      "bytes": 1468
+    },
+    "DIFF_PROOF.json": {
+      "sha256": "57622c8e8a812ff46d92f9b5f8790a6c0dfa346a5bfe6590504aff00cb00cc01",
+      "bytes": 2038
+    },
+    "ENGINEERING_CONTRACT.json": {
+      "sha256": "1b00972f152e6f4100c057b984c0e92460ccdebf4563dd381aec9fa80f974db0",
+      "bytes": 1539
+    },
+    "EXECUTION_BINDINGS.json": {
+      "sha256": "faf3398f609e77fa611e9988836aae05ce8a35eca05c987a12a63a935e0de422",
+      "bytes": 4704
+    },
+    "FROZEN_CONFIGS.json": {
+      "sha256": "4d56aa9edbab55620de4a6d4c3d7b42920a56831baa2c8514394b9ebaef7f09a",
+      "bytes": 6808
+    },
+    "PLAN_R3_1.md": {
+      "sha256": "c6224b705a65c98812fc95fec469b8645214db66cf24319ac74bd8289f58de45",
+      "bytes": 15190
+    },
+    "prepare_release.py": {
+      "sha256": "329c2af076e113526bdd0f06c3ab29dbd5f73f0f7f55c594108008ced9b0ede7",
+      "bytes": 7145
+    },
+    "QUEUE.json": {
+      "sha256": "94d9b7600c88282fee87430277394dc9e4ba0637e5f84f238a82881ec0dc35aa",
+      "bytes": 7860
+    },
+    "R3_1.json": {
+      "sha256": "759f10c48916c0f5184c5615bcad1425d2c485fc66e6d27c4567f181db63af92",
+      "bytes": 585
+    },
+    "source_pipeline.py": {
+      "sha256": "b97055927961f0c13f1b38a31d20466dcddacdf67b0b740934d6c143bd17e6b6",
+      "bytes": 5353
+    },
+    "train_worker.py": {
+      "sha256": "9ab3b69ea52f1961b5ee4cb80711e451fbcbf1356294dee0d6aaa2ece99fd420",
+      "bytes": 6720
+    },
+    "USER_AUTHORIZATION.json": {
+      "sha256": "c4f625b09185b42d947ea8d774334566fa33136a25addfd2c22aaeea2d8f0453",
+      "bytes": 793
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "source_access": "exact current-fit eight source T paths; no held loader; Python audit not OS/DLL sandbox",
+  "split": "same fixed PCG64 split_seed20261221, ascending current source owners, each class54/18, all models/seeds same fold split",
+  "normalization": "unchanged R3 scalar source-train-only mean/std; no validation fit",
+  "metadata_note": "reused pipeline contains historical owner2..9 split_algorithm prose; current registration/source_owners lists are authoritative for other held folds; algorithm unchanged",
+  "max_budget": "process-start-to-exit single-card wall, all success/failure attempts + prior source probe, hard cap80; reserve max next-fit budget before launch",
+  "sleep_detection": "power policy snapshot + 5s wall/monotonic sampling; >20s monitoring gap conservatively interrupts as possible sleep/hibernate; not claimed OS-complete event audit",
+  "telemetry": "5s AC/battery/core-temp/clocks/power/utilization/throttle mask; mask is record-only",
+  "model_checkpoint": "earliest strict best source val_loss for EEGNet, source val_accuracy others; scheduler/ES same frozen config; completion marker after file hashes",
+  "output": "local source logs, best weights, model-config, source normalizer, train/val manifest, per-fit completion hashes; no target predictions",
+  "dashboard": "detached Tk viewer; closing never stops controller; batch progress throttled2s, overall model median ETA once measured",
+  "storage": "new TEMP/TMP/CUDA cache on E under run directory; original research assets untouched"
+}
