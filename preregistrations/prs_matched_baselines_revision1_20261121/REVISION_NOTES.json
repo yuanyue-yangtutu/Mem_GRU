@@ -1,0 +1,36 @@
+{
+  "supersedes_draft_commit": "0d0aee60b91f597a1f72b6b65f1dac441f08e2ee",
+  "old_files_unchanged": true,
+  "hash_erratum": {
+    "old_public_sha256": "a1077cbac0b7633756fa92f4290eba40216f8ef8697f91ed194037955d77abb6",
+    "old_manifest_local_sha256": "01a5665d4ba7367b2800925256686458ce95363ea4574425070b8bd92a63aeca",
+    "public_CRLF": 0,
+    "local_CRLF": 123,
+    "differ_only_by_CRLF": true,
+    "previous_API_text_equality_claim_withdrawn": true
+  },
+  "changes": [
+    "Hash exact Git-commit bytes; LF/noBOM; scoped .gitattributes; anonymous verifier",
+    "DSGNet full paper facts added, missing implementation details retained; literature only",
+    "Replace pooled T+E source training with sourceT training/sourceE validation/heldTE test",
+    "IV2b literature uses all5 sessions, unlike retained T12 scope",
+    "Stage1 three baseline models×3seeds plus historical single frozen PRS",
+    "Stage2 optional separately confirmed three-system PRS retraining",
+    "Explicit budget/card/stage2/literature-arm decision list"
+  ],
+  "execution": {
+    "training": 0,
+    "smoke": 0,
+    "inference": 0,
+    "scoring": 0,
+    "E_reads": 0,
+    "OpenBMI_target_reads": 0,
+    "label_reads": 0
+  },
+  "retrieval": {
+    "DSGNet_full_text": "downloaded via TLS curl after web timeouts; no TLS bypass",
+    "PDF_skill_path": "official bundled PDF skill; initial wrong alias path corrected",
+    "installations": 0,
+    "subagents": 0
+  }
+}

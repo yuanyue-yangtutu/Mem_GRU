@@ -1,0 +1,18 @@
+{
+  "title": "Subject-Independent Deep Learning Framework for Motor Imagery Electroencephalogram Decoding in Neurorehabilitation",
+  "DOI": "10.1109/JBHI.2026.3689121",
+  "url": "https://bura.brunel.ac.uk/bitstream/2438/33344/3/FullText.pdf",
+  "sha256": "1154d98ea6d8329642836f545af2c9dcf7a9b5c99ff32183c9b8d214f303f6e5",
+  "bytes": 4412120,
+  "pages": 13,
+  "hash_object": "downloaded publisher/author PDF bytes, not a file published in this Git package",
+  "visual_pages_reviewed": [
+    3,
+    4,
+    7,
+    11,
+    12
+  ],
+  "extraction": "bundled pypdf; visual render through bundled pdfplumber; no installations",
+  "source_code_commit": "6ab313824b20471229da727a8ef1383ecc4cfbd6"
+}

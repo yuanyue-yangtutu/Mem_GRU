@@ -1,0 +1,62 @@
+[
+  {
+    "model": "EEGNet",
+    "repository": "vlawhern/arl-eegmodels",
+    "commit": "4a512e503198db2010848813ead9afbf8cd54c97",
+    "commit_time": "2022-05-02T08:42:59-04:00",
+    "commit_url": "https://github.com/vlawhern/arl-eegmodels/commit/4a512e503198db2010848813ead9afbf8cd54c97",
+    "tracked_file_count": 6,
+    "hashed_text_files": 5,
+    "code_executed": false,
+    "source_license_verification": "upstream license file preserved and hashed; no source redistribution in this package",
+    "source_hash_object": "upstream Git-commit blob bytes, not local checkout bytes"
+  },
+  {
+    "model": "EEGNeX",
+    "repository": "chenxiachan/EEGNeX",
+    "commit": "044d7fb2a5b953c7004f30fe45db40d1ce57af5c",
+    "commit_time": "2023-09-14T10:26:02+02:00",
+    "commit_url": "https://github.com/chenxiachan/EEGNeX/commit/044d7fb2a5b953c7004f30fe45db40d1ce57af5c",
+    "tracked_file_count": 8,
+    "hashed_text_files": 4,
+    "code_executed": false,
+    "source_license_verification": "upstream license file preserved and hashed; no source redistribution in this package",
+    "source_hash_object": "upstream Git-commit blob bytes, not local checkout bytes"
+  },
+  {
+    "model": "ATCNet",
+    "repository": "Altaheri/EEG-ATCNet",
+    "commit": "65162fb359ea46a2f62c885a9987247ab491ee7a",
+    "commit_time": "2026-08-16T03:38:48+03:00",
+    "commit_url": "https://github.com/Altaheri/EEG-ATCNet/commit/65162fb359ea46a2f62c885a9987247ab491ee7a",
+    "tracked_file_count": 25,
+    "hashed_text_files": 10,
+    "code_executed": false,
+    "source_license_verification": "upstream license file preserved and hashed; no source redistribution in this package",
+    "source_hash_object": "upstream Git-commit blob bytes, not local checkout bytes"
+  },
+  {
+    "model": "EEG-Conformer",
+    "repository": "eeyhsong/EEG-Conformer",
+    "commit": "9ae149ba62487ceae723277d13adac27837113d2",
+    "commit_time": "2024-07-24T22:39:12+08:00",
+    "commit_url": "https://github.com/eeyhsong/EEG-Conformer/commit/9ae149ba62487ceae723277d13adac27837113d2",
+    "tracked_file_count": 21,
+    "hashed_text_files": 11,
+    "code_executed": false,
+    "source_license_verification": "upstream license file preserved and hashed; no source redistribution in this package",
+    "source_hash_object": "upstream Git-commit blob bytes, not local checkout bytes"
+  },
+  {
+    "model": "DSGNet",
+    "repository": "xicheng105/DSGNet",
+    "commit": "6ab313824b20471229da727a8ef1383ecc4cfbd6",
+    "commit_time": "2025-06-25T22:34:21+08:00",
+    "commit_url": "https://github.com/xicheng105/DSGNet/commit/6ab313824b20471229da727a8ef1383ecc4cfbd6",
+    "tracked_file_count": 3,
+    "hashed_text_files": 3,
+    "code_executed": false,
+    "source_license_verification": "no license file in preview; unresolved",
+    "source_hash_object": "upstream Git-commit blob bytes, not local checkout bytes"
+  }
+]

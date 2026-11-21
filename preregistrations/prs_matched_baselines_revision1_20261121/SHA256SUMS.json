@@ -1,0 +1,51 @@
+{
+  "hash_object": "exact bytes in the Git commit",
+  "encoding": "UTF-8 without BOM, LF; .gitattributes * -text scoped to this package",
+  "self_hash": "excluded to avoid recursion; manifest SHA256 and full commit recorded in anonymous verification receipt",
+  "files": {
+    ".gitattributes": {
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+      "bytes": 8
+    },
+    "PLAN_DRAFT.md": {
+      "sha256": "d654faa52de3b1e38bd562cb51b267464dfef53cb19f6ef8eeb7c0f44ec3053c",
+      "bytes": 23155
+    },
+    "PLAN_DRAFT.json": {
+      "sha256": "05e1d0c093f64648a8afb4ab0b21d8fa8043c80e51e4870fa49c7c2ebaf02bf5",
+      "bytes": 3947
+    },
+    "SOURCE_REPOS.json": {
+      "sha256": "061b3546e79af4ad0b0a9f61809e85eeef432dd913763c9f2ec41ef258ef0442",
+      "bytes": 2874
+    },
+    "SOURCE_FILES_SHA256.json": {
+      "sha256": "7816c167b30eae697302f6596e2df039a405d93339bdf97c16e8866e6f80cc9c",
+      "bytes": 15173
+    },
+    "LOCAL_SOURCE_REFERENCES.json": {
+      "sha256": "2674dbf922b424629cdd5894349ff6fc6229ca0c36623ad9da77b104fab42153",
+      "bytes": 1653
+    },
+    "PAPER_REFERENCE.json": {
+      "sha256": "baf70a536f4a70ec9ce304b2a450dce38b99fccc74c23d64a1466acfcaa96481",
+      "bytes": 690
+    },
+    "DEFAULTS_AND_BLOCKERS.json": {
+      "sha256": "a005959937eb4011b3bd0e752ad02b38f04c1fccc595a51e101d0c421c63bad3",
+      "bytes": 5356
+    },
+    "REVISION_NOTES.json": {
+      "sha256": "69b8e498e4f3976a04099a07057f6a0904751a1123cdc9824d802adae6fb1f97",
+      "bytes": 1442
+    },
+    "build_revision_package.py": {
+      "sha256": "6609dbf97c286a4570e0bd669570bdbf23efa56a454c29fde18dd765260e8e78",
+      "bytes": 12678
+    },
+    "verify_anonymous.py": {
+      "sha256": "8894670d3c0b2d14f2d02f77a37eaee467644bfef408b38bdefc8c1015cd0296",
+      "bytes": 3320
+    }
+  }
+}

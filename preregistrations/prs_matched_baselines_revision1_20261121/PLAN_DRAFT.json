@@ -1,0 +1,148 @@
+{
+  "title": "同口径基线对比",
+  "revision": "R1",
+  "date": "2026-11-21",
+  "timezone": "Asia/Shanghai",
+  "status": "DRAFT_NOT_EXECUTABLE_AWAITING_REVIEW",
+  "hash_object": "exact bytes in the Git commit",
+  "normative_document": {
+    "file": "PLAN_DRAFT.md",
+    "sha256": "d654faa52de3b1e38bd562cb51b267464dfef53cb19f6ef8eeb7c0f44ec3053c"
+  },
+  "authorization": {
+    "document_revision_and_publication": true,
+    "training": false,
+    "smoke": false,
+    "inference": false,
+    "scoring": false,
+    "E_access": false,
+    "OpenBMI_target_access": false,
+    "old_PLAN_changes": false
+  },
+  "stage1": {
+    "protocol": "P_T",
+    "required_baselines": [
+      "EEGNet",
+      "EEGNeX",
+      "ATCNet"
+    ],
+    "optional": [
+      "EEG-Conformer"
+    ],
+    "excluded_matched": [
+      "DSGNet"
+    ],
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "training_fits": 81,
+    "PRS": "historical frozen SINGLE five-expert system across9 panels; no retraining; tuned on development cohort, not equivalent to new baselines",
+    "readout": "person means of baseline three-seed metrics; PRS single-system metrics; raw/corrected; PRS-vs-baseline contrasts exploratory and selection-biased",
+    "GPU_hours": {
+      "training": [
+        43.2,
+        270
+      ],
+      "PRS_forward": [
+        0.25,
+        2
+      ],
+      "baseline_forward": [
+        1,
+        6
+      ],
+      "total": [
+        44.45,
+        278
+      ],
+      "optional_Conformer_training": [
+        108,
+        648
+      ]
+    }
+  },
+  "stage2": {
+    "optional": true,
+    "separate_confirmation": true,
+    "PRS_system_repetitions": 3,
+    "components_per_system": 5,
+    "folds": 9,
+    "component_fits": 135,
+    "GPU_hours": {
+      "training": [
+        135,
+        1080
+      ],
+      "forward": [
+        0.75,
+        6
+      ],
+      "total": [
+        135.75,
+        1086
+      ]
+    },
+    "readout": "same source split/checkpoint boundaries; average three system metrics within person; not independent blind confirmation"
+  },
+  "protocols": {
+    "P_T": {
+      "source_train": "source8 T 75%",
+      "source_validation": "source8 T25%",
+      "test": "held T288",
+      "E_forbidden": true
+    },
+    "P_LIT_TTRAIN_EVAL_TE_TEST": {
+      "optional": true,
+      "separate_confirmation_and_E_authorization": true,
+      "source_train": "source8 T only",
+      "source_validation": "source8 E only",
+      "test": "held T+E576",
+      "replaces": "P_TE_POOL, which incorrectly pooled sourceT+E for training",
+      "GPU_hours_three_baselines": [
+        66.8,
+        687
+      ],
+      "GPU_hours_PRS_three_repeats": [
+        204,
+        2712
+      ]
+    },
+    "IV2b_literature": {
+      "train": "source sessions1–3T",
+      "validation": "source sessions4–5E",
+      "test": "held all5",
+      "relation": "different from retained sessions1/2T; no access authorization"
+    }
+  },
+  "causal": {
+    "history": "original probabilities0..t inclusive",
+    "first20_unchanged": true,
+    "log_clip": 1e-09,
+    "lambda_rule": ".1+20/n",
+    "L2": "lambda*sum(b*b)/C",
+    "solver": "original pinned L-BFGS-B maxiter150/gtol1e-8; framework defaults must bind",
+    "fusion_level": "one post-fusion correction",
+    "class_prior": "uniform, assumes balance; NOT pure zero calibration"
+  },
+  "statistics": {
+    "unit": "subject, not subject×seed",
+    "bootstrap": 50000,
+    "seed": 20261121,
+    "CI": "paired-block percentile95% pointwise",
+    "crosses_zero": "无法区分",
+    "lower_positive_mean_under1pp": "方向一致、幅度小",
+    "historical_selection_bias_not_removed": true
+  },
+  "user_decisions": {
+    "budget_cap_GPU_hours_or_money": null,
+    "GPU_model_VRAM_count_and_availability": null,
+    "stage2": null,
+    "literature_arm_and_E_scope": null,
+    "optional_Conformer": "not included unless explicitly selected"
+  },
+  "measured_budget": false,
+  "ETA": null,
+  "ready_for_execution": false
+}

@@ -1,0 +1,206 @@
+{
+  "DSGNet": {
+    "status": "literature_reference_only_excluded_from_matched_training",
+    "facts": [
+      {
+        "field": "optimizer",
+        "value": "Adam",
+        "source": "论文原文",
+        "page": 7,
+        "missing": "betas/epsilon/version binding"
+      },
+      {
+        "field": "learning_rate",
+        "value": 0.0001,
+        "source": "论文原文",
+        "page": 7
+      },
+      {
+        "field": "batch",
+        "value": 128,
+        "source": "论文原文",
+        "page": 7,
+        "qualification": "standard classification; same paragraph says32 per subject for subject-wise DA/DG; sampler unclear"
+      },
+      {
+        "field": "epochs",
+        "value": 500,
+        "source": "论文原文",
+        "page": 7
+      },
+      {
+        "field": "lambda2",
+        "value": 0.01,
+        "source": "论文原文",
+        "pages": [
+          7,
+          12
+        ]
+      },
+      {
+        "field": "lambda1",
+        "value": 1.1,
+        "source": "论文原文",
+        "pages": [
+          11,
+          12
+        ],
+        "selection_history": "IV2a LOSO sensitivity analysis; not independently nested parameter selection"
+      },
+      {
+        "field": "windows_stride_depth_kernel",
+        "value": [
+          6,
+          1,
+          4,
+          4
+        ],
+        "source": "论文原文＋代码预览",
+        "pages": [
+          11,
+          12
+        ],
+        "selection_history": "IV2a sensitivity; temp_model.py DSGNet.__init__"
+      },
+      {
+        "field": "initial_filters_kernels",
+        "value": {
+          "temporal": [
+            8,
+            64
+          ],
+          "spectral": [
+            16,
+            96
+          ]
+        },
+        "source": "论文原文＋代码预览",
+        "page": 4
+      },
+      {
+        "field": "depthwise_separable",
+        "value": {
+          "depth_multiplier": 2,
+          "spatial": "E×1",
+          "temporal_separable": 16,
+          "spectral_separable": 24
+        },
+        "source": "论文原文＋代码预览",
+        "page": 4
+      },
+      {
+        "field": "pooling",
+        "value": {
+          "temporal": "average",
+          "spectral": "max"
+        },
+        "source": "论文原文＋代码预览",
+        "pages": [
+          4,
+          11
+        ]
+      },
+      {
+        "field": "pool_widths",
+        "value": {
+          "temporal": [
+            4,
+            8
+          ],
+          "spectral": [
+            6,
+            12
+          ]
+        },
+        "source": "代码预览推导",
+        "location": "_LC_Block kernel_length//16 and//8",
+        "paper_value_missing": true
+      },
+      {
+        "field": "dropout",
+        "value": {
+          "paper": null,
+          "preview": 0.25
+        },
+        "source": "代码预览；论文训练配置缺失",
+        "blocking": true
+      },
+      {
+        "field": "SE_reduction",
+        "value": {
+          "paper_ratio": null,
+          "preview_hidden_dimension": 2
+        },
+        "source": "代码预览；论文训练配置缺失",
+        "qualification": "seize=2 is hidden dimension, not reduction ratio2",
+        "blocking": true
+      },
+      {
+        "field": "checkpoint_selection",
+        "value": null,
+        "source": "缺失",
+        "blocking": true
+      },
+      {
+        "field": "class_center_batch_subject_composition",
+        "value": null,
+        "source": "缺失",
+        "qualification": "paper defines centers, not exact batch sampler/memory/missing-class rules",
+        "blocking": true
+      },
+      {
+        "field": "IV2a_protocol",
+        "value": "other8 T train / other8 E validate / held T+E test",
+        "source": "论文原文",
+        "page": 3
+      },
+      {
+        "field": "IV2b_protocol",
+        "value": "other8 sessions1–3 T train /4–5 E validate /held all5 sessions test",
+        "source": "论文原文＋官方数据集说明",
+        "page": 3,
+        "official": "https://www.bbci.de/competition/iv/desc_2b.pdf"
+      }
+    ]
+  },
+  "EEGNet": {
+    "confirmed": "F1=8,D=2,F2=16,cross-subject dropout.25,Adam,CE,500epochs,source-val-loss-best",
+    "blocking": [
+      "MI batch",
+      "kernel32 at common250Hz vs original128Hz adaptation"
+    ]
+  },
+  "EEGNeX": {
+    "confirmed": "Adam.001,batch128,notebook200epochs,ES20,LR*.5/patience5",
+    "blocking": [
+      "paper accuracy vs notebook loss monitoring",
+      "best checkpoint restoration and framework defaults"
+    ]
+  },
+  "ATCNet": {
+    "confirmed": "5windows,MHA,F1=16,D2,k64,pool7,dropout.3,TCN2/k4/32/.3/ELU,Adam.001,batch64",
+    "blocking": [
+      "original-paper1000/300 vs revised500-epoch recipe binding",
+      "source-only validation adaptation"
+    ]
+  },
+  "Conformer": {
+    "status": "optional",
+    "confirmed": "emb40,depth6,batch72,epochs2000,Adam.0002/betas(.5,.999)",
+    "blocking": [
+      "source-only checkpoint/augmentation adaptation"
+    ]
+  },
+  "PRS_stage1": {
+    "status": "historical_frozen_single_system",
+    "blocking": [
+      "source/checkpoint/input provenance and source-preflight gate remain required"
+    ]
+  },
+  "PRS_stage2": {
+    "status": "optional_separate_confirmation",
+    "blocking": [
+      "complete five-component original training recipe and all loss/validation/version bindings"
+    ]
+  }
+}
