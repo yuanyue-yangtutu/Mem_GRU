@@ -1,0 +1,68 @@
+{
+  "date": "2026-11-21",
+  "method": "built-in browser Jupyter terminal; readonly device and Python package queries",
+  "snapshot_not_future_availability_guarantee": true,
+  "not_exhaustive_environment_inventory": true,
+  "nodes": [
+    {
+      "logical_node": "single_A",
+      "visible_cards": 1,
+      "authorized_cards": 1,
+      "proposed_indices": [
+        0
+      ],
+      "device": "PPU-ZW810E",
+      "memory_MiB_per_card": 98304,
+      "torch_runtime": "2.4.0",
+      "PPU_SMI": "1.18",
+      "driver": "1.5.1-d474a",
+      "HGGC": "11.1",
+      "tensorflow_available_in_default_python": false,
+      "existing_python_job_observed": true,
+      "snapshot_memory_MiB_per_observed_card": 1854,
+      "snapshot_utilization_percent": 38,
+      "scheduling": "wait; do not preempt"
+    },
+    {
+      "logical_node": "single_B",
+      "visible_cards": 1,
+      "authorized_cards": 1,
+      "proposed_indices": [
+        0
+      ],
+      "device": "PPU-ZW810E",
+      "memory_MiB_per_card": 98304,
+      "torch_runtime": "2.4.0",
+      "PPU_SMI": "1.18",
+      "driver": "1.5.1-d474a",
+      "HGGC": "11.1",
+      "tensorflow_available_in_default_python": false,
+      "existing_python_job_observed": true,
+      "snapshot_memory_MiB_per_observed_card": 2242,
+      "snapshot_utilization_percent": 44,
+      "scheduling": "wait; do not preempt"
+    },
+    {
+      "logical_node": "dual_allocation",
+      "visible_cards": 4,
+      "authorized_cards": 2,
+      "proposed_indices": [
+        0,
+        1
+      ],
+      "device": "PPU-ZW810E",
+      "memory_MiB_per_card": 98304,
+      "torch_runtime": "2.9.0",
+      "PPU_SMI": "1.22",
+      "driver": "1.5.1-d474a",
+      "HGGC": "13.0",
+      "tensorflow_available_in_default_python": false,
+      "existing_python_job_observed": false,
+      "snapshot_memory_MiB_per_observed_card": 2,
+      "snapshot_utilization_percent": 0,
+      "scheduling": "candidate only; no training launched"
+    }
+  ],
+  "extra_two_visible_cards": "not authorized; remain unused",
+  "private_addresses_and_identifiers": "excluded"
+}

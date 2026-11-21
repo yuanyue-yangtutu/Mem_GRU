@@ -1,0 +1,2 @@
+nvidia-smi
+python -c "import torch,importlib.util as u,json; print('PRS_CARD_CHECK',json.dumps({'tf':u.find_spec('tensorflow') is not None,'torch':torch.__version__,'cards':torch.cuda.device_count(),'names':[torch.cuda.get_device_name(i) for i in range(torch.cuda.device_count())]}))"

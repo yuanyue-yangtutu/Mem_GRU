@@ -1,0 +1,13 @@
+{
+  "readonly_resource_inspection_complete": true,
+  "new_training_jobs": 0,
+  "new_real_EEG_or_label_reads": 0,
+  "model_weight_uploads": 0,
+  "framework_installs": 0,
+  "existing_jobs_modified": 0,
+  "formal_training": false,
+  "PPU_model_compatibility_validated": false,
+  "default_python_TF_missing": "does not establish hardware lacks TensorFlow support",
+  "heterogeneity": "torch 2.4.0 on singles, 2.9.0 on four-visible-card node; not validated interchangeable",
+  "next_step": "Review amendment; separately authorize backend/environment preflight if needed. No formal training from this amendment."
+}

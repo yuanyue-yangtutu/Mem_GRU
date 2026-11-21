@@ -1,0 +1,39 @@
+{
+  "hash_object": "exact bytes in the Git commit",
+  "encoding": "UTF8 noBOM LF",
+  "self_hash": "excluded; commit and anonymous receipt bind manifest",
+  "files": {
+    ".gitattributes": {
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+      "bytes": 8
+    },
+    "CHECKS_AND_GAPS.json": {
+      "sha256": "997fe4bf67e823cad659447baab6357b5143f410541244c748120fd249034a2c",
+      "bytes": 609
+    },
+    "PLAN_DRAFT.json": {
+      "sha256": "43d82c515c29afedbc81e081cbc0b0a8f74a4dd88287453e34fc682f4944ba8e",
+      "bytes": 957
+    },
+    "PLAN_DRAFT.md": {
+      "sha256": "0a223ce902739a635e8ba327171f05fc2d9d18324de0b62fbc4014c6234e37ad",
+      "bytes": 7069
+    },
+    "resource_check_commands.txt": {
+      "sha256": "b7b73f99c14f41271226b65f0cdda5aa4631fe086112330eed214da71b1a5475",
+      "bytes": 285
+    },
+    "RESOURCE_INVENTORY.json": {
+      "sha256": "fe854546250ce3343afe5cd114c2132b19365d8fa4bdc39dda8459f76c45d093",
+      "bytes": 2069
+    },
+    "SCHEDULING_CONTRACT.json": {
+      "sha256": "d2f9029d9bbfb660eab8da201da9863e46ff0a4e3f1121a3539eb0e200cf449b",
+      "bytes": 1183
+    },
+    "verify_anonymous.py": {
+      "sha256": "49ba23445847623185e18ff2af398863a71160e66e72d3c2c6f179402aff6cf0",
+      "bytes": 3323
+    }
+  }
+}

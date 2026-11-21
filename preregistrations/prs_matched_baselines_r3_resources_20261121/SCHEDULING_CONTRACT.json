@@ -1,0 +1,24 @@
+{
+  "single_card_independent_fits": true,
+  "DDP": false,
+  "effective_batch_changes": false,
+  "completed_fit_retained": true,
+  "interrupted_fit": "restart entire model x fold x seed; no epoch resume",
+  "all_attempts_charge_budget": true,
+  "existing_jobs": "never stop or preempt",
+  "backend_gates": [
+    "Supported isolated TensorFlow/Keras execution or separately reviewed equivalent implementation",
+    "No simplified PyTorch substitute",
+    "Same validated implementation/version for all fits of each baseline",
+    "Device binding and compatibility preflight before any authorized data execution"
+  ],
+  "data_boundary": "No additional data transfer/read authorized. Future packets restricted to registered source T subjects; deny held-out, E and OpenBMI.",
+  "historical_PRS_replay_tolerance": "2e-5 remains unchanged; not automatically a baseline port tolerance",
+  "local_only_estimate_card_hours": [
+    21.563044399277768,
+    61.70792989927776
+  ],
+  "PPU_throughput": "not measured; cannot divide local estimate by five",
+  "previously_charged_local_probe_card_hours": 0.0132828877777744,
+  "notebook_power_sleep_thermal_rules": "inherit original R3 unchanged"
+}

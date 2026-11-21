@@ -1,0 +1,22 @@
+{
+  "status": "resource_amendment_only_formal_training_not_authorized",
+  "parent_commit": "1244dfb59ecd6034767ea536233cf6b6cae8c97d",
+  "markdown_sha256": "0a223ce902739a635e8ba327171f05fc2d9d18324de0b62fbc4014c6234e37ad",
+  "user_confirmation": "是，按此更新R3",
+  "authorized_resources": [
+    "local RTX4060 Laptop",
+    "single PPU A: 1 card",
+    "single PPU B: 1 card",
+    "dual allocation: 2 cards only"
+  ],
+  "total_budget_card_hours": 80,
+  "budget_accounting": "sum physical card occupied time, including failures and retries",
+  "max_candidate_independent_fit_slots": 5,
+  "paid_resources": false,
+  "formal_training_authorized": false,
+  "additional_real_data_reads_authorized": false,
+  "framework_installation_authorized": false,
+  "scientific_protocol_changes": false,
+  "backend_eligibility": "not established; blocks PPU baseline execution",
+  "original_R3_files": "unchanged; resource clauses superseded only by this amendment"
+}
