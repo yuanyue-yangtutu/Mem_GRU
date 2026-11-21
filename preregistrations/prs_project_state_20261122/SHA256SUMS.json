@@ -1,0 +1,37 @@
+{
+  "hash_object": "exact bytes in the Git commit",
+  "files": {
+    ".gitattributes": {
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+      "bytes": 8
+    },
+    "CLAIMS.md": {
+      "sha256": "c0e465c0594de44da891562da486e9df3c16280228ed343429b565f1102b3d88",
+      "bytes": 1839
+    },
+    "DELIVERY_MANIFEST_APPEND_20261122.json": {
+      "sha256": "7aba1985e8affabdd165016565530626d449bd6c55bab5239db4399355a01106",
+      "bytes": 5804
+    },
+    "INDEX_APPEND_20261122.json": {
+      "sha256": "fae2d0e4906c0633e731108ecc9737d35ece7e08a2a4e0ad70248b110883f41a",
+      "bytes": 4621
+    },
+    "OLD_FILES_SNAPSHOT.json": {
+      "sha256": "36f8c377ba15be5bc584bd9cab2f5cc7a6fdf5e211f65e6e949dd7ce03e35cc3",
+      "bytes": 4412
+    },
+    "PROJECT_STATE.json": {
+      "sha256": "1ee5fb1ec55b23055b292cda2d83ac2a4d0a33dd94fa08af0411bb6d70c87d23",
+      "bytes": 11123
+    },
+    "PROJECT_STATE.md": {
+      "sha256": "d9edd02fa4e711b2be4f0fae364e6f1872384248f47ab457cac25bf4f08b794a",
+      "bytes": 7601
+    },
+    "RESUMPTION_GATES.md": {
+      "sha256": "8caae35f086606a10bec8befa2b895402189bc6bfd8275244aec2bc1aea5fdd1",
+      "bytes": 1636
+    }
+  }
+}

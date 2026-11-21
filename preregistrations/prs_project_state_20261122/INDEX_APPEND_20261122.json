@@ -1,0 +1,115 @@
+{
+  "kind": "append_only_index",
+  "base_indices": [
+    {
+      "file": "state.json",
+      "sha256": "823e3d2d7c2580c8a1c22b5891f41ea686d8427331a79ffff95b585c692b2009"
+    },
+    {
+      "file": "LATEST.json",
+      "sha256": "4e40a6d0fc64c8058a658d0e6767f63adbfae11658326275f3c9c09871c698a7"
+    }
+  ],
+  "new_entries": [
+    {
+      "id": "同口径基线 R1",
+      "status": "仅登记",
+      "detail": "仅草案登记；默认值与协议边界修订，无正式训练。",
+      "public_commit": "4f101eb62af515f76a2f81c832d84682ce7eb6e7",
+      "public_commit_gap": null,
+      "references": [
+        {
+          "file": "PRS_MatchedBaselines_Revision1_20261121/PLAN_DRAFT.md",
+          "sha256": "d654faa52de3b1e38bd562cb51b267464dfef53cb19f6ef8eeb7c0f44ec3053c",
+          "role": "normative_or_evidence"
+        },
+        {
+          "file": "PRS_MatchedBaselines_Revision1_20261121/PLAN_DRAFT.json",
+          "sha256": "05e1d0c093f64648a8afb4ab0b21d8fa8043c80e51e4870fa49c7c2ebaf02bf5",
+          "role": "normative_or_evidence"
+        },
+        {
+          "file": "PRS_MatchedBaselines_Revision1_20261121/SHA256SUMS.json",
+          "sha256": "e7078eaf28e884197864ba63f4c78a2f8bf1adaa8d0b85309ccb31401b7b5c29",
+          "role": "normative_or_evidence"
+        }
+      ]
+    },
+    {
+      "id": "同口径基线 R2",
+      "status": "已执行并锁定",
+      "detail": "阶段0已执行锁定：独立环境、合成输入前向/反向冒烟；不是实数据准确率验证。",
+      "public_commit": "a5446a52e99b3c4b7411f9836fdc4127b19140a6",
+      "public_commit_gap": null,
+      "references": [
+        {
+          "file": "PRS_MatchedBaselines_R2_Stage0_20261121/public/PLAN_DRAFT.md",
+          "sha256": "b73df2ee83aa52ed2872471532ad7ba17b3564b462db4a36dc2cce3803b7fc55",
+          "role": "normative_or_evidence"
+        },
+        {
+          "file": "PRS_MatchedBaselines_R2_Stage0_20261121/public/PLAN_DRAFT.json",
+          "sha256": "1eb4485b8691f3312fd0103bced108597feec06bdc7a89518233604f7bf3c941",
+          "role": "normative_or_evidence"
+        },
+        {
+          "file": "PRS_MatchedBaselines_R2_Stage0_20261121/public/SHA256SUMS.json",
+          "sha256": "1f42d8ffc7a7f167a01cee49b90b20866ee3ba7cb1963708379a932edc23b2f3",
+          "role": "normative_or_evidence"
+        }
+      ]
+    },
+    {
+      "id": "同口径基线 R3",
+      "status": "已执行并锁定",
+      "detail": "阶段0.5已执行锁定：固定一折源8人T的短探针，权重丢弃；未输出留出者成绩。",
+      "public_commit": "1244dfb59ecd6034767ea536233cf6b6cae8c97d",
+      "public_commit_gap": null,
+      "references": [
+        {
+          "file": "PRS_MatchedBaselines_R3_Stage05_20261121/public/PLAN_DRAFT.md",
+          "sha256": "de06bb67a183bf93ae1427be935c990812172c4cfeef1ae672c71010fd94c0df",
+          "role": "normative_or_evidence"
+        },
+        {
+          "file": "PRS_MatchedBaselines_R3_Stage05_20261121/public/PLAN_DRAFT.json",
+          "sha256": "b864e41f4bd5d51e8cbba36aa5c1fc3a138d57ceb9bdce9efdfef43339fad122",
+          "role": "normative_or_evidence"
+        },
+        {
+          "file": "PRS_MatchedBaselines_R3_Stage05_20261121/public/SHA256SUMS.json",
+          "sha256": "566beff849db83179e57e1c16b37f95d53b641df8f919f0dbd910eca1b639bad",
+          "role": "normative_or_evidence"
+        }
+      ]
+    },
+    {
+      "id": "同口径基线 R3资源附录",
+      "status": "仅登记",
+      "detail": "仅登记：本机+两个单卡PPU+双卡PPU；80小时按各卡累计，非训练授权。",
+      "public_commit": "befcdae91e7d614c91657f7c0dbec2e2744619ef",
+      "public_commit_gap": null,
+      "references": [
+        {
+          "file": "PRS_R3_PPU_ResourceAmendment_20261121/public/PLAN_DRAFT.md",
+          "sha256": "0a223ce902739a635e8ba327171f05fc2d9d18324de0b62fbc4014c6234e37ad",
+          "role": "normative_or_evidence"
+        },
+        {
+          "file": "PRS_R3_PPU_ResourceAmendment_20261121/public/PLAN_DRAFT.json",
+          "sha256": "43d82c515c29afedbc81e081cbc0b0a8f74a4dd88287453e34fc682f4944ba8e",
+          "role": "normative_or_evidence"
+        },
+        {
+          "file": "PRS_R3_PPU_ResourceAmendment_20261121/public/SHA256SUMS.json",
+          "sha256": "31d5afb29764c25a824f799c9ae1fc39ae9c7929565bce49fdd94c983acf7c67",
+          "role": "normative_or_evidence"
+        }
+      ]
+    }
+  ],
+  "entrypoint": "documentation_20261122/PROJECT_STATE.json",
+  "claims": "documentation_20261122/CLAIMS.md",
+  "recovery": "documentation_20261122/RESUMPTION_GATES.md",
+  "no_base_file_modified": true
+}
