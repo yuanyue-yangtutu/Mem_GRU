@@ -1,0 +1,98 @@
+{
+  "model": "ATCNet",
+  "status": "synthetic_smoke_passed",
+  "python": "3.8.20 | packaged by conda-forge | (default, Sep 30 2024, 17:44:03) [MSC v.1929 64 bit (AMD64)]",
+  "TF": "2.10.0",
+  "keras": "2.10.0",
+  "numpy": "1.23.5",
+  "device": {
+    "device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "compute_capability": [
+      8,
+      9
+    ]
+  },
+  "batch": 64,
+  "shape": [
+    64,
+    1,
+    22,
+    1000
+  ],
+  "classes": 4,
+  "source_hashes": {
+    "evidence\\atcnet_2022\\attention_models.py": "95da9c76a581195d934333c0ac2e625d0563332e607fbc1b4c4d53b9fd310b2b",
+    "evidence\\atcnet_2022\\models.py": "9f43f78c4336fd11a1be05099cf58015af81a19018d89c6beb2745af2f708450"
+  },
+  "AST_adaptations": [
+    {
+      "function": "TCN_block",
+      "paper_initialization_override": "he_uniform -> glorot_uniform",
+      "call_sites": 4,
+      "reason": "original paper III-C says Glorot; fixed before real data"
+    }
+  ],
+  "params_total": 115172,
+  "params_trainable": 113732,
+  "optimizer": {
+    "name": "Adam",
+    "learning_rate": "0.0009",
+    "decay": 0.0,
+    "beta_1": "0.9",
+    "beta_2": "0.999",
+    "epsilon": 1e-07,
+    "amsgrad": false
+  },
+  "warmup_seconds": [
+    5.840864799999999,
+    0.03236300000000014,
+    0.03309720000000027
+  ],
+  "train_step_seconds": [
+    0.03646700000000003,
+    0.035016300000000555,
+    0.03357999999999883,
+    0.03331479999999942,
+    0.03507319999999936,
+    0.03676160000000017,
+    0.04075029999999913,
+    0.04107390000000066,
+    0.04200909999999958,
+    0.04084420000000044,
+    0.04093799999999881,
+    0.03883480000000006,
+    0.03565350000000045,
+    0.03804109999999916,
+    0.037136399999999625,
+    0.03174759999999921,
+    0.03639110000000123,
+    0.03289709999999957,
+    0.031910200000000444,
+    0.03305560000000085
+  ],
+  "eval_step_seconds": [
+    0.006712399999999619,
+    0.006542299999999557,
+    0.006584699999999444,
+    0.006820299999999335,
+    0.007379399999999592
+  ],
+  "train_median_s": 0.03642905000000063,
+  "train_min_s": 0.03174759999999921,
+  "train_max_s": 0.04200909999999958,
+  "train_p90_s": 0.040951589999999,
+  "eval_median_s": 0.006712399999999619,
+  "peak_allocator_bytes": 2507774208,
+  "current_allocator_bytes": 7078912,
+  "synthetic_optimizer_steps": 23,
+  "output_shape": [
+    64,
+    4
+  ],
+  "row_sum_max_error": 1.1920928955078125e-07,
+  "scientific_training_fits": 0,
+  "real_EEG_reads": 0,
+  "real_label_reads": 0,
+  "E_or_OpenBMI_target_reads": 0,
+  "caveat": "synthetic GPU microbenchmark; not real-data throughput or convergence evidence; no source fixture or weights read"
+}

@@ -1,0 +1,141 @@
+{
+  "upstream_hash_object": "Git-commit blob bytes; local execution-source SHA separately in results",
+  "repositories": [
+    {
+      "model": "EEGNet",
+      "repository": "vlawhern/arl-eegmodels",
+      "commit": "4a512e503198db2010848813ead9afbf8cd54c97",
+      "commit_time": "2022-05-02T08:42:59-04:00",
+      "commit_url": "https://github.com/vlawhern/arl-eegmodels/commit/4a512e503198db2010848813ead9afbf8cd54c97",
+      "tracked_file_count": 6,
+      "hashed_text_files": 5,
+      "code_executed": false,
+      "source_license_verification": "upstream license file preserved and hashed; no source redistribution in this package",
+      "source_hash_object": "upstream Git-commit blob bytes, not local checkout bytes",
+      "stage0_instantiated": true
+    },
+    {
+      "model": "EEGNeX",
+      "repository": "chenxiachan/EEGNeX",
+      "commit": "044d7fb2a5b953c7004f30fe45db40d1ce57af5c",
+      "commit_time": "2023-09-14T10:26:02+02:00",
+      "commit_url": "https://github.com/chenxiachan/EEGNeX/commit/044d7fb2a5b953c7004f30fe45db40d1ce57af5c",
+      "tracked_file_count": 8,
+      "hashed_text_files": 4,
+      "code_executed": false,
+      "source_license_verification": "upstream license file preserved and hashed; no source redistribution in this package",
+      "source_hash_object": "upstream Git-commit blob bytes, not local checkout bytes",
+      "stage0_instantiated": true
+    },
+    {
+      "model": "ATCNet",
+      "repository": "Altaheri/EEG-ATCNet",
+      "commit": "cd702831b1310476507dde3a10a9fc4dcd0d3cbd",
+      "commit_time": "2026-08-16T03:38:48+03:00",
+      "commit_url": "https://github.com/Altaheri/EEG-ATCNet/commit/cd702831b1310476507dde3a10a9fc4dcd0d3cbd",
+      "tracked_file_count": 25,
+      "hashed_text_files": 10,
+      "code_executed": false,
+      "source_license_verification": "upstream license file preserved and hashed; no source redistribution in this package",
+      "source_hash_object": "upstream Git-commit blob bytes, not local checkout bytes",
+      "R1_commit": "65162fb359ea46a2f62c885a9987247ab491ee7a",
+      "reason": "2022 original paper recipe;not performance-selected",
+      "files": [
+        {
+          "file": "models.py",
+          "sha256": "9f43f78c4336fd11a1be05099cf58015af81a19018d89c6beb2745af2f708450"
+        },
+        {
+          "file": "attention_models.py",
+          "sha256": "95da9c76a581195d934333c0ac2e625d0563332e607fbc1b4c4d53b9fd310b2b"
+        },
+        {
+          "file": "main.py",
+          "sha256": "788c63e9960b916afa656c02643c21e20b9f7415471688a555636b9ece9dde2c"
+        },
+        {
+          "file": "LICENSE",
+          "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+        }
+      ],
+      "stage0_instantiated": true
+    },
+    {
+      "model": "EEG-Conformer",
+      "repository": "eeyhsong/EEG-Conformer",
+      "commit": "9ae149ba62487ceae723277d13adac27837113d2",
+      "commit_time": "2024-07-24T22:39:12+08:00",
+      "commit_url": "https://github.com/eeyhsong/EEG-Conformer/commit/9ae149ba62487ceae723277d13adac27837113d2",
+      "tracked_file_count": 21,
+      "hashed_text_files": 11,
+      "code_executed": false,
+      "source_license_verification": "upstream license file preserved and hashed; no source redistribution in this package",
+      "source_hash_object": "upstream Git-commit blob bytes, not local checkout bytes",
+      "stage0_instantiated": false,
+      "status": "excluded by user"
+    },
+    {
+      "model": "DSGNet",
+      "repository": "xicheng105/DSGNet",
+      "commit": "6ab313824b20471229da727a8ef1383ecc4cfbd6",
+      "commit_time": "2025-06-25T22:34:21+08:00",
+      "commit_url": "https://github.com/xicheng105/DSGNet/commit/6ab313824b20471229da727a8ef1383ecc4cfbd6",
+      "tracked_file_count": 3,
+      "hashed_text_files": 3,
+      "code_executed": false,
+      "source_license_verification": "no license file in preview; unresolved",
+      "source_hash_object": "upstream Git-commit blob bytes, not local checkout bytes",
+      "stage0_instantiated": false,
+      "status": "literature only;not matched baseline"
+    }
+  ],
+  "source_files": [
+    {
+      "model": "EEGNet",
+      "path": "EEGModels.py",
+      "commit": "4a512e503198db2010848813ead9afbf8cd54c97",
+      "upstream_git_blob_sha256": "604c7399a2a0e6c90cd8b4cbbc0f78550a3fb5c64b23f311d9c7db44dac94b02",
+      "actual_local_execution_source_sha256": "6e70eb6fb11a9b1ce9293e7becaf731f3ae2b9f27768b961fc591f3a8cbdbff5",
+      "differ_only_in_newlines": true,
+      "url": "https://github.com/vlawhern/arl-eegmodels/blob/4a512e503198db2010848813ead9afbf8cd54c97/EEGModels.py"
+    },
+    {
+      "model": "EEGNeX",
+      "path": "BenchmarkModels.py",
+      "commit": "044d7fb2a5b953c7004f30fe45db40d1ce57af5c",
+      "upstream_git_blob_sha256": "ab8550fa5e6efd00a24aafcb0fd8b6c672c48c065356d30c7d8dd0b6b89d6164",
+      "actual_local_execution_source_sha256": "ab8550fa5e6efd00a24aafcb0fd8b6c672c48c065356d30c7d8dd0b6b89d6164",
+      "differ_only_in_newlines": true,
+      "url": "https://github.com/chenxiachan/EEGNeX/blob/044d7fb2a5b953c7004f30fe45db40d1ce57af5c/BenchmarkModels.py"
+    },
+    {
+      "model": "ATCNet",
+      "path": "models.py",
+      "commit": "cd702831b1310476507dde3a10a9fc4dcd0d3cbd",
+      "upstream_git_blob_sha256": "9f43f78c4336fd11a1be05099cf58015af81a19018d89c6beb2745af2f708450",
+      "actual_local_execution_source_sha256": "9f43f78c4336fd11a1be05099cf58015af81a19018d89c6beb2745af2f708450",
+      "differ_only_in_newlines": true,
+      "url": "https://github.com/Altaheri/EEG-ATCNet/blob/cd702831b1310476507dde3a10a9fc4dcd0d3cbd/models.py"
+    },
+    {
+      "model": "ATCNet",
+      "path": "attention_models.py",
+      "commit": "cd702831b1310476507dde3a10a9fc4dcd0d3cbd",
+      "upstream_git_blob_sha256": "95da9c76a581195d934333c0ac2e625d0563332e607fbc1b4c4d53b9fd310b2b",
+      "actual_local_execution_source_sha256": "95da9c76a581195d934333c0ac2e625d0563332e607fbc1b4c4d53b9fd310b2b",
+      "differ_only_in_newlines": true,
+      "url": "https://github.com/Altaheri/EEG-ATCNet/blob/cd702831b1310476507dde3a10a9fc4dcd0d3cbd/attention_models.py"
+    },
+    {
+      "model": "ATCNet",
+      "path": "main.py",
+      "commit": "cd702831b1310476507dde3a10a9fc4dcd0d3cbd",
+      "upstream_git_blob_sha256": "788c63e9960b916afa656c02643c21e20b9f7415471688a555636b9ece9dde2c",
+      "actual_local_execution_source_sha256": "788c63e9960b916afa656c02643c21e20b9f7415471688a555636b9ece9dde2c",
+      "differ_only_in_newlines": true,
+      "url": "https://github.com/Altaheri/EEG-ATCNet/blob/cd702831b1310476507dde3a10a9fc4dcd0d3cbd/main.py"
+    }
+  ],
+  "actual_worker_sha256": "7f4055f0031734c10a10d4d8f84cf3abedcc76abb3f39dfce1d50c8518cb18c9",
+  "parent_R1_commit": "4f101eb62af515f76a2f81c832d84682ce7eb6e7"
+}

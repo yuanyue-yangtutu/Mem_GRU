@@ -1,0 +1,50 @@
+{
+  "model_entrypoints_executed": false,
+  "only_AST_model_definitions": true,
+  "real_data_probe": false,
+  "source_replay": false,
+  "checks": [
+    {
+      "model": "EEGNet",
+      "log_sha256": "dc614c574079e167ac673fd3dcc131885b5b4b423d947be7f6276b4d006d4612",
+      "open_events": 3044,
+      "forbidden_suffix_opens": 0,
+      "denied": 0,
+      "coverage": "Python open audit, not OS-level DLL audit",
+      "script_sha256": "7f4055f0031734c10a10d4d8f84cf3abedcc76abb3f39dfce1d50c8518cb18c9",
+      "source_code_hashes": {
+        "arl-eegmodels\\EEGModels.py": "6e70eb6fb11a9b1ce9293e7becaf731f3ae2b9f27768b961fc591f3a8cbdbff5"
+      }
+    },
+    {
+      "model": "EEGNeX",
+      "log_sha256": "93e0a49090860c2b84e4bee7c6c770b421658b6490b08315855a47421214ac99",
+      "open_events": 3044,
+      "forbidden_suffix_opens": 0,
+      "denied": 0,
+      "coverage": "Python open audit, not OS-level DLL audit",
+      "script_sha256": "7f4055f0031734c10a10d4d8f84cf3abedcc76abb3f39dfce1d50c8518cb18c9",
+      "source_code_hashes": {
+        "EEGNeX\\BenchmarkModels.py": "ab8550fa5e6efd00a24aafcb0fd8b6c672c48c065356d30c7d8dd0b6b89d6164"
+      }
+    },
+    {
+      "model": "ATCNet",
+      "log_sha256": "96c1bacce7d9d6d143f21b7dbda0052fc5ac78816556f5b44d0aaa62e36d6eec",
+      "open_events": 3047,
+      "forbidden_suffix_opens": 0,
+      "denied": 0,
+      "coverage": "Python open audit, not OS-level DLL audit",
+      "script_sha256": "7f4055f0031734c10a10d4d8f84cf3abedcc76abb3f39dfce1d50c8518cb18c9",
+      "source_code_hashes": {
+        "evidence\\atcnet_2022\\attention_models.py": "95da9c76a581195d934333c0ac2e625d0563332e607fbc1b4c4d53b9fd310b2b",
+        "evidence\\atcnet_2022\\models.py": "9f43f78c4336fd11a1be05099cf58015af81a19018d89c6beb2745af2f708450"
+      }
+    }
+  ],
+  "all_pass": true,
+  "EEGNeX_changes": "Remove plot_model/internal compile only; retain official BN last axis",
+  "EEGNet_changes": "kernel64 sample-rate-support adaptation; pure input transpose;batch16 author-example protocol supplement",
+  "ATCNet_changes": "2022 upstream commit;paper0.0009;4 AST initializer call sites He->Glorot;exclude2023 added L2",
+  "target_path_access": "No targeted data file IO; Python-hook coverage only; no claim of complete OS audit"
+}

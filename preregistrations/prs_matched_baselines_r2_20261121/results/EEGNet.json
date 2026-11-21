@@ -1,0 +1,96 @@
+{
+  "model": "EEGNet",
+  "status": "synthetic_smoke_passed",
+  "python": "3.8.20 | packaged by conda-forge | (default, Sep 30 2024, 17:44:03) [MSC v.1929 64 bit (AMD64)]",
+  "TF": "2.10.0",
+  "keras": "2.10.0",
+  "numpy": "1.23.5",
+  "device": {
+    "device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "compute_capability": [
+      8,
+      9
+    ]
+  },
+  "batch": 16,
+  "shape": [
+    16,
+    1,
+    22,
+    1000
+  ],
+  "classes": 4,
+  "source_hashes": {
+    "arl-eegmodels\\EEGModels.py": "6e70eb6fb11a9b1ce9293e7becaf731f3ae2b9f27768b961fc591f3a8cbdbff5"
+  },
+  "AST_adaptations": [
+    {
+      "function": "EEGNet input",
+      "change": "B,1,C,T -> B,C,T,1",
+      "signal_values_changed": false
+    }
+  ],
+  "params_total": 3524,
+  "params_trainable": 3444,
+  "optimizer": {
+    "name": "Adam",
+    "learning_rate": "0.001",
+    "decay": 0.0,
+    "beta_1": "0.9",
+    "beta_2": "0.999",
+    "epsilon": 1e-07,
+    "amsgrad": false
+  },
+  "warmup_seconds": [
+    2.4802418999999993,
+    0.003311799999999643,
+    0.0033264000000006178
+  ],
+  "train_step_seconds": [
+    0.0029631999999999437,
+    0.003010999999999875,
+    0.0029906000000003985,
+    0.0031540999999997155,
+    0.0029612000000005523,
+    0.003101700000000207,
+    0.0029340999999991624,
+    0.0030175999999997316,
+    0.0031711000000003153,
+    0.003283000000000591,
+    0.003338499999999911,
+    0.002923000000000009,
+    0.0030608000000000857,
+    0.0034627000000000407,
+    0.0035332000000005692,
+    0.0037644999999999484,
+    0.003560699999999528,
+    0.0031986000000001624,
+    0.0038885999999997978,
+    0.0029152000000003397
+  ],
+  "eval_step_seconds": [
+    0.0009493999999996561,
+    0.0007591999999991828,
+    0.0006918000000002422,
+    0.0006640999999998343,
+    0.0007495999999997949
+  ],
+  "train_median_s": 0.0031278999999999613,
+  "train_min_s": 0.0029152000000003397,
+  "train_max_s": 0.0038885999999997978,
+  "train_p90_s": 0.0035810799999995706,
+  "eval_median_s": 0.0007495999999997949,
+  "peak_allocator_bytes": 343840000,
+  "current_allocator_bytes": 2844928,
+  "synthetic_optimizer_steps": 23,
+  "output_shape": [
+    16,
+    4
+  ],
+  "row_sum_max_error": 1.1920928955078125e-07,
+  "scientific_training_fits": 0,
+  "real_EEG_reads": 0,
+  "real_label_reads": 0,
+  "E_or_OpenBMI_target_reads": 0,
+  "caveat": "synthetic GPU microbenchmark; not real-data throughput or convergence evidence; no source fixture or weights read"
+}

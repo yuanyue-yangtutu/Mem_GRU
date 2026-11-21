@@ -1,0 +1,63 @@
+{
+  "title": "同口径基线对比",
+  "revision": "R2",
+  "status": "FROZEN_DRAFT_AWAITING_USER_CONFIRMATION",
+  "normative_document": {
+    "file": "PLAN_DRAFT.md",
+    "sha256": "b73df2ee83aa52ed2872471532ad7ba17b3564b462db4a36dc2cce3803b7fc55"
+  },
+  "authorization": {
+    "phase0_static_and_synthetic": true,
+    "phase0_complete": true,
+    "formal_training": false,
+    "real_data_reads": false,
+    "source_fixture_replay": false,
+    "E_OpenBMI_target_reads": false,
+    "real_2epoch_probe": false,
+    "scoring": false
+  },
+  "decisions": {
+    "budget_cap": null,
+    "money_cap": null,
+    "production_GPU_model_count": null,
+    "Conformer": "excluded",
+    "stage2": "decide after stage1 review",
+    "literature_arm": "not now"
+  },
+  "stage1": {
+    "baselines": [
+      "EEGNet",
+      "EEGNeX",
+      "ATCNet"
+    ],
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "fits": 81,
+    "PRS": "historical frozen single system;development-selected;not equal three repetitions",
+    "protocol": "P_T source8 T75/25;heldT288;raw22channels250Hz0–4s",
+    "GPU_hours": [
+      18.442402665500083,
+      58.48584060799821
+    ]
+  },
+  "configs": "FROZEN_CONFIGS.json",
+  "environment": "ENVIRONMENT_LOCK.json",
+  "synthetic_results": [
+    "results/EEGNet.json",
+    "results/EEGNeX.json",
+    "results/ATCNet.json"
+  ],
+  "source_replay": "PRS_SOURCE_REPLAY_CONTRACT.json;not run",
+  "bias": "post-fusion original probabilities0..t inclusive;first20 unchanged;lambda=.1+20/n;original pinned solver;balanced prior assumption;not pure zero calibration",
+  "statistics": "R1 paired person-block50000 bootstrap;seed20261121;raw/corrected;development selection caveat",
+  "prerequisites_before_formal_work": [
+    "user R2 review/execution authorization",
+    "explicit budget cap and production card allocation",
+    "authorized real source input metadata/fixture gates, no replacement or tolerance relaxation beyond explicitly registered contract"
+  ],
+  "ready_for_formal_execution": false,
+  "hash_object": "exact bytes in the Git commit"
+}

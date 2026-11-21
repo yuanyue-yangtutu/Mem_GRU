@@ -1,0 +1,222 @@
+{
+  "failures": [
+    "Windows clone path parsing",
+    "offline cache missing",
+    "cache-directory configuration",
+    "GPU precheck attempted before clone completed:missing numpy.version",
+    "invalid encoding alias",
+    "BN metadata duplicate name",
+    "EEGNet channels-last input transpose missing"
+  ],
+  "failures_pre_optimizer": true,
+  "old_successful_profiles": {
+    "EEGNeX_steps": 23,
+    "ATCNet_2023_steps": 23
+  },
+  "final_profiles_steps": 69,
+  "total_synthetic_optimizer_updates": 115,
+  "scientific_training_fits": 0,
+  "formal_data_probe_epochs": 0,
+  "real_EEG_reads": 0,
+  "real_label_reads": 0,
+  "E_OpenBMI_reads": 0,
+  "PPU": {
+    "browser": "same-chat in-app browser;actual visible new terminal",
+    "python": "3.10.13",
+    "tensorflow_available": false,
+    "torch_available": true,
+    "model_jobs_submitted": 0,
+    "paid_resources_created": 0,
+    "interpretation": "TF profile unsupported as currently installed;no silent PyTorch substitution"
+  },
+  "conda_clone_success": true,
+  "bci_unchanged": true,
+  "R1_files_unchanged": true,
+  "temp_cleanup": {
+    "archives": 72,
+    "GiB": 1.41,
+    "scope": "own completed-install compressed package cache only;environment/research assets retained"
+  },
+  "raw_log_files": [
+    {
+      "file": "logs\\ATCNet.final.stderr.txt",
+      "sha256": "87cd36977a8283296bd96191ca444787be9889cdef1e049c121e14365144c848",
+      "bytes": 1090
+    },
+    {
+      "file": "logs\\ATCNet.final.stdout.txt",
+      "sha256": "1b670c73d6fa8a606ecc92a809d151b7eaf0e2b3f7c74e54d8b6034d976201e6",
+      "bytes": 195
+    },
+    {
+      "file": "logs\\ATCNet.run2.stderr.txt",
+      "sha256": "ed262c6042b4fbe2af1c1e916fec33ddfa1123f947d40045d85580b10679b132",
+      "bytes": 435
+    },
+    {
+      "file": "logs\\ATCNet.run2.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file": "logs\\ATCNet.run3.stderr.txt",
+      "sha256": "c4982015409cb668d170b2d170013ab71286ad5a277413db29f97f3d4929eb0f",
+      "bytes": 1088
+    },
+    {
+      "file": "logs\\ATCNet.run3.stdout.txt",
+      "sha256": "a7c153cd7161faf89944a93506cb03f4f1620f1512063aedb63abd8e91b027b5",
+      "bytes": 195
+    },
+    {
+      "file": "logs\\conda_clone.json",
+      "sha256": "fc7c029497aa3dfd135e2f289a775db0311c467771105ef792861b6a4447cb19",
+      "bytes": 285
+    },
+    {
+      "file": "logs\\conda_clone.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file": "logs\\conda_clone_online.json",
+      "sha256": "c8457c319db63df08b69cb290a11e4666980e825ae6488fe428cdb7647c12b9a",
+      "bytes": 510
+    },
+    {
+      "file": "logs\\conda_clone_online.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file": "logs\\conda_clone_online2.json",
+      "sha256": "12af1c8279f21102f114612508db512989ac8e184d24a560c6e77e7b04da9131",
+      "bytes": 414
+    },
+    {
+      "file": "logs\\conda_clone_online2.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file": "logs\\conda_clone_online3.json",
+      "sha256": "d3f1680816235787ca0093350ebde48d9ca82adf3b0751da9e89eacf91c375eb",
+      "bytes": 1286556
+    },
+    {
+      "file": "logs\\conda_clone_online3.stderr.txt",
+      "sha256": "efaa679fa4e952058f58d89e37591405b7b1ea14f7f67e46996ff39c8e580d3e",
+      "bytes": 370
+    },
+    {
+      "file": "logs\\conda_clone_retry.json",
+      "sha256": "dfb9eef07d67bd324b0e0ce3637abdd1539724d6637bf82198bf1b376595c358",
+      "bytes": 4112
+    },
+    {
+      "file": "logs\\conda_clone_retry.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file": "logs\\EEGNet.final.stderr.txt",
+      "sha256": "bcece008f4927337dd9a0b4e9cba807364bc332efad2102fcde55037e0fbc10c",
+      "bytes": 1090
+    },
+    {
+      "file": "logs\\EEGNet.final.stdout.txt",
+      "sha256": "c46f5375311a0f937e2abe5ec4c4d88f60d486ab1918c579b86126b920d042eb",
+      "bytes": 195
+    },
+    {
+      "file": "logs\\EEGNet.run2.stderr.txt",
+      "sha256": "ed262c6042b4fbe2af1c1e916fec33ddfa1123f947d40045d85580b10679b132",
+      "bytes": 435
+    },
+    {
+      "file": "logs\\EEGNet.run2.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file": "logs\\EEGNet.run3.stderr.txt",
+      "sha256": "9849cfdf2c1e43e7b8ca3be9ab5e2cd9571bad6ecb80d6d677f55c8258f731f1",
+      "bytes": 1726
+    },
+    {
+      "file": "logs\\EEGNet.run3.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file": "logs\\EEGNet.stderr.txt",
+      "sha256": "0badb1b0ed035f640412df25a53af5079f8ec05e541e13ddc5fe45f32b88f479",
+      "bytes": 518
+    },
+    {
+      "file": "logs\\EEGNet.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file": "logs\\EEGNeX.final.stderr.txt",
+      "sha256": "e97e3db18e00767171b0a82fae04c691b292f4108c5e3504264cbe9265a4a41d",
+      "bytes": 1708
+    },
+    {
+      "file": "logs\\EEGNeX.final.stdout.txt",
+      "sha256": "136bf98f05db095ee1939295d7b13af7231d4961354f3715a554ea0a14eee25f",
+      "bytes": 194
+    },
+    {
+      "file": "logs\\EEGNeX.run2.stderr.txt",
+      "sha256": "ed262c6042b4fbe2af1c1e916fec33ddfa1123f947d40045d85580b10679b132",
+      "bytes": 435
+    },
+    {
+      "file": "logs\\EEGNeX.run2.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file": "logs\\EEGNeX.run3.stderr.txt",
+      "sha256": "181bf034ab1f06604822e4b68ea41ae591e6c17991860b288de093f17018f4ae",
+      "bytes": 1706
+    },
+    {
+      "file": "logs\\EEGNeX.run3.stdout.txt",
+      "sha256": "eb25e111d6261742df46591bfe2f8d3aaf964b9b6e7b4b4d2861e25e5b4553a2",
+      "bytes": 194
+    },
+    {
+      "file": "logs\\isolated_gpu_precheck.stderr.txt",
+      "sha256": "a29a1f60b6820279c60586875b4800ecd4afe45f3399497a21c44b464d5212e0",
+      "bytes": 899
+    },
+    {
+      "file": "logs\\isolated_gpu_precheck.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file": "logs\\isolated_gpu_precheck_complete.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file": "logs\\isolated_gpu_precheck_complete.txt",
+      "sha256": "6ebf07bc5a6378292c9b3c17cf03f2d0527d5a27800da880a2fe76ba1f91dec1",
+      "bytes": 173
+    },
+    {
+      "file": "logs\\runtime_lock.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file": "logs\\runtime_lock.stdout.txt",
+      "sha256": "f08158c2bd97e3424f7c6cff0a13d1de47e04176a81baeada7766edcbe03fa03",
+      "bytes": 114
+    }
+  ]
+}

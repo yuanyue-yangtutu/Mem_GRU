@@ -1,0 +1,95 @@
+{
+  "model": "EEGNeX",
+  "status": "synthetic_smoke_passed",
+  "python": "3.8.20 | packaged by conda-forge | (default, Sep 30 2024, 17:44:03) [MSC v.1929 64 bit (AMD64)]",
+  "TF": "2.10.0",
+  "keras": "2.10.0",
+  "numpy": "1.23.5",
+  "device": {
+    "device_name": "NVIDIA GeForce RTX 4060 Laptop GPU",
+    "compute_capability": [
+      8,
+      9
+    ]
+  },
+  "batch": 128,
+  "shape": [
+    128,
+    1,
+    22,
+    1000
+  ],
+  "classes": 4,
+  "source_hashes": {
+    "EEGNeX\\BenchmarkModels.py": "ab8550fa5e6efd00a24aafcb0fd8b6c672c48c065356d30c7d8dd0b6b89d6164"
+  },
+  "AST_adaptations": [
+    {
+      "function": "EEGNeX_8_32",
+      "removed": "plot_model and internal compile only; forward layers unchanged"
+    }
+  ],
+  "params_total": 71188,
+  "params_trainable": 64188,
+  "optimizer": {
+    "name": "Adam",
+    "learning_rate": "0.001",
+    "decay": 0.0,
+    "beta_1": "0.9",
+    "beta_2": "0.999",
+    "epsilon": 1e-07,
+    "amsgrad": false
+  },
+  "warmup_seconds": [
+    3.0821749999999994,
+    0.09344609999999953,
+    0.09448420000000013
+  ],
+  "train_step_seconds": [
+    0.09312680000000029,
+    0.09411679999999922,
+    0.09503730000000044,
+    0.09355669999999972,
+    0.09445049999999977,
+    0.09478600000000004,
+    0.09470840000000003,
+    0.09472030000000053,
+    0.0948380999999987,
+    0.09502010000000105,
+    0.09653389999999895,
+    0.09557449999999967,
+    0.09635119999999908,
+    0.09589170000000102,
+    0.09600700000000018,
+    0.09556500000000057,
+    0.09548159999999939,
+    0.0942778999999998,
+    0.09535419999999917,
+    0.09463320000000053
+  ],
+  "eval_step_seconds": [
+    0.027905300000000466,
+    0.028206899999998924,
+    0.028454500000000493,
+    0.028241200000000077,
+    0.028352199999998717
+  ],
+  "train_median_s": 0.09492909999999988,
+  "train_min_s": 0.09312680000000029,
+  "train_max_s": 0.09653389999999895,
+  "train_p90_s": 0.09604142000000007,
+  "eval_median_s": 0.028241200000000077,
+  "peak_allocator_bytes": 3949622272,
+  "current_allocator_bytes": 12158976,
+  "synthetic_optimizer_steps": 23,
+  "output_shape": [
+    128,
+    4
+  ],
+  "row_sum_max_error": 1.1920928955078125e-07,
+  "scientific_training_fits": 0,
+  "real_EEG_reads": 0,
+  "real_label_reads": 0,
+  "E_or_OpenBMI_target_reads": 0,
+  "caveat": "synthetic GPU microbenchmark; not real-data throughput or convergence evidence; no source fixture or weights read"
+}
