@@ -1,0 +1,38 @@
+{
+  "type": "archived_summary_and_receipts_only",
+  "sources": {
+    "01_three_datasets.md": {
+      "file": "D:\\BCI_builds\\PRS_FrozenArchive_20261121\\tables\\01_three_datasets.md",
+      "sha256": "da81eac5358d2dfcbfb7f49f430b120ce364ca656e342209a99d9914d984fe30"
+    },
+    "02_prior_stress.md": {
+      "file": "D:\\BCI_builds\\PRS_FrozenArchive_20261121\\tables\\02_prior_stress.md",
+      "sha256": "bd7ddec6e86bd85e008eb4bf5a97a3878f40315caaf770cc785aa29fcc66462d"
+    },
+    "04_baseline_tertiles.md": {
+      "file": "D:\\BCI_builds\\PRS_FrozenArchive_20261121\\tables\\04_baseline_tertiles.md",
+      "sha256": "dc718d73f88437630829c6a1e0a44b9a20f9639342cc4a4714d95ba2fcd8c8be"
+    },
+    "05_mechanism_correlations.md": {
+      "file": "D:\\BCI_builds\\PRS_FrozenArchive_20261121\\tables\\05_mechanism_correlations.md",
+      "sha256": "1daf331f637143da0d65cefd3f502793d480d9e7763700e94474b0124287f6e0"
+    }
+  },
+  "OpenBMI_output_lock": {
+    "commit": "80db932a5195954744249b6ca94208d9118d3884",
+    "manifest_file": "preregistrations/openbmi-split-studies-20261120-revision2/outputs/OUTPUT_SHA256_20261120.json",
+    "manifest_sha256": "78616980123354a96d0941176de8cc5131b0cf847c550709a01cbf2307899a2b",
+    "role": "全部输出的哈希锁定公开提交，先于本轮第1会话标签档案首次打开与评分；不是模型规范提交，不含预测内容。",
+    "evidence": [
+      {
+        "file": "D:\\BCI_builds\\OpenBMI_AB_Execution_20261120\\PUBLIC_OUTPUT_RECEIPT.json",
+        "sha256": "4a3368bac2d28834c4e975d15df15cc2f5868c11137769c54b789cc0ebea96dd"
+      },
+      {
+        "file": "D:\\BCI_builds\\OpenBMI_AB_Execution_20261120\\REPORT_SUPPLEMENT.md",
+        "sha256": "bdd0f001289a67be15571e0d85ac239d6410d2eb49c704306c08e3af9f738133"
+      }
+    ],
+    "timing_limit": "仓库级pushed_at，不是提交级独立签名PushEvent；Python日志记录NPZ档案open，不单独记录内部y.npy读取时刻。代码顺序与核验记录支持本轮公开核验后评分；不否认历史会话曝光。"
+  }
+}

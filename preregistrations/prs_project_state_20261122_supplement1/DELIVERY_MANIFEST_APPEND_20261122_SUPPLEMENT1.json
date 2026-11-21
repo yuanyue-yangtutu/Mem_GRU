@@ -1,0 +1,34 @@
+{
+  "hash_object": "exact bytes in the Git commit",
+  "parent_manifest_sha256": "7aba1985e8affabdd165016565530626d449bd6c55bab5239db4399355a01106",
+  "files": {
+    ".gitattributes": {
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+      "bytes": 8
+    },
+    "CLAIMS.md": {
+      "sha256": "e7d8881207b6c7ddcc6fc65ce7f18b733cdf418b0c9ce52c1afcbcaabf5530b7",
+      "bytes": 5300
+    },
+    "INDEX_APPEND_20261122_SUPPLEMENT1.json": {
+      "sha256": "fb785a625ac25e60aa0cdd29e2717099cca05a28601ab9cc3295e84060b2c690",
+      "bytes": 191
+    },
+    "OLD_FILES_SNAPSHOT.json": {
+      "sha256": "c49f31cb737a33c43e74afa1c2a6c3035a2da49330e01a9f157aa5c14fb4b859",
+      "bytes": 7256
+    },
+    "PROJECT_STATE.json": {
+      "sha256": "d054dd6e8ea80af45eee9ddc963232ebd432528258f5b42085e4e1e7bbc8b965",
+      "bytes": 12531
+    },
+    "PROJECT_STATE.md": {
+      "sha256": "bd83f0e2770ee5d84d70be70fa9d1665737ed762b3dd1e20876dc286af434913",
+      "bytes": 8664
+    },
+    "SOURCES.json": {
+      "sha256": "47555d98c482305d6923cbc21f515bfa32d1063b36ab18534eeaf895c94815c8",
+      "bytes": 2050
+    }
+  }
+}
