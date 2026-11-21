@@ -1,0 +1,86 @@
+{
+  "title": "同口径基线对比",
+  "revision": "R3",
+  "status": "FROZEN_DRAFT_AWAITING_USER_CONFIRMATION",
+  "normative_document": {
+    "file": "PLAN_DRAFT.md",
+    "sha256": "de06bb67a183bf93ae1427be935c990812172c4cfeef1ae672c71010fd94c0df"
+  },
+  "parent": {
+    "commit": "a5446a52e99b3c4b7411f9836fdc4127b19140a6",
+    "JSON_SHA256": "1eb4485b8691f3312fd0103bced108597feec06bdc7a89518233604f7bf3c941"
+  },
+  "authorization": {
+    "phase05_source_only": true,
+    "phase05_complete": true,
+    "formal_training": false,
+    "held_data_reads": false,
+    "E_OpenBMI_reads": false,
+    "source_probe_held": 1,
+    "source_subjects": [
+      2,
+      3,
+      4,
+      5,
+      6,
+      7,
+      8,
+      9
+    ],
+    "probe_seed": 42,
+    "max_probe_epochs": 2
+  },
+  "decisions": {
+    "cap_GPU_hours": 80,
+    "card": "local RTX4060 Laptop only",
+    "no_paid_resources": true,
+    "PPU": false,
+    "Conformer": "excluded",
+    "stage2": "after stage1 review",
+    "literature_arm": "not now"
+  },
+  "probe_result_files": [
+    "probe_results/EEGNet.json",
+    "probe_results/EEGNeX.json",
+    "probe_results/ATCNet.json"
+  ],
+  "source_manifest": "SOURCE_MANIFEST_PUBLIC.json",
+  "access_audit": "ACCESS_AUDIT.json",
+  "machine_trace": "HARDWARE_TRACE.json",
+  "restart": "FIT_RESTART_POLICY.json",
+  "stage1_proposed": {
+    "baselines": [
+      "EEGNet",
+      "EEGNeX",
+      "ATCNet"
+    ],
+    "seeds": [
+      42,
+      43,
+      44
+    ],
+    "folds": 9,
+    "fits": 81,
+    "PRS": "historical single frozen five-expert reference;development-selected",
+    "planned_total_GPU_hours": [
+      21.563044399277768,
+      61.70792989927776
+    ],
+    "remaining_budget_after_probe": 79.98671711222222
+  },
+  "actual": {
+    "probe_fits": 3,
+    "probe_epochs": 6,
+    "optimizer_updates": 298,
+    "formal_fits": 0,
+    "weights_saved": false,
+    "held_reads": 0,
+    "E_OpenBMI_reads": 0
+  },
+  "protocol": "R2 unchanged;sourceT75/25;raw22×1000;current-inclusive post-fusion causal rule;subject-paired bootstrap",
+  "PRS_replay": "R2 registered2e-5 contract;still not run",
+  "claims": "pipeline timing/metadata only;no accuracy/gain/generalization/long-run thermal stability claim",
+  "next": "user R3 review before any formal training;no automatic expansion",
+  "ready_for_formal_execution": false,
+  "hash_object": "exact bytes in the Git commit"
+}

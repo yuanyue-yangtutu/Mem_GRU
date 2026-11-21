@@ -1,0 +1,14 @@
+{
+  "status": "REGISTERED_NOT_RUN",
+  "scope": "R2 historical five neural experts and their complete equal-weight mean only",
+  "max_abs_probability_error": 2e-05,
+  "rtol": 0,
+  "argmax_changes_required": 0,
+  "near_tie_margin_flag": 4e-05,
+  "source": "explicit user preregistration this turn, not fit to target or source outcomes",
+  "rationale": "small absolute float32/backend arithmetic engineering budget, coupled to zero decision changes and exact provenance/port binding",
+  "caveat": "not empirically validated by stage0; does not establish training isolation or accuracy; no source fixture or weights read",
+  "old_full_PRS_45_gates_unchanged": true,
+  "old_2e_6_oracle_unchanged": true,
+  "old_E_OpenBMI_PLANS_unchanged": true
+}

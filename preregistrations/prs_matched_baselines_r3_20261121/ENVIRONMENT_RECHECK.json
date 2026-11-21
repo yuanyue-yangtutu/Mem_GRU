@@ -1,0 +1,96 @@
+{
+  "R2_runtime_metadata_matches": true,
+  "primary_metadata_count_before_TF": 60,
+  "runtime_metadata_count_after_TF": 77,
+  "added_runtime_metadata": [
+    {
+      "name": "autocommand",
+      "version": "2.2.2",
+      "location": "E:\\BCI_CV\\.conda\\prs_stage0_tf210\\lib\\site-packages\\setuptools\\_vendor"
+    },
+    {
+      "name": "backports.tarfile",
+      "version": "1.2.0",
+      "location": "E:\\BCI_CV\\.conda\\prs_stage0_tf210\\lib\\site-packages\\setuptools\\_vendor"
+    },
+    {
+      "name": "importlib_metadata",
+      "version": "8.0.0",
+      "location": "E:\\BCI_CV\\.conda\\prs_stage0_tf210\\lib\\site-packages\\setuptools\\_vendor"
+    },
+    {
+      "name": "importlib_resources",
+      "version": "6.4.0",
+      "location": "E:\\BCI_CV\\.conda\\prs_stage0_tf210\\lib\\site-packages\\setuptools\\_vendor"
+    },
+    {
+      "name": "inflect",
+      "version": "7.3.1",
+      "location": "E:\\BCI_CV\\.conda\\prs_stage0_tf210\\lib\\site-packages\\setuptools\\_vendor"
+    },
+    {
+      "name": "jaraco.collections",
+      "version": "5.1.0",
+      "location": "E:\\BCI_CV\\.conda\\prs_stage0_tf210\\lib\\site-packages\\setuptools\\_vendor"
+    },
+    {
+      "name": "jaraco.context",
+      "version": "5.3.0",
+      "location": "E:\\BCI_CV\\.conda\\prs_stage0_tf210\\lib\\site-packages\\setuptools\\_vendor"
+    },
+    {
+      "name": "jaraco.functools",
+      "version": "4.0.1",
+      "location": "E:\\BCI_CV\\.conda\\prs_stage0_tf210\\lib\\site-packages\\setuptools\\_vendor"
+    },
+    {
+      "name": "jaraco.text",
+      "version": "3.12.1",
+      "location": "E:\\BCI_CV\\.conda\\prs_stage0_tf210\\lib\\site-packages\\setuptools\\_vendor"
+    },
+    {
+      "name": "more-itertools",
+      "version": "10.3.0",
+      "location": "E:\\BCI_CV\\.conda\\prs_stage0_tf210\\lib\\site-packages\\setuptools\\_vendor"
+    },
+    {
+      "name": "packaging",
+      "version": "24.1",
+      "location": "E:\\BCI_CV\\.conda\\prs_stage0_tf210\\lib\\site-packages\\setuptools\\_vendor"
+    },
+    {
+      "name": "platformdirs",
+      "version": "4.2.2",
+      "location": "E:\\BCI_CV\\.conda\\prs_stage0_tf210\\lib\\site-packages\\setuptools\\_vendor"
+    },
+    {
+      "name": "tomli",
+      "version": "2.0.1",
+      "location": "E:\\BCI_CV\\.conda\\prs_stage0_tf210\\lib\\site-packages\\setuptools\\_vendor"
+    },
+    {
+      "name": "typeguard",
+      "version": "4.3.0",
+      "location": "E:\\BCI_CV\\.conda\\prs_stage0_tf210\\lib\\site-packages\\setuptools\\_vendor"
+    },
+    {
+      "name": "typing_extensions",
+      "version": "4.12.2",
+      "location": "E:\\BCI_CV\\.conda\\prs_stage0_tf210\\lib\\site-packages\\setuptools\\_vendor"
+    },
+    {
+      "name": "wheel",
+      "version": "0.43.0",
+      "location": "E:\\BCI_CV\\.conda\\prs_stage0_tf210\\lib\\site-packages\\setuptools\\_vendor"
+    },
+    {
+      "name": "zipp",
+      "version": "3.19.2",
+      "location": "E:\\BCI_CV\\.conda\\prs_stage0_tf210\\lib\\site-packages\\setuptools\\_vendor"
+    }
+  ],
+  "tensorflow": "2.10.0",
+  "keras": "2.10.0",
+  "numpy": "1.23.5",
+  "note": "metadata enumeration is import-context dependent; no package installation/removal inferred from pre-import count"
+}

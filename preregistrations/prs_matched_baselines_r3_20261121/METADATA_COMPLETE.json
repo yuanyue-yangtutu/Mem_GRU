@@ -1,0 +1,1 @@
+{"status":"source_metadata_complete","held":1,"source_owners":[2,3,4,5,6,7,8,9],"train_shape":[1728,22,1000],"val_shape":[576,22,1000],"manifest_sha256":"c04cb7006e43d52607d39b8988dc9e64b19373c0d1943d410fb818e3f9abc095","timings":{"source_load_and_verify_seconds":1.0694089,"normalizer_and_transform_seconds":0.5555117}}

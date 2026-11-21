@@ -1,0 +1,49 @@
+{
+  "registration_utc": "2026-11-21T03:22:42.715709+00:00",
+  "first_source_open_utc": "2026-11-21T03:24:05.896440+00:00",
+  "registration_preceded_source_open": true,
+  "logs": [
+    {
+      "file": "logs/ACCESS_ATCNet.jsonl",
+      "sha256": "a19463a00d9dea8d40161cc710fffb1c92e2593e8be24625965dd45df9b7ecd5",
+      "events": 3281,
+      "source_file_opens": 24,
+      "denied": 0
+    },
+    {
+      "file": "logs/ACCESS_controller.jsonl",
+      "sha256": "55233224c50cba5f8e1ff85119e3d6ffaee2fa67b06bb76319996df36918d1d6",
+      "events": 58,
+      "source_file_opens": 0,
+      "denied": 0
+    },
+    {
+      "file": "logs/ACCESS_EEGNet.jsonl",
+      "sha256": "d4d1ac4064624af0f2361139606662f19675fe88a06d941a8c00c5f7ff5a28d6",
+      "events": 4143,
+      "source_file_opens": 24,
+      "denied": 0
+    },
+    {
+      "file": "logs/ACCESS_EEGNeX.jsonl",
+      "sha256": "de074dffb982262672b4514443b8472518e1ce8ee0bf8427a5f5bb92b21ba806",
+      "events": 3143,
+      "source_file_opens": 24,
+      "denied": 0
+    },
+    {
+      "file": "logs/ACCESS_metadata.jsonl",
+      "sha256": "c5cec7a4d7262be3ad7a4f51f53f1af7da939c1cb83dd77dd1febfbe1bd5bfa8",
+      "events": 277,
+      "source_file_opens": 27,
+      "denied": 0
+    }
+  ],
+  "total_source_file_open_events": 99,
+  "held_data_opens": 0,
+  "E_OpenBMI_opens": 0,
+  "denied": 0,
+  "coverage": "Python open hooks with exact8-file allowlist;not OS ACL or complete DLL system-call audit",
+  "dataset_files_read_only": true,
+  "stopping_rule": "any forbidden open logs STOP then exits90;controller stops all remaining jobs"
+}

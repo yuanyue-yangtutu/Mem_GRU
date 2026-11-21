@@ -1,0 +1,71 @@
+{
+  "hardware": "local RTX4060 Laptop8GB only",
+  "cap_GPU_hours": 80,
+  "no_paid_resources": true,
+  "probe_GPU_hours_conservative_wall": 0.0132828877777744,
+  "budget_remaining_after_probe": 79.98671711222222,
+  "models": {
+    "EEGNet": {
+      "fits": 27,
+      "max_epochs": 500,
+      "measured_steady_epoch_seconds": 0.8373946000000014,
+      "measured_fixed_overhead_seconds": 9.468041099999997,
+      "GPU_hours": [
+        4.781354933250008,
+        12.63192930825002
+      ],
+      "peak_allocator_bytes": 343103744
+    },
+    "EEGNeX": {
+      "fits": 27,
+      "max_epochs": 200,
+      "measured_steady_epoch_seconds": 1.5003457999999998,
+      "measured_fixed_overhead_seconds": 10.344491900000001,
+      "GPU_hours": [
+        3.4533617392499996,
+        9.079658489249999
+      ],
+      "peak_allocator_bytes": 4993210112
+    },
+    "ATCNet": {
+      "fits": 27,
+      "max_epochs": 1000,
+      "measured_steady_epoch_seconds": 1.062294099999999,
+      "measured_fixed_overhead_seconds": 15.231495200000001,
+      "GPU_hours": [
+        12.065044838999988,
+        31.983059213999965
+      ],
+      "peak_allocator_bytes": 2499647488
+    }
+  },
+  "training_GPU_hours": [
+    20.299761511499995,
+    53.69464701149998
+  ],
+  "baseline_forward_unmeasured": [
+    1,
+    6
+  ],
+  "PRS_forward_unmeasured": [
+    0.25,
+    2
+  ],
+  "stage1_plus_probe_GPU_hours": [
+    21.563044399277768,
+    61.70792989927776
+  ],
+  "CPU_bias_unmeasured_hours": [
+    1,
+    8
+  ],
+  "formula": "27*(F+[1.5,4]*max_epochs*measured_epoch2_wall)/3600",
+  "planning_multipliers_unchanged_from_R2": [
+    1.5,
+    4
+  ],
+  "ETA_or_guarantee": false,
+  "long_term_thermal_stability_proven": false,
+  "cap_includes_failed_attempts_and_reruns": true,
+  "no_formal_jobs_started": true
+}

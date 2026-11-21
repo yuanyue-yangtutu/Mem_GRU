@@ -1,0 +1,232 @@
+{
+  "EEGNet": {
+    "lr": 0.001,
+    "batch": 16,
+    "max_epochs": 500,
+    "kernel_samples": 64,
+    "checkpoint": {
+      "monitor": "val_loss",
+      "mode": "min",
+      "tie": "earliest strict minimum",
+      "min_delta": 0
+    },
+    "scheduler": null,
+    "early_stopping": null,
+    "batch_provenance": "original MI paper does not specify batch; fixed16 from official author example as disclosed protocol adaptation, not asserted original MI default",
+    "kernel_provenance": "32/128=.250s SMR paper support ->64/250=.256s; fixed rate adaptation before real data, not result-selected",
+    "optimizer": {
+      "name": "tensorflow.keras.optimizers.Adam",
+      "learning_rate": 0.001,
+      "beta_1": 0.9,
+      "beta_2": 0.999,
+      "epsilon": 1e-07,
+      "amsgrad": false,
+      "decay": 0.0,
+      "decoupled_weight_decay": 0.0,
+      "weight_decay_note": "legacy Adam has no decoupled weight_decay argument; no add-on decay"
+    },
+    "loss": {
+      "name": "CategoricalCrossentropy",
+      "from_logits": false,
+      "label_smoothing": 0,
+      "reduction": "sum_over_batch_size",
+      "regularization": "exact original layer constraints; no added L2"
+    },
+    "BN": {
+      "epsilon": 0.001,
+      "momentum": 0.99,
+      "center": true,
+      "scale": true,
+      "axis": "per-layer MODEL_CONFIG JSON; EEGNeX retains official last-axis normalization"
+    },
+    "framework": {
+      "Python": "3.8.20",
+      "tensorflow": "2.10.0",
+      "keras": "2.10.0",
+      "backend_epsilon": 1e-07,
+      "dtype": "float32",
+      "TF32": false,
+      "JIT": false,
+      "mixed_precision": false,
+      "image_data_format": "channels_last",
+      "seed": 20261121,
+      "full_op_determinism": false,
+      "determinism_note": "fixed seeds; no promise of bitwise cross-driver equality"
+    },
+    "effective_callback_attributes": {}
+  },
+  "EEGNeX": {
+    "lr": 0.001,
+    "batch": 128,
+    "max_epochs": 200,
+    "checkpoint": {
+      "monitor": "val_accuracy",
+      "mode": "max",
+      "tie": "earliest strict maximum",
+      "min_delta": 0
+    },
+    "scheduler": {
+      "monitor": "val_accuracy",
+      "mode": "max",
+      "factor": 0.5,
+      "patience": 5,
+      "min_delta": 0.0001,
+      "cooldown": 0,
+      "min_lr": 0
+    },
+    "early_stopping": {
+      "monitor": "val_accuracy",
+      "mode": "max",
+      "patience": 20,
+      "min_delta": 0,
+      "baseline": null,
+      "restore_best_weights": true
+    },
+    "monitor_provenance": "paper3.3 accuracy takes precedence over notebook val_loss;200 cap from notebook; no target data used",
+    "optimizer": {
+      "name": "tensorflow.keras.optimizers.Adam",
+      "learning_rate": 0.001,
+      "beta_1": 0.9,
+      "beta_2": 0.999,
+      "epsilon": 1e-07,
+      "amsgrad": false,
+      "decay": 0.0,
+      "decoupled_weight_decay": 0.0,
+      "weight_decay_note": "legacy Adam has no decoupled weight_decay argument; no add-on decay"
+    },
+    "loss": {
+      "name": "CategoricalCrossentropy",
+      "from_logits": false,
+      "label_smoothing": 0,
+      "reduction": "sum_over_batch_size",
+      "regularization": "exact original layer constraints; no added L2"
+    },
+    "BN": {
+      "epsilon": 0.001,
+      "momentum": 0.99,
+      "center": true,
+      "scale": true,
+      "axis": "per-layer MODEL_CONFIG JSON; EEGNeX retains official last-axis normalization"
+    },
+    "framework": {
+      "Python": "3.8.20",
+      "tensorflow": "2.10.0",
+      "keras": "2.10.0",
+      "backend_epsilon": 1e-07,
+      "dtype": "float32",
+      "TF32": false,
+      "JIT": false,
+      "mixed_precision": false,
+      "image_data_format": "channels_last",
+      "seed": 20261121,
+      "full_op_determinism": false,
+      "determinism_note": "fixed seeds; no promise of bitwise cross-driver equality"
+    },
+    "effective_callback_attributes": {
+      "scheduler": {
+        "monitor": "val_accuracy",
+        "mode": "max",
+        "factor": 0.5,
+        "patience": 5,
+        "min_delta": 0.0001,
+        "cooldown": 0,
+        "min_lr": 0
+      },
+      "early_stopping": {
+        "monitor": "val_accuracy",
+        "patience": 20,
+        "min_delta": 0,
+        "restore_best_weights": true,
+        "baseline": null
+      }
+    }
+  },
+  "ATCNet": {
+    "lr": 0.0009,
+    "batch": 64,
+    "max_epochs": 1000,
+    "checkpoint": {
+      "monitor": "val_accuracy",
+      "mode": "max",
+      "tie": "earliest strict maximum",
+      "min_delta": 0
+    },
+    "scheduler": {
+      "monitor": "val_loss",
+      "mode": "min",
+      "factor": 0.9,
+      "patience": 20,
+      "min_delta": 0.0001,
+      "cooldown": 0,
+      "min_lr": 0.0001
+    },
+    "early_stopping": {
+      "monitor": "val_accuracy",
+      "mode": "max",
+      "patience": 300,
+      "min_delta": 0,
+      "baseline": null,
+      "restore_best_weights": true
+    },
+    "code_commit": "cd702831b1310476507dde3a10a9fc4dcd0d3cbd",
+    "provenance": "paper III-C and original2022 main.py agree .0009/64/1000/300; newest2023 architecture L2 additions excluded",
+    "initialization": "paper Glorot uniform; four TCN kernel_initializer he_uniform AST call sites explicitly changed; no structural change",
+    "optimizer": {
+      "name": "tensorflow.keras.optimizers.Adam",
+      "learning_rate": 0.0009,
+      "beta_1": 0.9,
+      "beta_2": 0.999,
+      "epsilon": 1e-07,
+      "amsgrad": false,
+      "decay": 0.0,
+      "decoupled_weight_decay": 0.0,
+      "weight_decay_note": "legacy Adam has no decoupled weight_decay argument; no add-on decay"
+    },
+    "loss": {
+      "name": "CategoricalCrossentropy",
+      "from_logits": false,
+      "label_smoothing": 0,
+      "reduction": "sum_over_batch_size",
+      "regularization": "exact original layer constraints; no added L2"
+    },
+    "BN": {
+      "epsilon": 0.001,
+      "momentum": 0.99,
+      "center": true,
+      "scale": true,
+      "axis": "per-layer MODEL_CONFIG JSON; EEGNeX retains official last-axis normalization"
+    },
+    "framework": {
+      "Python": "3.8.20",
+      "tensorflow": "2.10.0",
+      "keras": "2.10.0",
+      "backend_epsilon": 1e-07,
+      "dtype": "float32",
+      "TF32": false,
+      "JIT": false,
+      "mixed_precision": false,
+      "image_data_format": "channels_last",
+      "seed": 20261121,
+      "full_op_determinism": false,
+      "determinism_note": "fixed seeds; no promise of bitwise cross-driver equality"
+    },
+    "effective_callback_attributes": {
+      "scheduler": {
+        "monitor": "val_loss",
+        "mode": "min",
+        "factor": 0.9,
+        "patience": 20,
+        "min_delta": 0.0001,
+        "cooldown": 0,
+        "min_lr": 0.0001
+      },
+      "early_stopping": {
+        "monitor": "val_accuracy",
+        "patience": 300,
+        "min_delta": 0,
+        "restore_best_weights": true,
+        "baseline": null
+      }
+    }
+  }
+}

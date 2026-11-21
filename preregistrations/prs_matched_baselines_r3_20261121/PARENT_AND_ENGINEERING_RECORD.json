@@ -1,0 +1,157 @@
+{
+  "parent_commit": "a5446a52e99b3c4b7411f9836fdc4127b19140a6",
+  "parent_files_unchanged": true,
+  "frozen_R2_worker_sha256": "7f4055f0031734c10a10d4d8f84cf3abedcc76abb3f39dfce1d50c8518cb18c9",
+  "derived_factory_sha256": "5c6129981e6662043811d43c1ab8d667b787c7ddf58f8048147ac989a15a7845",
+  "derivation": "R2 run prefix up to model construction;fixed probe seed42 substitutes synthetic seed20261121;no model hyperparameter changed",
+  "metadata_initial_failure": "script assumed cache storagefloat32;actualfloat64;fixed existing R2 float32 model-port conversion before any updates",
+  "metadata_failure_log_sha256": "1dc2292c8f22daa2c458239c57e0881d927e708da1290db0d7447a8cef506c78",
+  "environment_assertion": "pre-import60 vs R2 post-TF77 metadata;17 setuptools vendored entries;post-TF context matches exactly;no dependency changes",
+  "probes_rerun": false,
+  "completed_probe_fits": 3,
+  "probe_epochs_total": 6,
+  "total_optimizer_updates": 298,
+  "formal_training_fits": 0,
+  "held_scores": 0,
+  "real_source_T_owners": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "E_OpenBMI_reads": 0,
+  "probes_weights_saved": false,
+  "probe_weights_reused": false,
+  "PRS_source_replay_run": false,
+  "PPU_jobs_or_uploads": 0,
+  "no_paid_resources": true,
+  "temporary_dashboard_refresh_stopped": true,
+  "actual_executed_code_sha256": {
+    "access_guard.py": "de935967f602b2ad4c7604b278f0778aecc8dba47890e9bd70213acec402614a",
+    "source_pipeline.py": "b97055927961f0c13f1b38a31d20466dcddacdf67b0b740934d6c143bd17e6b6",
+    "baseline_factory.py": "5c6129981e6662043811d43c1ab8d667b787c7ddf58f8048147ac989a15a7845",
+    "probe_worker.py": "37eb81087bdf5fec1db1c36f7d6724f8fcff74d8be193efa03a663315bc7b38d",
+    "run_probes.py": "ab921e456ea39513363e95c44ecbf7bf830aa13e221061db282af000849c1d25"
+  },
+  "log_index": [
+    {
+      "file": "logs/ACCESS_ATCNet.jsonl",
+      "sha256": "a19463a00d9dea8d40161cc710fffb1c92e2593e8be24625965dd45df9b7ecd5",
+      "bytes": 910890
+    },
+    {
+      "file": "logs/ACCESS_controller.jsonl",
+      "sha256": "55233224c50cba5f8e1ff85119e3d6ffaee2fa67b06bb76319996df36918d1d6",
+      "bytes": 13373
+    },
+    {
+      "file": "logs/ACCESS_EEGNet.jsonl",
+      "sha256": "d4d1ac4064624af0f2361139606662f19675fe88a06d941a8c00c5f7ff5a28d6",
+      "bytes": 1119031
+    },
+    {
+      "file": "logs/ACCESS_EEGNeX.jsonl",
+      "sha256": "de074dffb982262672b4514443b8472518e1ce8ee0bf8427a5f5bb92b21ba806",
+      "bytes": 877529
+    },
+    {
+      "file": "logs/ACCESS_metadata.jsonl",
+      "sha256": "c5cec7a4d7262be3ad7a4f51f53f1af7da939c1cb83dd77dd1febfbe1bd5bfa8",
+      "bytes": 69396
+    },
+    {
+      "file": "logs/ATCNet.stderr.txt",
+      "sha256": "fed8dadef75c6af309fb009d9fd8583033fde31425ac2294c0a7183245e9635b",
+      "bytes": 1082
+    },
+    {
+      "file": "logs/ATCNet.stdout.txt",
+      "sha256": "2f1295ab3fcbe7b22d8f561d5b014d39801fc849d17cce58b475a5b71d44266c",
+      "bytes": 167
+    },
+    {
+      "file": "logs/controller.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file": "logs/controller.stdout.txt",
+      "sha256": "fa47c3c35be1bac0069786b70032dbad6025fcf010e1253cc039e6044bf20070",
+      "bytes": 304
+    },
+    {
+      "file": "logs/EEGNet.stderr.txt",
+      "sha256": "2c2c124c79b65d462897d5bde837e113d215020b46daeefa2c68627b7e587ae2",
+      "bytes": 1082
+    },
+    {
+      "file": "logs/EEGNet.stdout.txt",
+      "sha256": "27a9e634816b49520467c508d84d1d035cd85aa531b442d7a0edd20dae17a3c6",
+      "bytes": 172
+    },
+    {
+      "file": "logs/EEGNeX.stderr.txt",
+      "sha256": "62d411176b004a839fe36c316f85e00f5b28aa9caf647e12d8d50f75213d20ef",
+      "bytes": 3657
+    },
+    {
+      "file": "logs/EEGNeX.stdout.txt",
+      "sha256": "8182931a76b4ec7626c1de73982f39f7a20f8b3601206d27dc7d14badc95ce98",
+      "bytes": 173
+    },
+    {
+      "file": "logs/env_recheck.stderr.txt",
+      "sha256": "0f54757ea62fb978a47190a59c0d4e9f1055632f2fabe00a071b7821e030abbd",
+      "bytes": 339
+    },
+    {
+      "file": "logs/HARDWARE.jsonl",
+      "sha256": "ca5238c24d471c5cda1a082043623dea5ae05709af69e2650d41b22d699667aa",
+      "bytes": 12485
+    },
+    {
+      "file": "logs/hibernate_policy.txt",
+      "sha256": "bbd4095ba789d80d073a4094bdcface2ed12b78816661057ed71d068ac9ee065",
+      "bytes": 565
+    },
+    {
+      "file": "logs/metadata.stderr.txt",
+      "sha256": "1dc2292c8f22daa2c458239c57e0881d927e708da1290db0d7447a8cef506c78",
+      "bytes": 453
+    },
+    {
+      "file": "logs/metadata.stdout.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file": "logs/metadata_attempt1_storage_dtype.stderr.txt",
+      "sha256": "1dc2292c8f22daa2c458239c57e0881d927e708da1290db0d7447a8cef506c78",
+      "bytes": 453
+    },
+    {
+      "file": "logs/metadata_final.stderr.txt",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "bytes": 0
+    },
+    {
+      "file": "logs/metadata_final.stdout.txt",
+      "sha256": "5809459e5884216992d653bbeae8077976f097701211c9804bc17d75c2e872f7",
+      "bytes": 108
+    },
+    {
+      "file": "logs/power_scheme.txt",
+      "sha256": "84c9ce56ad7e43ec189583fb4980b05f4fedda128896fda11d0611779cf92173",
+      "bytes": 65
+    },
+    {
+      "file": "logs/sleep_policy.txt",
+      "sha256": "6932c0d56268a1d5dbaec112b6ae2119cf87567cd4929acdbee7c18ec969159a",
+      "bytes": 563
+    }
+  ]
+}

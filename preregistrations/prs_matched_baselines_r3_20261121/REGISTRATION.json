@@ -1,0 +1,42 @@
+{
+  "registered_utc": "2026-11-21T03:22:42.715709+00:00",
+  "held": 1,
+  "source_subjects": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "selection_reason": "first fixed fold, not based on scores",
+  "probe_seed": 42,
+  "split_seed": 20261221,
+  "source_files": [
+    "D:/BCI_builds/PRS_UNIFORM_NEWSEEDS/data/S2.npz",
+    "D:/BCI_builds/PRS_UNIFORM_NEWSEEDS/data/S3.npz",
+    "D:/BCI_builds/PRS_UNIFORM_NEWSEEDS/data/S4.npz",
+    "D:/BCI_builds/PRS_UNIFORM_NEWSEEDS/data/S5.npz",
+    "D:/BCI_builds/PRS_UNIFORM_NEWSEEDS/data/S6.npz",
+    "D:/BCI_builds/PRS_UNIFORM_NEWSEEDS/data/S7.npz",
+    "D:/BCI_builds/PRS_UNIFORM_NEWSEEDS/data/S8.npz",
+    "D:/BCI_builds/PRS_UNIFORM_NEWSEEDS/data/S9.npz"
+  ],
+  "allowed_sessions": "source T only",
+  "epochs_per_model": 2,
+  "models": [
+    "EEGNet",
+    "EEGNeX",
+    "ATCNet"
+  ],
+  "baseline_config_parent": "a5446a52e99b3c4b7411f9836fdc4127b19140a6",
+  "formal_training_authorized": false,
+  "held_read_authorized": false,
+  "E_OpenBMI_read_authorized": false,
+  "budget_cap_GPU_hours": 80,
+  "production_card": "local RTX4060 Laptop only; no paid/remote resources",
+  "PPU_source_data_upload": false,
+  "user_ambiguity_resolution": "specific local-only restriction takes precedence over generic PPU分流 wording"
+}

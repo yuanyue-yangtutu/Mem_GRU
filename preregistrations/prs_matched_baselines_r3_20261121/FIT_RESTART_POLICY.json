@@ -1,0 +1,23 @@
+{
+  "unit": "one model×outer_fold×training_seed",
+  "completed_marker": "TRAINING_COMPLETED",
+  "completed_fits": "retain immutable successful checkpoint/normalizer/source-selection metadata;never retrain because another fit or inference fails",
+  "interrupted_fits": "keep failed attempt for audit;new attempt starts whole fit with same seed and fresh model/optimizer/RNG;no epoch resume",
+  "probe_fits": "retain logs only;weights discarded;not counted as completed formal fits",
+  "inference": "separate status/job;failure does not invalidate completed training",
+  "attempts_count_toward80h": true,
+  "automatic_infinite_retry": false,
+  "budget_exhaustion": "stop/suspend scheduling;current interrupted fit not scored;completed fits retained;do not reduce folds,seeds,trials or epochs silently",
+  "machine_records": {
+    "before_after": [
+      "AC,battery,active power scheme,AC/DC standby andhibernate timeout,GPU,driver"
+    ],
+    "interval_seconds_formal": 5,
+    "AC_loss": "interrupt at next safe batch boundary",
+    "thermal_stop_proposed": "thermal flag continuous>=30s OR core>=85C continuous>=30s;stop fit,no automatic retry",
+    "idle_bit_not_thermal": true,
+    "no_permanent_global_power_changes": true,
+    "temporary_paths": "formal TEMP/TMP/CUDA_CACHE_PATH on non-system drive",
+    "suspend": "UTC+monotonic gaps and available OS resume events;do not infer full OS audit from sampling alone"
+  }
+}

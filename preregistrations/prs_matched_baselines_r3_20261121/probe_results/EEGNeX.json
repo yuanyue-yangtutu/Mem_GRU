@@ -1,0 +1,118 @@
+{
+  "status": "source_probe_complete_weights_discarded",
+  "held": 1,
+  "source_owners": [
+    2,
+    3,
+    4,
+    5,
+    6,
+    7,
+    8,
+    9
+  ],
+  "seed": 42,
+  "epochs": 2,
+  "train_shape": [
+    1728,
+    22,
+    1000
+  ],
+  "val_shape": [
+    576,
+    22,
+    1000
+  ],
+  "batch": 128,
+  "train_steps_per_epoch": 14,
+  "val_steps_per_epoch": 5,
+  "optimizer_updates": 28,
+  "params_total": 71188,
+  "pipeline_timings": {
+    "source_load_and_verify_seconds": 1.0118915,
+    "normalizer_and_transform_seconds": 0.5168994
+  },
+  "model_build_seconds": 4.4855803,
+  "dataset_build_seconds": 0.007322599999999291,
+  "fit_seconds": 7.127863499999999,
+  "epoch_timings": [
+    {
+      "epoch": 1,
+      "wall_seconds": 5.516729700000001,
+      "train_batch_seconds": [
+        3.4497349,
+        0.10588599999999992,
+        0.09476199999999935,
+        0.09500479999999989,
+        0.09469209999999961,
+        0.09453760000000067,
+        0.09498379999999962,
+        0.09648520000000005,
+        0.10002110000000108,
+        0.09509910000000055,
+        0.09570979999999984,
+        0.09852510000000159,
+        0.09670509999999943,
+        0.5568652999999983
+      ],
+      "val_batch_seconds": [
+        0.14929479999999984,
+        0.03114780000000117,
+        0.031198700000000912,
+        0.0312644000000013,
+        0.01589120000000044
+      ]
+    },
+    {
+      "epoch": 2,
+      "wall_seconds": 1.5003457999999998,
+      "train_batch_seconds": [
+        0.0947136000000004,
+        0.10339589999999887,
+        0.09463839999999912,
+        0.09357900000000008,
+        0.09674539999999965,
+        0.09400029999999937,
+        0.0970361999999998,
+        0.094396699999999,
+        0.09405399999999986,
+        0.09858760000000011,
+        0.09452710000000053,
+        0.0966212000000013,
+        0.09449019999999919,
+        0.04790419999999962
+      ],
+      "val_batch_seconds": [
+        0.032634599999999736,
+        0.0318082000000004,
+        0.03128980000000148,
+        0.031162200000000695,
+        0.015948599999999757
+      ]
+    }
+  ],
+  "peak_allocator_bytes": 4993210112,
+  "current_allocator_bytes": 893696,
+  "process_wall_seconds": 13.345183500000001,
+  "source_train_ids_sha256": "8f7d5ba1c600272e23646e9f00b66b07eac036806f83354186983d90c57b7224",
+  "source_val_ids_sha256": "878a4f5dca5d3d216e694bf5a9ebd07369f24bd550957c4adb6796acda8428a5",
+  "normalizer_sha256": "5bf767572d26dc673a7f1d506e6af7b03d3ce1caa51913c0815ed08d241a01a5",
+  "source_hashes": {
+    "EEGNeX\\BenchmarkModels.py": "ab8550fa5e6efd00a24aafcb0fd8b6c672c48c065356d30c7d8dd0b6b89d6164"
+  },
+  "adaptations": [
+    {
+      "function": "EEGNeX_8_32",
+      "removed": "plot_model and internal compile only; forward layers unchanged"
+    }
+  ],
+  "real_source_read": true,
+  "held_data_reads": 0,
+  "E_OpenBMI_reads": 0,
+  "held_scores_exported": false,
+  "source_scores_exported": false,
+  "weights_saved": false,
+  "weights_reused": false,
+  "formal_training_fits": 0,
+  "configuration_changed_after_source_scores": false
+}
