@@ -1,0 +1,51 @@
+{
+  "R31_commit": "0ad8b39fb104cfb02673de3aa8f7d682696d958f",
+  "R31_json": {
+    "logical_file": "R3_1.json",
+    "sha256": "759f10c48916c0f5184c5615bcad1425d2c485fc66e6d27c4567f181db63af92",
+    "bytes": 585,
+    "role": "normative R3.1 JSON in published commit"
+  },
+  "R31_markdown": {
+    "logical_file": "PLAN_R3_1.md",
+    "sha256": "c6224b705a65c98812fc95fec469b8645214db66cf24319ac74bd8289f58de45",
+    "bytes": 15190,
+    "role": "normative R3.1 Markdown"
+  },
+  "R31_engineering_contract": {
+    "logical_file": "ENGINEERING_CONTRACT.json",
+    "sha256": "1b00972f152e6f4100c057b984c0e92460ccdebf4563dd381aec9fa80f974db0",
+    "bytes": 1539,
+    "role": "contains constant split_seed; did not resolve contradiction with R2"
+  },
+  "R31_diff_proof": {
+    "logical_file": "DIFF_PROOF.json",
+    "sha256": "57622c8e8a812ff46d92f9b5f8790a6c0dfa346a5bfe6590504aff00cb00cc01",
+    "bytes": 2038,
+    "role": "two Markdown substitutions only; NOT proof implementation had only two semantic changes"
+  },
+  "R2_commit": "a5446a52e99b3c4b7411f9836fdc4127b19140a6",
+  "R2_markdown": {
+    "logical_file": "PLAN_DRAFT.md",
+    "sha256": "b73df2ee83aa52ed2872471532ad7ba17b3564b462db4a36dc2cce3803b7fc55",
+    "bytes": 16275,
+    "role": "R2 source split20261121+100h"
+  },
+  "R2_seed_rule": "20261121+100*h, h=1..9",
+  "actual_split_seed": 20261221,
+  "deviating_scope": "H2-H9 x3 models x3 seeds=72 fits; H1 x9 fits equals R2 formula",
+  "training_complete_manifest": {
+    "logical_file": "MODEL_HASH_MANIFEST.json",
+    "sha256": "738d22b360ebd0f4efa16f33b7c3e433779ef4b2da79039551719c8a3568607f",
+    "bytes": 121217,
+    "role": "original training-end full manifest; public81-row CSV is an extracted model-hash index, not a replacement"
+  },
+  "training_final": {
+    "logical_file": "FINAL.json",
+    "sha256": "55b5a52b6dab6f41231949fc18a41f70a0c3957a11dc46148f51757e92726703",
+    "bytes": 565,
+    "role": "completion binds original full manifest SHA"
+  },
+  "reason": "Implementation carried phase0.5 first-fold constant split_seed20261221 into every fit; controller registration hard-coded the constant. This was an implementation/review omission, not required by hardware or nondeterministic libraries. No evidence of target-score-based seed selection.",
+  "deterministic_record": "PCG64 default_rng20261221, ascending current source owners/classes, each72 permuted first54 train last18 val; same per-fold split across architectures/training seeds, stored before fitting; recording does not cure the protocol deviation"
+}

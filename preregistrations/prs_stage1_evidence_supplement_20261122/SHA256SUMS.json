@@ -1,0 +1,42 @@
+{
+  "hash_object": "exact bytes in the Git commit",
+  "self_hash": "excluded; commit and anonymous receipt bind manifest",
+  "files": {
+    ".gitattributes": {
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+      "bytes": 8
+    },
+    "EVIDENCE_MANIFEST.json": {
+      "sha256": "8c9954914d30d9c01e906b048c974440adf07813aa3a3842c3bc1c830bc9b5ba",
+      "bytes": 785
+    },
+    "PREDICTION_LOCK.json": {
+      "sha256": "57f69a847ba96cff3700c4e5f203b78767814e08d592fcf239d563779408f009",
+      "bytes": 30917
+    },
+    "R31_AND_TRAINING_REFERENCES.json": {
+      "sha256": "ae85a4bca6f9a66c1878390992892545601ff173fc150bb69da9245cafae174e",
+      "bytes": 2535
+    },
+    "README.md": {
+      "sha256": "4a35d16a17c891f65af2992958bba7186622167c4b7f56c3a05ab863472c24b6",
+      "bytes": 653
+    },
+    "TABLE_AND_PROVENANCE_SHA256.json": {
+      "sha256": "a8d91b35db23c4ffc5a2c24a8537a331b573aa8ef27321c5d36fb5b023b938c9",
+      "bytes": 4556
+    },
+    "TIMELINE_AND_LIMITATIONS.json": {
+      "sha256": "5a9a25d62c53ec7b461914601038f9b99f60e72792cfe4c448a99f1c809fa10f",
+      "bytes": 3238
+    },
+    "TRAINED_MODEL_HASHES.csv": {
+      "sha256": "90b39a46e398929c5528df4a49e57ee8a29a459edad0b614c40c790eab9f0f3d",
+      "bytes": 15709
+    },
+    "verify_anonymous.py": {
+      "sha256": "b3314e9bb475950404b5c3a1a2dc6c281f8c1677afd2848bf7c87aaf20219d70",
+      "bytes": 3319
+    }
+  }
+}

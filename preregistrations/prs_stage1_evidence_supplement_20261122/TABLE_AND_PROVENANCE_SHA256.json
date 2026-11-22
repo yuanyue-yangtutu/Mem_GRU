@@ -1,0 +1,120 @@
+{
+  "published_contents": "hashes only; original result/subject table bytes remain local",
+  "files": [
+    {
+      "logical_file": "tables/01_all_seeds_subjects.csv",
+      "sha256": "f7a2dd38a1fc22efc970270cdf0ecbd0bc96ecccc4d3256e8ba9c6425aeaad05",
+      "bytes": 12159,
+      "CRLF_count": 181,
+      "hash_object": "exact archived file bytes; no newline normalization"
+    },
+    {
+      "logical_file": "tables/02_subject_seed_means.csv",
+      "sha256": "a681b6ec0a90dc540d554470ba63bba7bbedf50071197027429e28ab8a55750a",
+      "bytes": 5947,
+      "CRLF_count": 73,
+      "hash_object": "exact archived file bytes; no newline normalization"
+    },
+    {
+      "logical_file": "tables/03_summary.csv",
+      "sha256": "7d7719f71b0fb6a2cf1036b80119835940dde131a4eb60ad209db1ff8e71d7dc",
+      "bytes": 752,
+      "CRLF_count": 9,
+      "hash_object": "exact archived file bytes; no newline normalization"
+    },
+    {
+      "logical_file": "tables/04_each_seed_summary.csv",
+      "sha256": "01efddd9b66ea5bdbe95d961401cadc06884e096c3d16c03553f0db4dbb07e5d",
+      "bytes": 1118,
+      "CRLF_count": 21,
+      "hash_object": "exact archived file bytes; no newline normalization"
+    },
+    {
+      "logical_file": "tables/05_paired_bootstrap.csv",
+      "sha256": "e41a3d5112b03d54bbf21858d4b0e93e6915c860a31f6d4941195598eb9d4d4d",
+      "bytes": 2743,
+      "CRLF_count": 11,
+      "hash_object": "exact archived file bytes; no newline normalization"
+    },
+    {
+      "logical_file": "tables/06_paired_subject_deltas.csv",
+      "sha256": "96b379966ae5bfd7f99039a04e6a18dcf36a9cd80fea41ed09257787cb9bee21",
+      "bytes": 5286,
+      "CRLF_count": 91,
+      "hash_object": "exact archived file bytes; no newline normalization"
+    },
+    {
+      "logical_file": "tables/07_leave_one_subject_out.csv",
+      "sha256": "e7d9b6fe57a90ca7158755c8759cfc73e074fb70ef2cb18a782e0c6d65f77855",
+      "bytes": 5316,
+      "CRLF_count": 91,
+      "hash_object": "exact archived file bytes; no newline normalization"
+    },
+    {
+      "logical_file": "REPORT.md",
+      "sha256": "3bb61824a143eb3be6030780373aaf513c903e5e83d22b93481216a427350eac",
+      "bytes": 7469,
+      "hash_object": "exact original bytes, not copied or changed"
+    },
+    {
+      "logical_file": "RESULT.json",
+      "sha256": "ca60f97881b372c9d6b3ddb57ee576530276a28e0848f877417857265c8552ea",
+      "bytes": 29139,
+      "hash_object": "exact original bytes, not copied or changed"
+    },
+    {
+      "logical_file": "CONFUSIONS.json",
+      "sha256": "1ee913087f1888fe23e7e2a76f6234bb19a54fd1be2fff5975c070219cfb841c",
+      "bytes": 41643,
+      "hash_object": "exact original bytes, not copied or changed"
+    },
+    {
+      "logical_file": "LABEL_PROVENANCE.json",
+      "sha256": "19151af215b56cbe1145f3c498afaa46809b522cbe49b7f76028f1ab33a77a93",
+      "bytes": 2890,
+      "hash_object": "exact original bytes, not copied or changed"
+    },
+    {
+      "logical_file": "FINAL_VERIFICATION.json",
+      "sha256": "818e4470458dc66cbbe49920ecaafba92fd1f9460cca5efeb4e7d031b82555b2",
+      "bytes": 1364,
+      "hash_object": "exact original bytes, not copied or changed"
+    },
+    {
+      "logical_file": "EXECUTION_CODE_HASHES.json",
+      "sha256": "67c3ea2749f2e10b8e1d1fd616cce493e977d6515a23b586a6e362b678eaf091",
+      "bytes": 638,
+      "hash_object": "exact original bytes, not copied or changed"
+    },
+    {
+      "logical_file": "DELIVERY_MANIFEST.json",
+      "sha256": "97ded8eab310b93d0809db58124087896d38cec7dbc8f5e110c66b9abca3640a",
+      "bytes": 25001,
+      "hash_object": "exact original bytes, not copied or changed"
+    },
+    {
+      "logical_file": "score_report.py",
+      "sha256": "4ab6f8da47977ed18e6017c226a5c6f807b20c4078b694d400af7f75c4b50dcc",
+      "bytes": 11181,
+      "hash_object": "exact original bytes, not copied or changed"
+    },
+    {
+      "logical_file": "prepare_eval.py",
+      "sha256": "898dfb587c84b35181758fff903f18dc749136e67dc8ab2145c30388a209e06e",
+      "bytes": 4186,
+      "hash_object": "exact original bytes, not copied or changed"
+    },
+    {
+      "logical_file": "training/controller.py",
+      "sha256": "c06462de18952c6ba0d6c21d7cbdcbb13a152e98174e1c77be5993325aeaf3b2",
+      "bytes": 8715,
+      "hash_object": "exact original bytes, not copied or changed"
+    },
+    {
+      "logical_file": "training/source_pipeline.py",
+      "sha256": "b97055927961f0c13f1b38a31d20466dcddacdf67b0b740934d6c143bd17e6b6",
+      "bytes": 5353,
+      "hash_object": "exact original bytes, not copied or changed"
+    }
+  ]
+}

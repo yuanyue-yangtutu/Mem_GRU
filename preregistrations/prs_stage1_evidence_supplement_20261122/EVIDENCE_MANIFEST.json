@@ -1,0 +1,13 @@
+{
+  "type": "retrospective hash-only evidence, no pre-scoring public lock",
+  "original_tables_file": "TABLE_AND_PROVENANCE_SHA256.json",
+  "source_split_audit_sha256": "5ef86ba84a6a5fd65ded0db748de9df7535c53c947e7b35343a60d04992185bd",
+  "local_full_report_sha256": "84887b52097df042716c7430c0fc3d3db85374abca857a0974f6b6d93ef3cdcb",
+  "local_aggregation_definition_sha256": "c5307723a2eb597164b1c6bf69aa9b03225a2caefcc9b9d4c70747d53bde13e7",
+  "original_model_manifest_sha256": "738d22b360ebd0f4efa16f33b7c3e433779ef4b2da79039551719c8a3568607f",
+  "original_prediction_lock_sha256": "57f69a847ba96cff3700c4e5f203b78767814e08d592fcf239d563779408f009",
+  "original_files_not_modified": true,
+  "models": 81,
+  "source_owner_exclusion_fits_verified": 81,
+  "split_deviation_fits": 72
+}

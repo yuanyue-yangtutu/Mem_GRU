@@ -1,0 +1,53 @@
+{
+  "events": {
+    "user_authorization": {
+      "timestamp_utc": "2026-11-22T02:39:04.115Z",
+      "timestamp_Beijing": "2026-11-22T10:39:04.115000+08:00",
+      "source": "private local conversation event, not independently signed server receipt",
+      "source_line": 14592,
+      "event_line_sha256": "29eb8d9c36ac305657007b6507ee48cc4495da73487ffec5a75ffdf2310a2ec9"
+    },
+    "first_verifiable_deviation_disclosure": {
+      "timestamp_utc": "2026-11-22T02:40:13.249Z",
+      "timestamp_Beijing": "2026-11-22T10:40:13.249000+08:00",
+      "source": "private local conversation event, not independently signed server receipt",
+      "source_line": 14620,
+      "event_line_sha256": "6f1263b3f4bcaffdd4a8016347c82ceebd5726becb0031e3dd18799e5849791a"
+    },
+    "preparation_tool_dispatched": {
+      "timestamp_utc": "2026-11-22T02:45:11.084Z",
+      "timestamp_Beijing": "2026-11-22T10:45:11.084000+08:00",
+      "source": "private local conversation event, not independently signed server receipt",
+      "source_line": 14699,
+      "event_line_sha256": "4db25724cf994e6fc55bd8806c23d978da799a9cc0385c947aba43f17d515d68"
+    }
+  },
+  "local_authorization_record": {
+    "utc": "2026-11-22T02:45:13.951857+00:00",
+    "Beijing": "2026-11-22T10:45:13.951857+08:00",
+    "sha256": "5941d4f502dea85b086f3f6bde9e22f8aa120e8eada85d0cce80004344ada643",
+    "file_mtime_utc": "2026-11-22T02:45:43.791745+00:00",
+    "limitation": "local execution registration, not the original user message timestamp"
+  },
+  "training_finished_utc": "2026-11-22T02:00:12.169713+00:00",
+  "local_prediction_lock_utc": "2026-11-22T02:54:37.248920+00:00",
+  "local_prediction_lock_Beijing": "2026-11-22T10:54:37.248920+08:00",
+  "local_prediction_lock_sha256": "57f69a847ba96cff3700c4e5f203b78767814e08d592fcf239d563779408f009",
+  "first_scoring_log_label_open_utc": "2026-11-22T02:55:08.255914+00:00",
+  "first_scoring_log_label_open_Beijing": "2026-11-22T10:55:08.255914+08:00",
+  "first_scoring_log_label_file": "PRS_UNIFORM_NEWSEEDS/score_labels/H1.npy",
+  "scoring_access_log_sha256": "3b6c01b5f8e6b11cb53790744531aac8b2679c8e30ff9bb262a0a5f91a95ce08",
+  "local_lock_to_logged_label_seconds": 31.006994,
+  "prior_public_output_lock_commit": null,
+  "public_lock_before_first_label_open_satisfied": false,
+  "first_full_evaluation_label_file_open": "not logged precisely: prepare_eval.py bound every H*.npy with sha() BEFORE AUTHORIZATION.json utc and before prediction lock; only byte hashing, not interpreting labels",
+  "preflight_label_hash_open_time_bound_utc": [
+    "2026-11-22T02:45:11.084Z",
+    "2026-11-22T02:45:13.951857+00:00"
+  ],
+  "first_label_value_load": "score_report.py loads H1.npy at first_scoring_log_label_open; before that, preflight SHA reads are not proof of no file opening",
+  "disclosure_precedes_preflight_byte_hash_open": true,
+  "disclosure_precedes_label_scoring": true,
+  "publication_status": "this new public hash package is retrospective and AFTER scoring; original file creation timestamp is not prior public commitment",
+  "audit_limit": "No full-run preparation access log; timestamps from local chat/files/Python audit are not independent server-signed proof. Historical IV2a-T development exposure remains."
+}
