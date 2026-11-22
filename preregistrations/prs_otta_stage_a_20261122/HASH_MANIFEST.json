@@ -1,0 +1,21 @@
+{
+  "measured_budget": null,
+  "data_preparation": "NOT_STARTED",
+  "status": "BLOCKED_STORAGE_PREFLIGHT",
+  "r2_sha256": {
+    "REVISION_AND_CONFIRMATION.json": "f710ebb8e650aa491e6ba3b8e46c3347b8917d9162701f0c53f8bc96026abd99",
+    "SOURCE_CODE_AUDIT.json": "eb17881218d72e6d71327e5ce2a9c709f4379799fb68f26257371410391af004",
+    "PLAN_DRAFT.json": "74ec21a0354ffa787ad2a5d7363167556536f735b7a488ebf6854f71acb5c7d3",
+    ".gitattributes": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+    "PLAN_DRAFT.md": "6a79b06ebc15244138f0eb783ef9c633be076c7d52438516a714420afe997193",
+    "SHA256SUMS.json": "1f1aad1da9f70b2d3361e59418a2d594c5c055ab9dc6f79e51c4a631cb0137b8",
+    "verify_anonymous.py": "b5d139d44dcc376c7f9bec78bc2e31219d226c40bbd8585fc6fbf4a73bea324b"
+  },
+  "environment": "NOT_CREATED",
+  "local_artifacts": {
+    "REPORT_md": "099e9041d2429497384cb3e2d5e56157c866c8ea61e445a94595b7efe48cb3c8"
+  },
+  "r2_commit": "eb0eed38963c4a8f511365a273ec531fcbb6cca7",
+  "gate_acceptance": "NOT_RUN",
+  "gpu_hours": 0
+}
