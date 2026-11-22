@@ -1,0 +1,17 @@
+{
+  "created": "2026-11-22T19:51:36.467582+08:00",
+  "files": {
+    "common.py": "3380bd9456f37f9d01e4d362cb9789c3a7e0fdaf3c96db9d079ca7080f3664d2",
+    "controller.py": "46c6fb529a7d7b6efab4b6f534d4bbe8cdf685948551e9aa43a39d25dd5306f4",
+    "dashboard.pyw": "8146ff5f1d9f9d26b8a5d5752a077f5ccc579dd211200a4f48aa0514220b27c6",
+    "infer.py": "452334414292cf081003826763b3b89d80a1407bc6f8d2938c1d1bb24ccb4084",
+    "INPUT_HASHES.json": "7f5c08ddab33bdc7b2522434fa22c6b3d1890897be76362ebf9933675da10699",
+    "LABEL_HASHES.json": "0ae5af883253b0e9262c621e15d72e62b2b3638321cfbb2e411ab25ebbce3a90",
+    "prepare.py": "c80f883c05232583aeee4cef47ab4356ad26addad6a5028c286ec129743f9921",
+    "RUN.json": "8f994d9274244740ad4ce34390b6845776341d257fa438400f1388c4c68810e6",
+    "score.py": "96dc076cfd64c5cefb16e2ce3cc910e827f70b97cb4cc4e1011b990558e5ac4b",
+    "SPLITS.json": "1ecf697094d7ee50327f8a3aac2709a32bcc774cb5f6feec824c960bf5faec8f",
+    "train.py": "e1b7c823327a30775c2c797d0887baa90c2b0d03619c77bffc1261b20660915d"
+  },
+  "meaning": "SHA256 of exact local UTF8 bytes; no probability, labels or parameters published"
+}
