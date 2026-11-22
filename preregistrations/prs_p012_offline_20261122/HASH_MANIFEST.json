@@ -1,0 +1,15 @@
+{
+  "type": "retrospective_exploratory_offline_analysis_hashes_only",
+  "not_preregistration": true,
+  "files": {
+    "REPORT.md": "6252388159f40efb0ee705df5c3222536f713ba35124f1a77852a371b193fd60",
+    "SUBJECTS.csv": "21b8bb0608d8341b6b94645abe8e357f1af0b6bb8b56664338ed3e93d5f4cb9f",
+    "STATISTICS.json": "ecc0010498dbf1f446dff90ec7a3f96136082ecceca1bdfc455d076f4d1fc1db",
+    "INPUT_PROVENANCE.json": "83491a852c72db134bdab69c2fd6ee8d6e784cab07d4c741220ebb00cf374ae4",
+    "PROJECT_STATE.json": "3e192f8a3c94f8bd2b8951619a027a126cf9199a2125b31881484135f575c82e",
+    "PROJECT_STATE.md": "ead0c8a6d746bf842eee72fec52bcf14d3e5efdea1ce14ca1d7c5005f2e19eda",
+    "COMPLETE.json": "d3cea0c4918fc6da804a4753a42839b79c3c4aaea584cab3e257d44cf7ba9cdb",
+    "analyze.py": "953fdf64d955e4ca5fb8cbb2d4cc9ea3ba7a55ebfedfdcb3b48b42b21aa58458"
+  },
+  "hash_object": "exact local artifact bytes; no predictions or labels published"
+}
