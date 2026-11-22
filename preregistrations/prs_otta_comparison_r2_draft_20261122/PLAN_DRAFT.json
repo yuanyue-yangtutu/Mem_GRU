@@ -1,0 +1,62 @@
+{
+  "status": "DRAFT_NOT_EXECUTABLE",
+  "date": "2026-11-22 Asia/Shanghai",
+  "normative_file": "PLAN_DRAFT.md",
+  "normative_sha256": "6a79b06ebc15244138f0eb783ef9c633be076c7d52438516a714420afe997193",
+  "authorization": "documents and public byte verification only",
+  "methods": [
+    "eeg-otta norm_test / BN-1",
+    "eeg-otta EntropyMinimization, supported alignment=False configuration"
+  ],
+  "repository": "martinwimpff/eeg-otta",
+  "commit": "e71e0aba60a2c60d908eddc4b74ee9b11f0dc320",
+  "license": "MIT",
+  "backbone": "official BaseNet; newly source-trained weights required; not stage1 TF EEGNet",
+  "subjects": 9,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "arms": [
+    "N",
+    "B",
+    "M",
+    "C",
+    "C_after_B",
+    "C_after_M"
+  ],
+  "training_fits_required": 27,
+  "source_gpu_hours_planning": [
+    7.5,
+    60
+  ],
+  "all_arms_gpu_hours_planning": [
+    7.67,
+    61.7
+  ],
+  "cost_measured": false,
+  "execution_authorized": false,
+  "gate_implemented": false,
+  "labels_read": false,
+  "revision": "R2",
+  "supersedes_draft_commit": "de39100207e4226e28e3adb695bc49b4d82bc5f2",
+  "primary_comparisons": [
+    "C-B",
+    "C-M"
+  ],
+  "secondary_exploratory_comparisons": [
+    "C_after_B-B",
+    "C_after_M-M"
+  ],
+  "gate_type": "lightweight software workflow; no OS permission isolation claim",
+  "gate_tested": false,
+  "budget_cap_gpu_hours": 80,
+  "resources": "local RTX4060 Laptop only",
+  "budget_is_execution_authorization": false,
+  "synthetic_epoch_seconds_median": null,
+  "synthetic_epoch_seconds_p90": null,
+  "synthetic_peak_gpu_memory_bytes": null,
+  "measured_27fit_gpu_hours": null,
+  "measurement_status": "pending separate synthetic-run and environment authorization"
+}

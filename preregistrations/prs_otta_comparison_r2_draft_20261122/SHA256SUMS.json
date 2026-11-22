@@ -1,0 +1,30 @@
+{
+  "hash_object": "exact bytes in the Git commit",
+  "self_hash": "excluded; immutable commit and anonymous receipt bind manifest",
+  "files": {
+    ".gitattributes": {
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+      "bytes": 8
+    },
+    "PLAN_DRAFT.json": {
+      "sha256": "74ec21a0354ffa787ad2a5d7363167556536f735b7a488ebf6854f71acb5c7d3",
+      "bytes": 1715
+    },
+    "PLAN_DRAFT.md": {
+      "sha256": "6a79b06ebc15244138f0eb783ef9c633be076c7d52438516a714420afe997193",
+      "bytes": 15389
+    },
+    "REVISION_AND_CONFIRMATION.json": {
+      "sha256": "f710ebb8e650aa491e6ba3b8e46c3347b8917d9162701f0c53f8bc96026abd99",
+      "bytes": 993
+    },
+    "SOURCE_CODE_AUDIT.json": {
+      "sha256": "eb17881218d72e6d71327e5ce2a9c709f4379799fb68f26257371410391af004",
+      "bytes": 3797
+    },
+    "verify_anonymous.py": {
+      "sha256": "b5d139d44dcc376c7f9bec78bc2e31219d226c40bbd8585fc6fbf4a73bea324b",
+      "bytes": 3317
+    }
+  }
+}
