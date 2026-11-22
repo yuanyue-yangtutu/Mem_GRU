@@ -1,0 +1,14 @@
+{
+  "schema": 1,
+  "hash_object": "Exact UTF-8 bytes of the named frozen local assets; this public JSON itself verified against Git commit bytes",
+  "authorization": "Full Kaggle T-only9LOSO3seed27fit; no E/OpenBMI",
+  "files": {
+    "RUN_LOCK.json": "311c7b7d864671d6f38794275fd92cca6d7f46d25310ce05514c3fd73affda27",
+    "AUTHORIZATION.json": "62233fb02d74bd38ea771f61a7df3ed5442caabb56630669bca621ff7d947ef5",
+    "worker.py": "f53bb4fe7c8b8d4ee882cb9dcd91dc7f3c7b4147a6aca77d49c20932016cc658",
+    "controller.py": "838389194b250dce8aa2e22b4274d6880e7b0278a1cd7a832a964a1c8faece8a",
+    "DBConformer_LOSO27.ipynb": "4079278e8baba76277bbf81c4eca2fd36782f5b212689719137727da002873f5",
+    "DBCONFORMER_T_ONLY_27.zip": "01a8729829ec4be2d66e1778e7c31252fb23ec0748212b4a9828592a98b55c89"
+  },
+  "bundle_bytes": 220104313
+}
