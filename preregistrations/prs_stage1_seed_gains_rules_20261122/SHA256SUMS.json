@@ -1,0 +1,42 @@
+{
+  "hash_object": "exact bytes in the Git commit",
+  "self_hash": "excluded; full commit and anonymous receipt bind manifest",
+  "files": {
+    ".gitattributes": {
+      "sha256": "705fd4d6451a31d36b3df7de96f83f30ac976c9b4a6d1e51671d8e2f33e2d0da",
+      "bytes": 8
+    },
+    "LESSONS_AND_FUTURE_RULES.md": {
+      "sha256": "245c91e916f7fcd8f47cca02dcab0080b1abff986401a1f75f1a4d4ccb7505a9",
+      "bytes": 3963
+    },
+    "PER_SEED_GAINS.csv": {
+      "sha256": "9971f7d98014a5602b7cd689f4e302573a41f3c6b2114513a974f94f4efa648b",
+      "bytes": 588
+    },
+    "PER_SEED_GAINS.json": {
+      "sha256": "ab40dbb9b5d89cafea4593179b0ec72bb0c46b1c0c200e00d4cea6ca93ad3fd5",
+      "bytes": 3600
+    },
+    "PER_SEED_GAINS.md": {
+      "sha256": "b4727d99ab77c9fef802eabfd884637d0bb36d4f9ccbb1c10b059930f81ab5b0",
+      "bytes": 1200
+    },
+    "RULES_APPEND_INDEX.json": {
+      "sha256": "8944c519816d7ab4a55abe1a691eab44cd585b7a7df762d8f596992830aa8b10",
+      "bytes": 999
+    },
+    "SOURCE_HASHES.json": {
+      "sha256": "3295a1fcf00f46792153d40900b928e7362b657d4ebf61a9f960a9dec9609adf",
+      "bytes": 1252
+    },
+    "SUBJECT_SIGN_TRACE.csv": {
+      "sha256": "7304ecfbbb9f050d679b253d45be53effa32f64e9fe06ed90e8e2d478ed04d23",
+      "bytes": 2671
+    },
+    "verify_anonymous.py": {
+      "sha256": "c6a90e264da4c0fb1b777842accfb81cd5e20814635ad2299a9b4d3385241a8c",
+      "bytes": 3316
+    }
+  }
+}

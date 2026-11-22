@@ -1,0 +1,29 @@
+{
+  "hash_object": "exact original archived bytes; not normalized",
+  "files": {
+    "E:\\BCI_CV\\experiments\\prs_stage1_T_eval_20261122\\tables\\01_all_seeds_subjects.csv": {
+      "sha256": "f7a2dd38a1fc22efc970270cdf0ecbd0bc96ecccc4d3256e8ba9c6425aeaad05",
+      "bytes": 12159
+    },
+    "E:\\BCI_CV\\experiments\\prs_stage1_T_eval_20261122\\tables\\04_each_seed_summary.csv": {
+      "sha256": "01efddd9b66ea5bdbe95d961401cadc06884e096c3d16c03553f0db4dbb07e5d",
+      "bytes": 1118
+    },
+    "E:\\BCI_CV\\experiments\\prs_stage1_T_eval_20261122\\REPORT.md": {
+      "sha256": "3bb61824a143eb3be6030780373aaf513c903e5e83d22b93481216a427350eac",
+      "bytes": 7469
+    },
+    "E:\\BCI_CV\\experiments\\prs_stage1_r31_20261122\\public\\R3_1.json": {
+      "sha256": "759f10c48916c0f5184c5615bcad1425d2c485fc66e6d27c4567f181db63af92",
+      "bytes": 585
+    },
+    "E:\\BCI_CV\\experiments\\prs_stage1_r31_20261122\\public\\PLAN_R3_1.md": {
+      "sha256": "c6224b705a65c98812fc95fec469b8645214db66cf24319ac74bd8289f58de45",
+      "bytes": 15190
+    },
+    "E:\\BCI_CV\\experiments\\prs_stage1_T_eval_20261122\\score_report.py": {
+      "sha256": "4ab6f8da47977ed18e6017c226a5c6f807b20c4078b694d400af7f75c4b50dcc",
+      "bytes": 11181
+    }
+  }
+}

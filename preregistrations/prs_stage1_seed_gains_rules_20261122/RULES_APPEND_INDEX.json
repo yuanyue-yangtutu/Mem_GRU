@@ -1,0 +1,16 @@
+{
+  "type": "append-only R3.1/stage1 documentation supplement; not a new executable PLAN",
+  "parent_R31_commit": "0ad8b39fb104cfb02673de3aa8f7d682696d958f",
+  "parent_evidence_commit": "78cb8c5fdec9769e0ca62222a2aa236f481e474d",
+  "original_R31_json_sha256": "759f10c48916c0f5184c5615bcad1425d2c485fc66e6d27c4567f181db63af92",
+  "original_R31_markdown_sha256": "c6224b705a65c98812fc95fec469b8645214db66cf24319ac74bd8289f58de45",
+  "original_scoring_program_sha256": "4ab6f8da47977ed18e6017c226a5c6f807b20c4078b694d400af7f75c4b50dcc",
+  "new_rule_file": "LESSONS_AND_FUTURE_RULES.md",
+  "new_rule_sha256": "245c91e916f7fcd8f47cca02dcab0080b1abff986401a1f75f1a4d4ccb7505a9",
+  "implementation_status": "documentation only; old scorer/access controls unchanged; future implementation and validation required",
+  "new_gains_table_sha256": "9971f7d98014a5602b7cd689f4e302573a41f3c6b2114513a974f94f4efa648b",
+  "training": false,
+  "inference": false,
+  "scoring": false,
+  "old_files_unchanged": true
+}

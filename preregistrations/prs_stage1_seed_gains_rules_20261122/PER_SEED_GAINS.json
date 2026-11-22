@@ -1,0 +1,128 @@
+{
+  "source_count_table": {
+    "file": "E:\\BCI_CV\\experiments\\prs_stage1_T_eval_20261122\\tables\\01_all_seeds_subjects.csv",
+    "sha256": "f7a2dd38a1fc22efc970270cdf0ecbd0bc96ecccc4d3256e8ba9c6425aeaad05"
+  },
+  "source_seed_summary": {
+    "file": "E:\\BCI_CV\\experiments\\prs_stage1_T_eval_20261122\\tables\\04_each_seed_summary.csv",
+    "sha256": "01efddd9b66ea5bdbe95d961401cadc06884e096c3d16c03553f0db4dbb07e5d"
+  },
+  "method": "Use archived correct counts only: causal minus raw within seed/person; equal-mean9 people; up/down/tie by exact integer net correct count, not rounded ACC. No probabilities/labels loaded, no rescoring.",
+  "unit": "ACC gain percentage points",
+  "all_three_seed_means_positive": {
+    "EEGNet": true,
+    "EEGNeX": true,
+    "ATCNet": true
+  },
+  "rows": [
+    {
+      "model": "EEGNet",
+      "seed": 42,
+      "subjects": 9,
+      "ACC_gain_pp": 3.279320987654321,
+      "exact_gain_pp_fraction": "2125/648",
+      "up": 7,
+      "down": 2,
+      "tie": 0,
+      "nine_subject_mean_positive": true,
+      "net_correct_change": 85
+    },
+    {
+      "model": "EEGNet",
+      "seed": 43,
+      "subjects": 9,
+      "ACC_gain_pp": 4.205246913580247,
+      "exact_gain_pp_fraction": "2725/648",
+      "up": 8,
+      "down": 1,
+      "tie": 0,
+      "nine_subject_mean_positive": true,
+      "net_correct_change": 109
+    },
+    {
+      "model": "EEGNet",
+      "seed": 44,
+      "subjects": 9,
+      "ACC_gain_pp": 2.970679012345679,
+      "exact_gain_pp_fraction": "1925/648",
+      "up": 7,
+      "down": 2,
+      "tie": 0,
+      "nine_subject_mean_positive": true,
+      "net_correct_change": 77
+    },
+    {
+      "model": "EEGNeX",
+      "seed": 42,
+      "subjects": 9,
+      "ACC_gain_pp": 5.131172839506172,
+      "exact_gain_pp_fraction": "3325/648",
+      "up": 9,
+      "down": 0,
+      "tie": 0,
+      "nine_subject_mean_positive": true,
+      "net_correct_change": 133
+    },
+    {
+      "model": "EEGNeX",
+      "seed": 43,
+      "subjects": 9,
+      "ACC_gain_pp": 4.398148148148148,
+      "exact_gain_pp_fraction": "475/108",
+      "up": 8,
+      "down": 1,
+      "tie": 0,
+      "nine_subject_mean_positive": true,
+      "net_correct_change": 114
+    },
+    {
+      "model": "EEGNeX",
+      "seed": 44,
+      "subjects": 9,
+      "ACC_gain_pp": 3.7037037037037037,
+      "exact_gain_pp_fraction": "100/27",
+      "up": 7,
+      "down": 2,
+      "tie": 0,
+      "nine_subject_mean_positive": true,
+      "net_correct_change": 96
+    },
+    {
+      "model": "ATCNet",
+      "seed": 42,
+      "subjects": 9,
+      "ACC_gain_pp": 2.314814814814815,
+      "exact_gain_pp_fraction": "125/54",
+      "up": 9,
+      "down": 0,
+      "tie": 0,
+      "nine_subject_mean_positive": true,
+      "net_correct_change": 60
+    },
+    {
+      "model": "ATCNet",
+      "seed": 43,
+      "subjects": 9,
+      "ACC_gain_pp": 2.507716049382716,
+      "exact_gain_pp_fraction": "1625/648",
+      "up": 7,
+      "down": 1,
+      "tie": 1,
+      "nine_subject_mean_positive": true,
+      "net_correct_change": 65
+    },
+    {
+      "model": "ATCNet",
+      "seed": 44,
+      "subjects": 9,
+      "ACC_gain_pp": 1.7361111111111112,
+      "exact_gain_pp_fraction": "125/72",
+      "up": 8,
+      "down": 0,
+      "tie": 1,
+      "nine_subject_mean_positive": true,
+      "net_correct_change": 45
+    }
+  ],
+  "limitations": "Positive nine-person means across3 seeds are not gains for every person, independent replications, new data confirmation, or removal of protocol/locking defects. Existing split-seed deviation and missing pre-label public hash lock remain."
+}
