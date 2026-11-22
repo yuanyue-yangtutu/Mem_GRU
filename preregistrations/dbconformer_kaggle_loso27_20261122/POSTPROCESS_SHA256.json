@@ -1,0 +1,6 @@
+{
+  "phase": "Before formal training and before any held inference",
+  "postprocess_sha256": "8e2f8c1c3ec2dcc5c067603ccba44b477a76cdf2a3a79dc051cb62b7d56d9fd3",
+  "historical_bias_sha256": "25075a334e6d87c48d76d8407b1f1a3dcc7502b606adf951a21912c16457943b",
+  "rule": "original0..t inclusive, first20 unchanged, .1+20/n; labels only after public54stream byte verification"
+}
