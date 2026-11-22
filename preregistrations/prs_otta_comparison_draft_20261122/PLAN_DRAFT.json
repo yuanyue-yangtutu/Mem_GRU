@@ -1,0 +1,40 @@
+{
+  "status": "DRAFT_NOT_EXECUTABLE",
+  "date": "2026-11-22 Asia/Shanghai",
+  "normative_file": "PLAN_DRAFT.md",
+  "normative_sha256": "b7ff55e3a391178c0f63fa7eb4d1dc0f4da2fb09d230d5c529d8d666dceda057",
+  "authorization": "documents and public byte verification only",
+  "methods": [
+    "eeg-otta norm_test / BN-1",
+    "eeg-otta EntropyMinimization, supported alignment=False configuration"
+  ],
+  "repository": "martinwimpff/eeg-otta",
+  "commit": "e71e0aba60a2c60d908eddc4b74ee9b11f0dc320",
+  "license": "MIT",
+  "backbone": "official BaseNet; newly source-trained weights required; not stage1 TF EEGNet",
+  "subjects": 9,
+  "seeds": [
+    42,
+    43,
+    44
+  ],
+  "arms": [
+    "N",
+    "B",
+    "M",
+    "C"
+  ],
+  "training_fits_required": 27,
+  "source_gpu_hours_planning": [
+    7.5,
+    60
+  ],
+  "all_arms_gpu_hours_planning": [
+    7.67,
+    61.7
+  ],
+  "cost_measured": false,
+  "execution_authorized": false,
+  "gate_implemented": false,
+  "labels_read": false
+}

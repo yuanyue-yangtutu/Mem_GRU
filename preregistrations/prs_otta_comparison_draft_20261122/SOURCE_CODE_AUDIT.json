@@ -1,0 +1,70 @@
+{
+  "checked_at": "2026-11-22 Asia/Shanghai",
+  "method": "read-only public source inspection; no imports or execution",
+  "repository": "martinwimpff/eeg-otta",
+  "commit": "e71e0aba60a2c60d908eddc4b74ee9b11f0dc320",
+  "license": "MIT",
+  "sources": [
+    {
+      "path": "LICENSE",
+      "url": "https://github.com/martinwimpff/eeg-otta/blob/e71e0aba60a2c60d908eddc4b74ee9b11f0dc320/LICENSE",
+      "sha256_utf8_fetched_text": "87bd2071c313a1adfc8ec348cfeee4eefe8e8e6bba596457f02f72dbd7a9180d"
+    },
+    {
+      "path": "pyproject.toml",
+      "url": "https://github.com/martinwimpff/eeg-otta/blob/e71e0aba60a2c60d908eddc4b74ee9b11f0dc320/pyproject.toml",
+      "sha256_utf8_fetched_text": "f36d5c8f7a6d3b8f71cdf998534fc7dbf7861b6a1083fc5d95eae34bf3f0222a"
+    },
+    {
+      "path": "configs/tta_norm.yaml",
+      "url": "https://github.com/martinwimpff/eeg-otta/blob/e71e0aba60a2c60d908eddc4b74ee9b11f0dc320/configs/tta_norm.yaml",
+      "sha256_utf8_fetched_text": "5d460fa562bf09e8eedad1275c834b21fe89bf43c5b09e572d7b41379f05028a"
+    },
+    {
+      "path": "configs/tta_entropy_minimization.yaml",
+      "url": "https://github.com/martinwimpff/eeg-otta/blob/e71e0aba60a2c60d908eddc4b74ee9b11f0dc320/configs/tta_entropy_minimization.yaml",
+      "sha256_utf8_fetched_text": "7510b62e3c5cd7ccb1ff28d666cfbb88dc10980a3e239271c12e3c1186e51a6b"
+    },
+    {
+      "path": "configs/bcic2a_loso_basenet.yaml",
+      "url": "https://github.com/martinwimpff/eeg-otta/blob/e71e0aba60a2c60d908eddc4b74ee9b11f0dc320/configs/bcic2a_loso_basenet.yaml",
+      "sha256_utf8_fetched_text": "8787de88f5cbd6c069a4c977752169f593c1b316145d65214138ff290ac70bf2"
+    },
+    {
+      "path": "eeg_otta/tta/base.py",
+      "url": "https://github.com/martinwimpff/eeg-otta/blob/e71e0aba60a2c60d908eddc4b74ee9b11f0dc320/eeg_otta/tta/base.py",
+      "sha256_utf8_fetched_text": "5278c69d86376a828e416a23dc59ed4d07ab3f4c2465b7c0cd58c11f17f19820"
+    },
+    {
+      "path": "eeg_otta/tta/norm.py",
+      "url": "https://github.com/martinwimpff/eeg-otta/blob/e71e0aba60a2c60d908eddc4b74ee9b11f0dc320/eeg_otta/tta/norm.py",
+      "sha256_utf8_fetched_text": "89563fc74c4559b6ae502aab27fceb1af112d6c6b3fd2beb284ee9390efc8813"
+    },
+    {
+      "path": "eeg_otta/tta/entropy_minimization.py",
+      "url": "https://github.com/martinwimpff/eeg-otta/blob/e71e0aba60a2c60d908eddc4b74ee9b11f0dc320/eeg_otta/tta/entropy_minimization.py",
+      "sha256_utf8_fetched_text": "d4686129fa540d123e492ac1af03ae375663ff88bc2b61704360c85832db50e1"
+    },
+    {
+      "path": "eeg_otta/models/basenet.py",
+      "url": "https://github.com/martinwimpff/eeg-otta/blob/e71e0aba60a2c60d908eddc4b74ee9b11f0dc320/eeg_otta/models/basenet.py",
+      "sha256_utf8_fetched_text": "b7451b73d1537d3f472991212a9c483f2a70862bfab15ed62f270e386c2f0ffd"
+    },
+    {
+      "path": "eeg_otta/models/classification_module.py",
+      "url": "https://github.com/martinwimpff/eeg-otta/blob/e71e0aba60a2c60d908eddc4b74ee9b11f0dc320/eeg_otta/models/classification_module.py",
+      "sha256_utf8_fetched_text": "3dc7320cfd1b6a11451498aacf103b95393e23c7a44870d63a860cbadd2b2685"
+    },
+    {
+      "path": "eeg_otta/train_source_model.py",
+      "url": "https://github.com/martinwimpff/eeg-otta/blob/e71e0aba60a2c60d908eddc4b74ee9b11f0dc320/eeg_otta/train_source_model.py",
+      "sha256_utf8_fetched_text": "adc1bdb0ea8bfef43e0d800df0890e733731d49dbed6447db7d7416dda9e4a1c"
+    },
+    {
+      "path": "eeg_otta/run_adaptation.py",
+      "url": "https://github.com/martinwimpff/eeg-otta/blob/e71e0aba60a2c60d908eddc4b74ee9b11f0dc320/eeg_otta/run_adaptation.py",
+      "sha256_utf8_fetched_text": "f28d38da871f6e74a5107b46552c773791d3f34ca3aaeb85eb6b370512af71cf"
+    }
+  ],
+  "hash_scope": "UTF-8 fetched public source text; not inferred compiled/runtime state"
+}
