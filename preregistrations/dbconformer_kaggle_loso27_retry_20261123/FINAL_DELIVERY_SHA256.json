@@ -1,0 +1,27 @@
+{
+  "hash_object": "Exact bytes of named files; hash-only public registration",
+  "public_output_commit": "3d0bb79dd612ca889a06d2c3f04231417aaa8d54",
+  "files": {
+    "FINAL_REPORT.md": "925a4d8a19d216eeae7fb21952c81f2d9b64876bc93b20537c86b8cc82190375",
+    "RESULT.json": "46f6258fc031de45398671f13d2a9aa6b0759febf78d238b0e195a2113eec747",
+    "PER_SUBJECT_SEED.csv": "ed86f0215c64fa2c6a7ad14f2d89f1e310f5b50d7b1ca0be116e7b5606daa556",
+    "PER_SUBJECT_MEAN3SEED.csv": "20f8830849d9f765a227a9d8e2fc2e417206519e1cf3667628bac41fd51aaa5b",
+    "SCORING_LABEL_ACCESS.jsonl": "ddc934edc46da23ea7dbbd6e260fe53cbd428d93cb4618bed2b7fd6ed796ac34",
+    "PUBLIC_OUTPUT_VERIFIED.json": "16383963b020fd573221cf9636b3f518037a7a3d80f7de8642e256d6d10bc743",
+    "SCORE_CONSISTENCY_AUDIT.json": "917fa28cec46e4c3a675bd318b7a1fe223caa63821ea52c7e46aedbee70d2667",
+    "SCORED_ARTIFACT_MANIFEST.json": "8abba84fea83d2c254d995e6df8d0e6dd90156b23fa742fa49afe06c227ceff9",
+    "SCORED_ARCHIVE_RECEIPT.json": "99cb291f7cbcf507ef187163c794f76b01758bf5c8e6a78aa18b7c1d7ac62757",
+    "DBCONFORMER_RETRY2_SCORED_RESULTS.zip": "04008fe1bd945d8d72cf127446d9c324b0e7588baac5c7bdaf16eaf5db0a7b66",
+    "FROZEN_SOURCE_SUPPLEMENT.zip": "3ae101dab2a41bd1d410d5ff6da1abb32ef3401f4b87011737db020f7e82973d",
+    "DELIVERY.md": "323620c1f542bd02077c7d51cc976a7929e65ab123e3e5e498b9dc22c5779357",
+    "package_source_supplement.py": "c7e6bd47b77eabe4c206d8eef01a26998bc720b35c9576dba8a62a352b4f7726"
+  },
+  "scientific_source_hashes": {
+    "worker.py": "f53bb4fe7c8b8d4ee882cb9dcd91dc7f3c7b4147a6aca77d49c20932016cc658",
+    "controller.py": "838389194b250dce8aa2e22b4274d6880e7b0278a1cd7a832a964a1c8faece8a",
+    "code/DBConformer.py": "426b5c5dae9ee1fdd4b79018a6f849164bb877fe5a707896903a610051cad2b6",
+    "code/source_preprocessing.py": "8c608a53e4b18bb31776ff0df4312a697daba74d8d592dbaa2398583bb320093",
+    "bias_reference_run.py": "25075a334e6d87c48d76d8407b1f1a3dcc7502b606adf951a21912c16457943b"
+  },
+  "prediction_values_or_labels_published": false
+}
