@@ -1,0 +1,11 @@
+{
+  "hash_object": "Exact local UTF8/file bytes; anonymous verify Git bytes after publication",
+  "files": {
+    "RETRY_EXECUTION.json": "ce2b08eeed3d84c4d27b7cc5893fcf1a1f132dd58f93ee8077fc9e1cedb3db40",
+    "DBConformer_Recovery2.ipynb": "50211e322946ba2a2cbdf465ed51825a9937672f9381a5cc0c365177c42b7feb",
+    "RUN_LOCK.json": "311c7b7d864671d6f38794275fd92cca6d7f46d25310ce05514c3fd73affda27",
+    "RUN_SHA256.json": "e4aaef499e48062966a2b26309b455bdb0a0968ec50a717677addda1c40c7d91",
+    "postprocess.py": "8e2f8c1c3ec2dcc5c067603ccba44b477a76cdf2a3a79dc051cb62b7d56d9fd3",
+    "build_recovery_wrapper.py": "a42a5a779e2a85bc3dfcda4415812365c385172a3abfe534cd508db9130653ec"
+  }
+}
